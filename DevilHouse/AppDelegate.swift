@@ -15,8 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var weapon:[Int]=[0,0]
     var protect:[Int]=[0,0]
     
-    var bug = 0
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true
