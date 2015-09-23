@@ -18,6 +18,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var myHitPoint: UILabel!
     @IBOutlet weak var HpBar: UIProgressView!
     @IBOutlet weak var myHpBar: UIProgressView!
+    
+    //てすと
+    
     var counter = 0
     var hp = 100
     var text:[String]=["a","b","c","d","e","f","g"]
