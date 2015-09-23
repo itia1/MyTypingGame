@@ -19,7 +19,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var HpBar: UIProgressView!
     @IBOutlet weak var myHpBar: UIProgressView!
     
-    //てすと
+    var test = 0
     
     var counter = 0
     var hp = 100
