@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF89E3781BB2833200E9FFD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89E3771BB2833200E9FFD5 /* AppDelegate.swift */; };
+		EF89E37A1BB2833200E9FFD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89E3791BB2833200E9FFD5 /* ViewController.swift */; };
+		EF89E37D1BB2833200E9FFD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF89E37B1BB2833200E9FFD5 /* Main.storyboard */; };
+		EF89E37F1BB2833200E9FFD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF89E37E1BB2833200E9FFD5 /* Images.xcassets */; };
+		EF89E3821BB2833200E9FFD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89E3801BB2833200E9FFD5 /* LaunchScreen.xib */; };
+		EF89E38E1BB2833200E9FFD5 /* DevilHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89E38D1BB2833200E9FFD5 /* DevilHouseTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF89E3881BB2833200E9FFD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF89E36A1BB2833200E9FFD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF89E3711BB2833200E9FFD5;
+			remoteInfo = DevilHouse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF89E3721BB2833200E9FFD5 /* DevilHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevilHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF89E3761BB2833200E9FFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF89E3771BB2833200E9FFD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF89E3791BB2833200E9FFD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF89E37C1BB2833200E9FFD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF89E37E1BB2833200E9FFD5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF89E3811BB2833200E9FFD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EF89E3871BB2833200E9FFD5 /* DevilHouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevilHouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF89E38C1BB2833200E9FFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF89E38D1BB2833200E9FFD5 /* DevilHouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevilHouseTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF89E36F1BB2833200E9FFD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF89E3841BB2833200E9FFD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF89E3691BB2833200E9FFD5 = {
+			isa = PBXGroup;
+			children = (
+				EF89E3741BB2833200E9FFD5 /* DevilHouse */,
+				EF89E38A1BB2833200E9FFD5 /* DevilHouseTests */,
+				EF89E3731BB2833200E9FFD5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF89E3731BB2833200E9FFD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF89E3721BB2833200E9FFD5 /* DevilHouse.app */,
+				EF89E3871BB2833200E9FFD5 /* DevilHouseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF89E3741BB2833200E9FFD5 /* DevilHouse */ = {
+			isa = PBXGroup;
+			children = (
+				EF89E3771BB2833200E9FFD5 /* AppDelegate.swift */,
+				EF89E3791BB2833200E9FFD5 /* ViewController.swift */,
+				EF89E37B1BB2833200E9FFD5 /* Main.storyboard */,
+				EF89E37E1BB2833200E9FFD5 /* Images.xcassets */,
+				EF89E3801BB2833200E9FFD5 /* LaunchScreen.xib */,
+				EF89E3751BB2833200E9FFD5 /* Supporting Files */,
+			);
+			path = DevilHouse;
+			sourceTree = "<group>";
+		};
+		EF89E3751BB2833200E9FFD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF89E3761BB2833200E9FFD5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF89E38A1BB2833200E9FFD5 /* DevilHouseTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF89E38D1BB2833200E9FFD5 /* DevilHouseTests.swift */,
+				EF89E38B1BB2833200E9FFD5 /* Supporting Files */,
+			);
+			path = DevilHouseTests;
+			sourceTree = "<group>";
+		};
+		EF89E38B1BB2833200E9FFD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF89E38C1BB2833200E9FFD5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF89E3711BB2833200E9FFD5 /* DevilHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF89E3911BB2833200E9FFD5 /* Build configuration list for PBXNativeTarget "DevilHouse" */;
+			buildPhases = (
+				EF89E36E1BB2833200E9FFD5 /* Sources */,
+				EF89E36F1BB2833200E9FFD5 /* Frameworks */,
+				EF89E3701BB2833200E9FFD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DevilHouse;
+			productName = DevilHouse;
+			productReference = EF89E3721BB2833200E9FFD5 /* DevilHouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF89E3861BB2833200E9FFD5 /* DevilHouseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF89E3941BB2833200E9FFD5 /* Build configuration list for PBXNativeTarget "DevilHouseTests" */;
+			buildPhases = (
+				EF89E3831BB2833200E9FFD5 /* Sources */,
+				EF89E3841BB2833200E9FFD5 /* Frameworks */,
+				EF89E3851BB2833200E9FFD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF89E3891BB2833200E9FFD5 /* PBXTargetDependency */,
+			);
+			name = DevilHouseTests;
+			productName = DevilHouseTests;
+			productReference = EF89E3871BB2833200E9FFD5 /* DevilHouseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF89E36A1BB2833200E9FFD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Itia;
+				TargetAttributes = {
+					EF89E3711BB2833200E9FFD5 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					EF89E3861BB2833200E9FFD5 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EF89E3711BB2833200E9FFD5;
+					};
+				};
+			};
+			buildConfigurationList = EF89E36D1BB2833200E9FFD5 /* Build configuration list for PBXProject "DevilHouse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF89E3691BB2833200E9FFD5;
+			productRefGroup = EF89E3731BB2833200E9FFD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF89E3711BB2833200E9FFD5 /* DevilHouse */,
+				EF89E3861BB2833200E9FFD5 /* DevilHouseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF89E3701BB2833200E9FFD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF89E37D1BB2833200E9FFD5 /* Main.storyboard in Resources */,
+				EF89E3821BB2833200E9FFD5 /* LaunchScreen.xib in Resources */,
+				EF89E37F1BB2833200E9FFD5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF89E3851BB2833200E9FFD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF89E36E1BB2833200E9FFD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF89E37A1BB2833200E9FFD5 /* ViewController.swift in Sources */,
+				EF89E3781BB2833200E9FFD5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF89E3831BB2833200E9FFD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF89E38E1BB2833200E9FFD5 /* DevilHouseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF89E3891BB2833200E9FFD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF89E3711BB2833200E9FFD5 /* DevilHouse */;
+			targetProxy = EF89E3881BB2833200E9FFD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF89E37B1BB2833200E9FFD5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF89E37C1BB2833200E9FFD5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF89E3801BB2833200E9FFD5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF89E3811BB2833200E9FFD5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF89E38F1BB2833200E9FFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF89E3901BB2833200E9FFD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF89E3921BB2833200E9FFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DevilHouse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF89E3931BB2833200E9FFD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DevilHouse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF89E3951BB2833200E9FFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DevilHouseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevilHouse.app/DevilHouse";
+			};
+			name = Debug;
+		};
+		EF89E3961BB2833200E9FFD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DevilHouseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevilHouse.app/DevilHouse";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF89E36D1BB2833200E9FFD5 /* Build configuration list for PBXProject "DevilHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF89E38F1BB2833200E9FFD5 /* Debug */,
+				EF89E3901BB2833200E9FFD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF89E3911BB2833200E9FFD5 /* Build configuration list for PBXNativeTarget "DevilHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF89E3921BB2833200E9FFD5 /* Debug */,
+				EF89E3931BB2833200E9FFD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF89E3941BB2833200E9FFD5 /* Build configuration list for PBXNativeTarget "DevilHouseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF89E3951BB2833200E9FFD5 /* Debug */,
+				EF89E3961BB2833200E9FFD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF89E36A1BB2833200E9FFD5 /* Project object */;
+}
