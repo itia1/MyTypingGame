@@ -40,7 +40,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                         ]
     
     
-    //攻撃エフェクト　いらないかも
+    
     var attackeffect = [
                         UIImage(named:"attack1.png")!,
                         UIImage(named:"attack2.png")!,
