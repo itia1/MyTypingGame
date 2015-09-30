@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00F06B3C1BBC1FA70097C1BA /* cat1.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B391BBC1FA70097C1BA /* cat1.png */; settings = {ASSET_TAGS = (); }; };
+		00F06B3D1BBC1FA70097C1BA /* cat2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B3A1BBC1FA70097C1BA /* cat2.png */; settings = {ASSET_TAGS = (); }; };
+		00F06B3E1BBC1FA70097C1BA /* cat3.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B3B1BBC1FA70097C1BA /* cat3.png */; settings = {ASSET_TAGS = (); }; };
+		00F06B431BBC2A940097C1BA /* attack1.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B3F1BBC2A940097C1BA /* attack1.png */; settings = {ASSET_TAGS = (); }; };
+		00F06B441BBC2A940097C1BA /* attack2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B401BBC2A940097C1BA /* attack2.png */; settings = {ASSET_TAGS = (); }; };
+		00F06B451BBC2A940097C1BA /* attack3.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B411BBC2A940097C1BA /* attack3.png */; settings = {ASSET_TAGS = (); }; };
+		00F06B461BBC2A940097C1BA /* attack4.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B421BBC2A940097C1BA /* attack4.png */; settings = {ASSET_TAGS = (); }; };
+		00F06B481BBC32700097C1BA /* cat1damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B471BBC32700097C1BA /* cat1damage.png */; settings = {ASSET_TAGS = (); }; };
 		EF89E37F1BB2833200E9FFD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF89E37E1BB2833200E9FFD5 /* Images.xcassets */; };
 		EF89E3821BB2833200E9FFD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89E3801BB2833200E9FFD5 /* LaunchScreen.xib */; };
 		EF89E38E1BB2833200E9FFD5 /* DevilHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89E38D1BB2833200E9FFD5 /* DevilHouseTests.swift */; };
@@ -34,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00F06B391BBC1FA70097C1BA /* cat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat1.png; sourceTree = "<group>"; };
+		00F06B3A1BBC1FA70097C1BA /* cat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat2.png; sourceTree = "<group>"; };
+		00F06B3B1BBC1FA70097C1BA /* cat3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat3.png; sourceTree = "<group>"; };
+		00F06B3F1BBC2A940097C1BA /* attack1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack1.png; sourceTree = "<group>"; };
+		00F06B401BBC2A940097C1BA /* attack2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack2.png; sourceTree = "<group>"; };
+		00F06B411BBC2A940097C1BA /* attack3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack3.png; sourceTree = "<group>"; };
+		00F06B421BBC2A940097C1BA /* attack4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack4.png; sourceTree = "<group>"; };
+		00F06B471BBC32700097C1BA /* cat1damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat1damage.png; sourceTree = "<group>"; };
 		EF89E3721BB2833200E9FFD5 /* DevilHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevilHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF89E3761BB2833200E9FFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF89E37E1BB2833200E9FFD5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -140,6 +156,14 @@
 		EF89E3A81BB283EE00E9FFD5 /* Picture */ = {
 			isa = PBXGroup;
 			children = (
+				00F06B471BBC32700097C1BA /* cat1damage.png */,
+				00F06B3F1BBC2A940097C1BA /* attack1.png */,
+				00F06B401BBC2A940097C1BA /* attack2.png */,
+				00F06B411BBC2A940097C1BA /* attack3.png */,
+				00F06B421BBC2A940097C1BA /* attack4.png */,
+				00F06B391BBC1FA70097C1BA /* cat1.png */,
+				00F06B3A1BBC1FA70097C1BA /* cat2.png */,
+				00F06B3B1BBC1FA70097C1BA /* cat3.png */,
 				EF89E3E51BB2843A00E9FFD5 /* title2.png */,
 				EF89E3E61BB2843A00E9FFD5 /* town.png */,
 			);
@@ -196,6 +220,7 @@
 				TargetAttributes = {
 					EF89E3711BB2833200E9FFD5 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = DRLLG3Z3Q7;
 					};
 					EF89E3861BB2833200E9FFD5 = {
 						CreatedOnToolsVersion = 6.4;
@@ -227,10 +252,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F06B3D1BBC1FA70097C1BA /* cat2.png in Resources */,
 				EF89E3EA1BB2847000E9FFD5 /* Main.storyboard in Resources */,
+				00F06B441BBC2A940097C1BA /* attack2.png in Resources */,
 				EF89E3821BB2833200E9FFD5 /* LaunchScreen.xib in Resources */,
+				00F06B3C1BBC1FA70097C1BA /* cat1.png in Resources */,
+				00F06B431BBC2A940097C1BA /* attack1.png in Resources */,
 				EF89E37F1BB2833200E9FFD5 /* Images.xcassets in Resources */,
 				EF89E3E71BB2843A00E9FFD5 /* title2.png in Resources */,
+				00F06B481BBC32700097C1BA /* cat1damage.png in Resources */,
+				00F06B3E1BBC1FA70097C1BA /* cat3.png in Resources */,
+				00F06B451BBC2A940097C1BA /* attack3.png in Resources */,
+				00F06B461BBC2A940097C1BA /* attack4.png in Resources */,
 				EF89E3E81BB2843A00E9FFD5 /* town.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,10 +410,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DevilHouse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DevilHouse/DevilHouse-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -391,10 +427,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DevilHouse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DevilHouse/DevilHouse-Bridging-Header.h";
 			};
 			name = Release;

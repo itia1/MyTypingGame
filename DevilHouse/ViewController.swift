@@ -14,6 +14,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var trueText: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var Picture: UIImageView!
+    @IBOutlet weak var AttackEffect: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var myHitPoint: UILabel!
     @IBOutlet weak var HpBar: UIProgressView!
@@ -30,19 +31,23 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var timer2: NSTimer?
     var myhp = 100
     
-    let monster1:[UIImage!] = [
-                    UIImage(named:"cat1.png"),
-                    UIImage(named:"cat2.png"),
-                    UIImage(named:"cat3.png")
-                    ]
-    let attack1:[UIImage!] = [
-                    UIImage(named:"attack1.png"),
-                    UIImage(named:"attack2.png"),
-                    UIImage(named:"attack3.png"),
-                    UIImage(named:"attack4.png")
-                    ]
-    let gameover = UIImage(named:"gameover.png")
     
+    var monster1 = UIImage(named:"cat1.png")
+    
+    var monster1damage = [
+                        UIImage(named:"cat1.png")!,
+                        UIImage(named:"cat1damage.png")!
+                        ]
+    
+    
+    
+    var attackeffect = [
+                        UIImage(named:"attack1.png")!,
+                        UIImage(named:"attack2.png")!,
+                        UIImage(named:"attack3.png")!,
+                        UIImage(named:"attack4.png")!
+                        ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.textField.delegate = self
@@ -62,7 +67,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         HpBar.progress = 1.0
         myHpBar.progress = 1.0
-    
+ 
+        Picture.image = monster1
+        
         
     }
 
@@ -81,8 +88,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         myHpBar.setProgress(myHpBar.progress - 0.05, animated: true)
             }
             if(myhp <= 0){
-                Picture.image = gameover
-            }
+                //ゲームオーバーの処理
+             }
         }
     }
     
@@ -100,6 +107,16 @@ class ViewController: UIViewController,UITextFieldDelegate {
             
             hp = hp-50;
             HpBar.setProgress(HpBar.progress - 0.5 , animated: true)
+            
+            AttackEffect.animationImages = attackeffect
+            AttackEffect.animationRepeatCount = 1
+            AttackEffect.animationDuration = 0.3
+            AttackEffect.startAnimating()
+            
+            Picture.animationImages = monster1damage
+            Picture.animationRepeatCount = 3
+            Picture.animationDuration = 0.2
+            Picture.startAnimating()
             
             if( hp <= 0){
                 counter++;
