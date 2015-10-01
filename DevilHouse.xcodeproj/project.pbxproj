@@ -29,6 +29,7 @@
 		EF89E3E71BB2843A00E9FFD5 /* title2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF89E3E51BB2843A00E9FFD5 /* title2.png */; };
 		EF89E3E81BB2843A00E9FFD5 /* town.png in Resources */ = {isa = PBXBuildFile; fileRef = EF89E3E61BB2843A00E9FFD5 /* town.png */; };
 		EF89E3EA1BB2847000E9FFD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF89E3E91BB2847000E9FFD5 /* Main.storyboard */; };
+		EFA6AC441BBD8D0D00F86B1F /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */; };
 		EFDB28881BBC3F380051C3C1 /* bukiya.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDB28871BBC3F380051C3C1 /* bukiya.png */; };
 		EFDB288A1BBC3F630051C3C1 /* load.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDB28891BBC3F630051C3C1 /* load.png */; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		EF89E3E51BB2843A00E9FFD5 /* title2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title2.png; sourceTree = "<group>"; };
 		EF89E3E61BB2843A00E9FFD5 /* town.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = town.png; sourceTree = "<group>"; };
 		EF89E3E91BB2847000E9FFD5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NextViewController.swift; path = ../NextViewController.swift; sourceTree = "<group>"; };
 		EFDB28871BBC3F380051C3C1 /* bukiya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bukiya.png; sourceTree = "<group>"; };
 		EFDB28891BBC3F630051C3C1 /* load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = load.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				EF89E39A1BB283CD00E9FFD5 /* ConfigViewController.swift */,
 				EF89E39B1BB283CD00E9FFD5 /* MainViewController.swift */,
 				EF89E39C1BB283CD00E9FFD5 /* ProtectViewController.swift */,
+				EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */,
 				EF89E39D1BB283CD00E9FFD5 /* StartViewController.swift */,
 				EF89E39E1BB283CD00E9FFD5 /* TownViewController.swift */,
 				EF89E39F1BB283CD00E9FFD5 /* ViewController.swift */,
@@ -297,6 +300,7 @@
 				EF89E3A61BB283CD00E9FFD5 /* ViewController.swift in Sources */,
 				EF89E3A51BB283CD00E9FFD5 /* TownViewController.swift in Sources */,
 				EF89E3A71BB283CD00E9FFD5 /* WeaponViewController.swift in Sources */,
+				EFA6AC441BBD8D0D00F86B1F /* NextViewController.swift in Sources */,
 				EF89E3991BB283AE00E9FFD5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

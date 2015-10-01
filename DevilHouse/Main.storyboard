@@ -149,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NaX-qp-IBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433" y="-157"/>
+            <point key="canvasLocation" x="660" y="-261"/>
         </scene>
         <!--Weapon View Controller-->
         <scene sceneID="1Y7-gp-oiT">
@@ -438,10 +438,10 @@
             </objects>
             <point key="canvasLocation" x="-107" y="631"/>
         </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="ssX-8y-OKM">
             <objects>
-                <viewController id="7yh-PA-VYr" sceneMemberID="viewController">
+                <viewController id="7yh-PA-VYr" customClass="NextViewController" customModule="DevilHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="34i-NR-z3y"/>
                         <viewControllerLayoutGuide type="bottom" id="mcQ-1G-K1R"/>
