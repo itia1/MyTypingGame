@@ -18,6 +18,7 @@
 		EF0AB0041BBD98A7000BA6B4 /* number2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0AB0031BBD98A7000BA6B4 /* number2.png */; };
 		EF0AB0061BBD98B3000BA6B4 /* number3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0AB0051BBD98B3000BA6B4 /* number3.png */; };
 		EF0AB0081BBD98BD000BA6B4 /* number1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0AB0071BBD98BD000BA6B4 /* number1.png */; };
+		EF0AB00A1BBE5601000BA6B4 /* 20110130_monhanicon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF0AB0091BBE5601000BA6B4 /* 20110130_monhanicon.jpg */; };
 		EF89E37F1BB2833200E9FFD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF89E37E1BB2833200E9FFD5 /* Images.xcassets */; };
 		EF89E3821BB2833200E9FFD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89E3801BB2833200E9FFD5 /* LaunchScreen.xib */; };
 		EF89E38E1BB2833200E9FFD5 /* DevilHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89E38D1BB2833200E9FFD5 /* DevilHouseTests.swift */; };
@@ -59,6 +60,7 @@
 		EF0AB0031BBD98A7000BA6B4 /* number2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number2.png; sourceTree = "<group>"; };
 		EF0AB0051BBD98B3000BA6B4 /* number3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number3.png; sourceTree = "<group>"; };
 		EF0AB0071BBD98BD000BA6B4 /* number1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number1.png; sourceTree = "<group>"; };
+		EF0AB0091BBE5601000BA6B4 /* 20110130_monhanicon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20110130_monhanicon.jpg; sourceTree = "<group>"; };
 		EF89E3721BB2833200E9FFD5 /* DevilHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevilHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF89E3761BB2833200E9FFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF89E37E1BB2833200E9FFD5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				00F06B411BBC2A940097C1BA /* attack3.png */,
 				00F06B421BBC2A940097C1BA /* attack4.png */,
 				00F06B391BBC1FA70097C1BA /* cat1.png */,
+				EF0AB0091BBE5601000BA6B4 /* 20110130_monhanicon.jpg */,
 				00F06B3A1BBC1FA70097C1BA /* cat2.png */,
 				00F06B3B1BBC1FA70097C1BA /* cat3.png */,
 				EF89E3E51BB2843A00E9FFD5 /* title2.png */,
@@ -277,6 +280,7 @@
 				00F06B441BBC2A940097C1BA /* attack2.png in Resources */,
 				EF89E3821BB2833200E9FFD5 /* LaunchScreen.xib in Resources */,
 				00F06B3C1BBC1FA70097C1BA /* cat1.png in Resources */,
+				EF0AB00A1BBE5601000BA6B4 /* 20110130_monhanicon.jpg in Resources */,
 				00F06B431BBC2A940097C1BA /* attack1.png in Resources */,
 				EF89E37F1BB2833200E9FFD5 /* Images.xcassets in Resources */,
 				EF89E3E71BB2843A00E9FFD5 /* title2.png in Resources */,

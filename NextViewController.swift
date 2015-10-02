@@ -37,8 +37,8 @@ class NextViewController: UIViewController {
         }else{
             let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             
-            let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("NextViewController") as! UIViewController
-            
+            let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("NextViewController")
+            as! UIViewController
             next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
                 
             self.presentViewController(next, animated: true, completion: nil)
