@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NaX-qp-IBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433" y="-157"/>
+            <point key="canvasLocation" x="660" y="-261"/>
         </scene>
         <!--Weapon View Controller-->
         <scene sceneID="1Y7-gp-oiT">
@@ -276,7 +276,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DevilHouse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NextViewController" id="vXZ-lx-hvc" customClass="ViewController" customModule="DevilHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -439,10 +439,10 @@
             </objects>
             <point key="canvasLocation" x="-107" y="631"/>
         </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="ssX-8y-OKM">
             <objects>
-                <viewController id="7yh-PA-VYr" sceneMemberID="viewController">
+                <viewController id="7yh-PA-VYr" customClass="NextViewController" customModule="DevilHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="34i-NR-z3y"/>
                         <viewControllerLayoutGuide type="bottom" id="mcQ-1G-K1R"/>
@@ -460,9 +460,23 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="3ge-rY-piJ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ki6-gB-MRo">
+                                <rect key="frame" x="250" y="70" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Sb0-9K-F2T"/>
+                                    <constraint firstAttribute="width" constant="100" id="gkR-zn-BdF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Ki6-gB-MRo" secondAttribute="centerX" id="0Pa-VT-Rh9"/>
+                            <constraint firstItem="Ki6-gB-MRo" firstAttribute="top" secondItem="34i-NR-z3y" secondAttribute="bottom" constant="50" id="3ut-Um-Ikl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countPicture" destination="Ki6-gB-MRo" id="NSH-F3-07y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nou-7Z-8EJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
