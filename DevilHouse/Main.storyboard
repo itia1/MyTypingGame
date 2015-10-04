@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zDG-mq-iKo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zDG-mq-iKo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,19 +21,8 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="load.png" translatesAutoresizingMaskIntoConstraints="NO" id="t7f-7V-hNg">
                                 <rect key="frame" x="93" y="-68" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-O5-MLY">
-                                <rect key="frame" x="36" y="356" width="56" height="46"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="街へ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="IGx-SG-JMH" kind="show" id="Wv9-O1-Aba"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ai3-O0-gcf">
-                                <rect key="frame" x="230" y="190" width="140" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ai3-O0-gcf">
+                                <rect key="frame" x="229" y="60" width="140" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="魔王の城へ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fq7-n6-ELX">
-                                <rect key="frame" x="452" y="340" width="112" height="46"/>
+                                <rect key="frame" x="453" y="350" width="112" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="アジトへ">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -53,6 +43,17 @@
                                     <segue destination="UIn-oR-HbU" kind="show" id="tBc-U5-Pbo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dn-O5-MLY">
+                                <rect key="frame" x="40" y="350" width="56" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="街へ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IGx-SG-JMH" kind="show" id="Wv9-O1-Aba"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -60,29 +61,47 @@
                             <constraint firstItem="0dn-O5-MLY" firstAttribute="top" secondItem="Ai3-O0-gcf" secondAttribute="bottom" constant="100" id="4QR-HK-0Cc"/>
                             <constraint firstItem="Ai3-O0-gcf" firstAttribute="top" secondItem="9vT-pw-aCi" secondAttribute="bottom" constant="150" id="4m3-4H-tbB"/>
                             <constraint firstItem="0dn-O5-MLY" firstAttribute="leading" secondItem="0hb-ob-bc3" secondAttribute="leadingMargin" constant="151" id="6Sp-tF-Ccz"/>
+                            <constraint firstItem="0dn-O5-MLY" firstAttribute="leading" secondItem="0hb-ob-bc3" secondAttribute="leadingMargin" constant="50" id="6gl-Hu-QEh"/>
                             <constraint firstItem="Ai3-O0-gcf" firstAttribute="top" secondItem="9vT-pw-aCi" secondAttribute="bottom" constant="150" id="9g5-Xc-eIN"/>
                             <constraint firstAttribute="centerX" secondItem="Ai3-O0-gcf" secondAttribute="centerX" id="D6B-Zb-LAq"/>
+                            <constraint firstItem="Ai3-O0-gcf" firstAttribute="top" secondItem="9vT-pw-aCi" secondAttribute="bottom" constant="40" id="EaX-Wr-Qg6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fq7-n6-ELX" secondAttribute="trailing" constant="50" id="Ekw-1x-pVQ"/>
                             <constraint firstItem="0dn-O5-MLY" firstAttribute="top" secondItem="Ai3-O0-gcf" secondAttribute="bottom" constant="64" id="MGj-lg-Kxg"/>
+                            <constraint firstItem="0dn-O5-MLY" firstAttribute="top" secondItem="9vT-pw-aCi" secondAttribute="bottom" constant="330" id="MtD-wa-83B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fq7-n6-ELX" secondAttribute="trailing" constant="20" id="NWf-Df-6fE"/>
                             <constraint firstAttribute="centerX" secondItem="t7f-7V-hNg" secondAttribute="centerX" id="Suf-9d-wf7"/>
                             <constraint firstItem="0dn-O5-MLY" firstAttribute="leading" secondItem="0hb-ob-bc3" secondAttribute="leadingMargin" constant="20" id="Wzr-So-nvV"/>
                             <constraint firstItem="Ai3-O0-gcf" firstAttribute="top" secondItem="9vT-pw-aCi" secondAttribute="bottom" constant="140" id="Yy0-Ks-q07"/>
                             <constraint firstItem="0dn-O5-MLY" firstAttribute="top" secondItem="Ai3-O0-gcf" secondAttribute="bottom" constant="120" id="acJ-o5-vtH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fq7-n6-ELX" secondAttribute="trailing" constant="15" id="baH-Wc-waH"/>
                             <constraint firstItem="Fq7-n6-ELX" firstAttribute="top" secondItem="Ai3-O0-gcf" secondAttribute="bottom" constant="104" id="e7H-BG-HeX"/>
                             <constraint firstItem="0dn-O5-MLY" firstAttribute="top" secondItem="Ai3-O0-gcf" secondAttribute="bottom" constant="80" id="khq-ee-mQk"/>
                             <constraint firstItem="Ai3-O0-gcf" firstAttribute="top" secondItem="9vT-pw-aCi" secondAttribute="bottom" constant="100" id="nVV-K8-NdB"/>
                             <constraint firstAttribute="centerY" secondItem="t7f-7V-hNg" secondAttribute="centerY" id="qDO-l6-ODS"/>
                             <constraint firstItem="Ai3-O0-gcf" firstAttribute="top" secondItem="9vT-pw-aCi" secondAttribute="bottom" constant="170" id="tXb-XC-EGc"/>
+                            <constraint firstItem="Fq7-n6-ELX" firstAttribute="top" secondItem="9vT-pw-aCi" secondAttribute="bottom" constant="330" id="xEb-4d-v4G"/>
+                            <constraint firstItem="Ai3-O0-gcf" firstAttribute="centerX" secondItem="0hb-ob-bc3" secondAttribute="centerX" id="xG3-CN-jeX"/>
+                            <constraint firstItem="0dn-O5-MLY" firstAttribute="leading" secondItem="0hb-ob-bc3" secondAttribute="leadingMargin" constant="20" id="zeg-Cr-Qc1"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="4m3-4H-tbB"/>
                                 <exclude reference="9g5-Xc-eIN"/>
+                                <exclude reference="D6B-Zb-LAq"/>
                                 <exclude reference="Yy0-Ks-q07"/>
                                 <exclude reference="nVV-K8-NdB"/>
+                                <exclude reference="tXb-XC-EGc"/>
                                 <exclude reference="4QR-HK-0Cc"/>
                                 <exclude reference="6Sp-tF-Ccz"/>
+                                <exclude reference="6gl-Hu-QEh"/>
                                 <exclude reference="MGj-lg-Kxg"/>
+                                <exclude reference="Wzr-So-nvV"/>
+                                <exclude reference="acJ-o5-vtH"/>
                                 <exclude reference="khq-ee-mQk"/>
+                                <exclude reference="4MM-be-bh6"/>
+                                <exclude reference="Ekw-1x-pVQ"/>
+                                <exclude reference="NWf-Df-6fE"/>
+                                <exclude reference="e7H-BG-HeX"/>
                             </mask>
                         </variation>
                     </view>
@@ -107,7 +126,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="town.png" translatesAutoresizingMaskIntoConstraints="NO" id="qKz-xI-YlU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt0-q7-kRP">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt0-q7-kRP">
                                 <rect key="frame" x="145" y="143" width="45" height="30"/>
                                 <state key="normal" title="武器屋">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -116,7 +135,7 @@
                                     <segue destination="WGc-rD-xEr" kind="show" identifier="FromTownToWeapon" id="SrC-nj-bZk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvl-cm-URS">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvl-cm-URS">
                                 <rect key="frame" x="278" y="143" width="45" height="30"/>
                                 <state key="normal" title="防具屋">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -202,25 +221,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="木の盾" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gw-Av-XOU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="木の盾" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gw-Av-XOU">
                                 <rect key="frame" x="123" y="136" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="勇者の盾" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-fX-5tH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="勇者の盾" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-fX-5tH">
                                 <rect key="frame" x="123" y="217" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k11-h4-y2N">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k11-h4-y2N">
                                 <rect key="frame" x="281" y="132" width="60" height="30"/>
                                 <state key="normal" title="購入する">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIh-1t-YKQ">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIh-1t-YKQ">
                                 <rect key="frame" x="281" y="213" width="60" height="30"/>
                                 <state key="normal" title="購入する">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -283,13 +302,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMW-0u-80y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMW-0u-80y">
                                 <rect key="frame" x="278" y="102" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-62-Mal">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzo-62-Mal">
                                 <rect key="frame" x="289" y="71" width="23" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -308,13 +327,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="myHP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNx-yx-h3R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="myHP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNx-yx-h3R">
                                 <rect key="frame" x="378" y="116" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="g4c-Fb-i9C" customClass="UIProgressView">
+                            <view contentMode="scaleAspectFit" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g4c-Fb-i9C" customClass="UIProgressView">
                                 <rect key="frame" x="200" y="36" width="200" height="27"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -477,7 +496,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title2.png" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-5i-9Yf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="title2.png" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-5i-9Yf">
                                 <rect key="frame" x="113" y="-34" width="375" height="668"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rli-PO-VP3">
