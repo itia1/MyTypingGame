@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003F63F71BC178E6005D4664 /* 魔王の城へ.png in Resources */ = {isa = PBXBuildFile; fileRef = 003F63F61BC178E6005D4664 /* 魔王の城へ.png */; settings = {ASSET_TAGS = (); }; };
 		00F06B3C1BBC1FA70097C1BA /* cat1.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B391BBC1FA70097C1BA /* cat1.png */; };
 		00F06B3D1BBC1FA70097C1BA /* cat2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B3A1BBC1FA70097C1BA /* cat2.png */; };
 		00F06B3E1BBC1FA70097C1BA /* cat3.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B3B1BBC1FA70097C1BA /* cat3.png */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		003F63F61BC178E6005D4664 /* 魔王の城へ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "魔王の城へ.png"; sourceTree = "<group>"; };
 		00F06B391BBC1FA70097C1BA /* cat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat1.png; sourceTree = "<group>"; };
 		00F06B3A1BBC1FA70097C1BA /* cat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat2.png; sourceTree = "<group>"; };
 		00F06B3B1BBC1FA70097C1BA /* cat3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat3.png; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				00F06B3B1BBC1FA70097C1BA /* cat3.png */,
 				EF89E3E51BB2843A00E9FFD5 /* title2.png */,
 				EF89E3E61BB2843A00E9FFD5 /* town.png */,
+				003F63F61BC178E6005D4664 /* 魔王の城へ.png */,
 				EFDB28871BBC3F380051C3C1 /* bukiya.png */,
 				EFDB28891BBC3F630051C3C1 /* load.png */,
 				EF0AB0031BBD98A7000BA6B4 /* number2.png */,
@@ -276,6 +279,7 @@
 				EFDB28881BBC3F380051C3C1 /* bukiya.png in Resources */,
 				00F06B3D1BBC1FA70097C1BA /* cat2.png in Resources */,
 				EF0AB0061BBD98B3000BA6B4 /* number3.png in Resources */,
+				003F63F71BC178E6005D4664 /* 魔王の城へ.png in Resources */,
 				EF89E3EA1BB2847000E9FFD5 /* Main.storyboard in Resources */,
 				00F06B441BBC2A940097C1BA /* attack2.png in Resources */,
 				EF89E3821BB2833200E9FFD5 /* LaunchScreen.xib in Resources */,
