@@ -14,6 +14,9 @@ class WeaponViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let equipment = Equipment()
+        
     }
 
     override func didReceiveMemoryWarning() {
