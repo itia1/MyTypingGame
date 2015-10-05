@@ -15,6 +15,7 @@
 		00F06B451BBC2A940097C1BA /* attack3.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B411BBC2A940097C1BA /* attack3.png */; };
 		00F06B461BBC2A940097C1BA /* attack4.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B421BBC2A940097C1BA /* attack4.png */; };
 		00F06B481BBC32700097C1BA /* cat1damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B471BBC32700097C1BA /* cat1damage.png */; };
+		0A28AFCA1BC24AB900CF6D19 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A28AFC91BC24AB900CF6D19 /* Equipment.swift */; settings = {ASSET_TAGS = (); }; };
 		EF0AB0041BBD98A7000BA6B4 /* number2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0AB0031BBD98A7000BA6B4 /* number2.png */; };
 		EF0AB0061BBD98B3000BA6B4 /* number3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0AB0051BBD98B3000BA6B4 /* number3.png */; };
 		EF0AB0081BBD98BD000BA6B4 /* number1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0AB0071BBD98BD000BA6B4 /* number1.png */; };
@@ -57,6 +58,7 @@
 		00F06B411BBC2A940097C1BA /* attack3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack3.png; sourceTree = "<group>"; };
 		00F06B421BBC2A940097C1BA /* attack4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack4.png; sourceTree = "<group>"; };
 		00F06B471BBC32700097C1BA /* cat1damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat1damage.png; sourceTree = "<group>"; };
+		0A28AFC91BC24AB900CF6D19 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		EF0AB0031BBD98A7000BA6B4 /* number2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number2.png; sourceTree = "<group>"; };
 		EF0AB0051BBD98B3000BA6B4 /* number3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number3.png; sourceTree = "<group>"; };
 		EF0AB0071BBD98BD000BA6B4 /* number1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number1.png; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				EF89E39D1BB283CD00E9FFD5 /* StartViewController.swift */,
 				EF89E39E1BB283CD00E9FFD5 /* TownViewController.swift */,
 				EF89E39F1BB283CD00E9FFD5 /* ViewController.swift */,
+				0A28AFC91BC24AB900CF6D19 /* Equipment.swift */,
 				EF89E3A01BB283CD00E9FFD5 /* WeaponViewController.swift */,
 				EF89E3E91BB2847000E9FFD5 /* Main.storyboard */,
 				EF89E37E1BB2833200E9FFD5 /* Images.xcassets */,
@@ -329,6 +332,7 @@
 				EF89E3A21BB283CD00E9FFD5 /* MainViewController.swift in Sources */,
 				EF89E3A11BB283CD00E9FFD5 /* ConfigViewController.swift in Sources */,
 				EF89E3A31BB283CD00E9FFD5 /* ProtectViewController.swift in Sources */,
+				0A28AFCA1BC24AB900CF6D19 /* Equipment.swift in Sources */,
 				EF89E3A61BB283CD00E9FFD5 /* ViewController.swift in Sources */,
 				EF89E3A51BB283CD00E9FFD5 /* TownViewController.swift in Sources */,
 				EF89E3A71BB283CD00E9FFD5 /* WeaponViewController.swift in Sources */,
