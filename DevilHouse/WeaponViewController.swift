@@ -15,7 +15,7 @@ class WeaponViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let equipment = Equipment()
+ 
         
     }
 

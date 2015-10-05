@@ -6,6 +6,17 @@
 //  Copyright (c) 2015年 Itia. All rights reserved.
 //
 
+
+
+
+
+// 2015/10/5 敵画像について
+//　　　使いたい画像の名前をmonster？.pngにしてフォルダに突っ込んで、元から入っていた仮の画像を削除して下さい
+//　　　？の数値は階層に対応しています（1〜5）
+//     画像は必ず透過してください
+//     被ダメージ時の点滅は画像の階層数値の後ろにdamageを付けて突っ込んで下さい
+//     今は明転で点滅をやってるけどもっといい感じのやつがあるかもしれない
+
 import UIKit
 
 class ViewController: UIViewController,UITextFieldDelegate {
@@ -27,19 +38,44 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var text:[String]=["a","b","c","d","e","f","g"]
     var startTime: NSTimeInterval? = nil
     var timer: NSTimer?
-    var startTime2: NSTimeInterval? = nil
+    var startTime2: NSTimeInterval? = nil 
     var timer2: NSTimer?
     var myhp = 100
     
     
-    var monster1 = UIImage(named:"cat1.png")
+    var monster1 = UIImage(named:"monster1.png")
     
     var monster1damage = [
-                        UIImage(named:"cat1.png")!,
-                        UIImage(named:"cat1damage.png")!
+                        UIImage(named:"monster1.png")!,
+                        UIImage(named:"monster1damage.png")!
                         ]
     
+    var monster2 = UIImage(named:"monster2.png")
     
+    var monster2damage = [
+                        UIImage(named:"monster2.png")!,
+                        UIImage(named:"monster2damage.png")!
+                        ]
+    var monster3 = UIImage(named:"monster3.png")
+    
+    var monster3damage = [
+                        UIImage(named:"monster3.png")!,
+                        UIImage(named:"monster3damage.png")!
+    ]
+    
+    var monster4 = UIImage(named:"monster4.png")
+    
+    var monster4damage = [
+                        UIImage(named:"monster4.png")!,
+                        UIImage(named:"monster4damage.png")!
+    ]
+    
+    var monster5 = UIImage(named:"monster5.png")
+    
+    var monster5damage = [
+                        UIImage(named:"monster5.png")!,
+                        UIImage(named:"monster5damage.png")!
+    ]
     
     var attackeffect = [
                         UIImage(named:"attack1.png")!,
@@ -47,6 +83,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
                         UIImage(named:"attack3.png")!,
                         UIImage(named:"attack4.png")!
                         ]
+    
+    var bug = UIImage(named:"number1.png")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,6 +127,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
             }
             if(myhp <= 0){
                 //ゲームオーバーの処理
+                
+                
+                
+                
+                
+                
              }
         }
     }
@@ -106,26 +150,79 @@ class ViewController: UIViewController,UITextFieldDelegate {
         if(textField.text==trueText.text){
             
             hp = hp-50;
-            HpBar.setProgress(HpBar.progress - 0.5 , animated: true)
+            HpBar.setProgress(Float(hp) * 0.01 - 0.05, animated: true)
             
             AttackEffect.animationImages = attackeffect
             AttackEffect.animationRepeatCount = 1
             AttackEffect.animationDuration = 0.3
             AttackEffect.startAnimating()
             
+
+            if( hp <= 0){
+                counter++
+                
+                if(counter == 5){
+                    //ゲームクリアの処理
+                    
+                    
+                    
+                    
+                    
+                    
+                }
+                
+                hp = 100 + counter*10
+                HpBar.setProgress(1.0 ,  animated: true)
+                self.startTime2 = nil
+                self.startTime2 = NSDate.timeIntervalSinceReferenceDate()
+                
+                switch counter{
+                case 1:
+                    Picture.image = monster2
+                case 2:
+                    Picture.image = monster3
+                case 3:
+                    Picture.image = monster4
+                case 4:
+                    Picture.image = monster5
+                default:
+                    Picture.image = bug
+                }
+  
+
+            }
+            
             Picture.animationImages = monster1damage
             Picture.animationRepeatCount = 3
             Picture.animationDuration = 0.2
             Picture.startAnimating()
             
-            if( hp <= 0){
-                counter++;
-                hp = 100 + counter*10
-                HpBar.setProgress(1.0 ,  animated: true)
-                self.startTime2 = nil
-                self.startTime2 = NSDate.timeIntervalSinceReferenceDate()
-               
+            switch counter{
+                
+            case 1:
+                    Picture.animationImages = monster2damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+            case 2:
+                    Picture.animationImages = monster3damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+            case 3:
+                    Picture.animationImages = monster4damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+            case 4:
+                    Picture.animationImages = monster5damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+            default:
+                    Picture.image = bug
             }
+            
             var randInt2 = Int(arc4random_uniform(UInt32(text.count)))
             randInt2 = randInt2%2
             randInt2 = randInt2 + counter;
