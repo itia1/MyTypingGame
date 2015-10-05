@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0067FC551BC2CD5400C14266 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0067FC541BC2CD5400C14266 /* Equipment.swift */; settings = {ASSET_TAGS = (); }; };
 		00EAFEE21BC2301C007040F1 /* monster2damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EAFEE01BC2301C007040F1 /* monster2damage.png */; settings = {ASSET_TAGS = (); }; };
 		00EAFEE31BC2301C007040F1 /* monster2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EAFEE11BC2301C007040F1 /* monster2.png */; settings = {ASSET_TAGS = (); }; };
 		00EAFEEA1BC247F1007040F1 /* monster3.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EAFEE41BC247F1007040F1 /* monster3.png */; settings = {ASSET_TAGS = (); }; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0067FC541BC2CD5400C14266 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		00EAFEE01BC2301C007040F1 /* monster2damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster2damage.png; sourceTree = "<group>"; };
 		00EAFEE11BC2301C007040F1 /* monster2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster2.png; sourceTree = "<group>"; };
 		00EAFEE41BC247F1007040F1 /* monster3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster3.png; sourceTree = "<group>"; };
@@ -170,13 +172,13 @@
 				EF89E3A81BB283EE00E9FFD5 /* Picture */,
 				EF89E3981BB283AE00E9FFD5 /* AppDelegate.swift */,
 				EF89E39A1BB283CD00E9FFD5 /* ConfigViewController.swift */,
+				0067FC541BC2CD5400C14266 /* Equipment.swift */,
 				EF89E39B1BB283CD00E9FFD5 /* MainViewController.swift */,
 				EF89E39C1BB283CD00E9FFD5 /* ProtectViewController.swift */,
 				EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */,
 				EF89E39D1BB283CD00E9FFD5 /* StartViewController.swift */,
 				EF89E39E1BB283CD00E9FFD5 /* TownViewController.swift */,
 				EF89E39F1BB283CD00E9FFD5 /* ViewController.swift */,
-				0A28AFC91BC24AB900CF6D19 /* Equipment.swift */,
 				EF89E3A01BB283CD00E9FFD5 /* WeaponViewController.swift */,
 				EF89E3E91BB2847000E9FFD5 /* Main.storyboard */,
 				EF89E37E1BB2833200E9FFD5 /* Images.xcassets */,
@@ -354,7 +356,7 @@
 				EF89E3A21BB283CD00E9FFD5 /* MainViewController.swift in Sources */,
 				EF89E3A11BB283CD00E9FFD5 /* ConfigViewController.swift in Sources */,
 				EF89E3A31BB283CD00E9FFD5 /* ProtectViewController.swift in Sources */,
-				0A28AFCA1BC24AB900CF6D19 /* Equipment.swift in Sources */,
+				0067FC551BC2CD5400C14266 /* Equipment.swift in Sources */,
 				EF89E3A61BB283CD00E9FFD5 /* ViewController.swift in Sources */,
 				EF89E3A51BB283CD00E9FFD5 /* TownViewController.swift in Sources */,
 				EF89E3A71BB283CD00E9FFD5 /* WeaponViewController.swift in Sources */,
