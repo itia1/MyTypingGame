@@ -38,7 +38,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var text:[String]=["a","b","c","d","e","f","g"]
     var startTime: NSTimeInterval? = nil
     var timer: NSTimer?
-    var startTime2: NSTimeInterval? = nil
+    var startTime2: NSTimeInterval? = nil 
     var timer2: NSTimer?
     var myhp = 100
     
