@@ -620,7 +620,59 @@
                     <view key="view" contentMode="scaleToFill" id="JzM-X9-dqv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arK-qr-KFg">
+                                <rect key="frame" x="40" y="40" width="30" height="30"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <segue destination="qrt-df-8Kx" kind="show" id="BtT-53-AmP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKb-Gm-yaB">
+                                <rect key="frame" x="270" y="120" width="60" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="装備"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdh-1A-Bw5">
+                                <rect key="frame" x="269" y="452" width="62" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Qyz-Fs-59a"/>
+                                    <constraint firstAttribute="width" constant="150" id="t1C-EO-tHX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title=" Skill"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qyz-Fs-59a"/>
+                                        <exclude reference="t1C-EO-tHX"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8a-jN-SxP">
+                                <rect key="frame" x="225" y="276" width="150" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="ステータス"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P8a-jN-SxP" firstAttribute="centerX" secondItem="JzM-X9-dqv" secondAttribute="centerX" id="59Y-QM-aal"/>
+                            <constraint firstItem="UKb-Gm-yaB" firstAttribute="top" secondItem="m0P-cN-Y5j" secondAttribute="bottom" constant="100" id="5DK-w5-Ov0"/>
+                            <constraint firstItem="UKb-Gm-yaB" firstAttribute="top" secondItem="m0P-cN-Y5j" secondAttribute="bottom" constant="50" id="7G7-Jh-1dy"/>
+                            <constraint firstItem="arK-qr-KFg" firstAttribute="top" secondItem="m0P-cN-Y5j" secondAttribute="bottom" constant="20" id="9ho-b5-Yfw"/>
+                            <constraint firstItem="P8a-jN-SxP" firstAttribute="centerY" secondItem="JzM-X9-dqv" secondAttribute="centerY" id="AOZ-a3-Tui"/>
+                            <constraint firstItem="Gdh-1A-Bw5" firstAttribute="centerX" secondItem="JzM-X9-dqv" secondAttribute="centerX" id="CxD-q2-vbV"/>
+                            <constraint firstItem="Aax-OB-GT2" firstAttribute="top" secondItem="Gdh-1A-Bw5" secondAttribute="bottom" constant="50" id="GdA-Re-xSM"/>
+                            <constraint firstItem="Aax-OB-GT2" firstAttribute="top" secondItem="Gdh-1A-Bw5" secondAttribute="bottom" constant="100" id="HsL-cG-mQG"/>
+                            <constraint firstItem="arK-qr-KFg" firstAttribute="leading" secondItem="JzM-X9-dqv" secondAttribute="leadingMargin" constant="20" id="QlD-ns-yHO"/>
+                            <constraint firstItem="UKb-Gm-yaB" firstAttribute="centerX" secondItem="JzM-X9-dqv" secondAttribute="centerX" id="gNZ-Ho-Qdl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7G7-Jh-1dy"/>
+                                <exclude reference="GdA-Re-xSM"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEW-FS-Mkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -767,7 +819,7 @@
         <image name="town3.png" width="414" height="736"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U5Z-58-bUv"/>
-        <segue reference="NOd-f5-VfY"/>
+        <segue reference="BtT-53-AmP"/>
+        <segue reference="Wv9-O1-Aba"/>
     </inferredMetricsTieBreakers>
 </document>
