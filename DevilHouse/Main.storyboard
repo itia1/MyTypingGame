@@ -231,26 +231,20 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-Lg-NoB">
-                                <rect key="frame" x="280" y="274" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYW-2g-kXL">
-                                <rect key="frame" x="215" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-Lg-NoB">
+                                <rect key="frame" x="269" y="176" width="50" height="250"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veR-aM-YU6">
-                                <rect key="frame" x="155" y="274" width="46" height="30"/>
+                                <rect key="frame" x="155" y="274" width="50" height="250"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ya-CV-89R">
-                                <rect key="frame" x="399" y="285" width="46" height="30"/>
+                                <rect key="frame" x="392" y="175" width="50" height="250"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -268,7 +262,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vm6-Km-W5H">
-                                <rect key="frame" x="345" y="274" width="46" height="30"/>
+                                <rect key="frame" x="334" y="181" width="50" height="250"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYW-2g-kXL">
+                                <rect key="frame" x="221" y="100" width="50" height="250"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -278,6 +278,8 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="dBX-74-phz" secondAttribute="centerX" id="7if-j2-94X"/>
                             <constraint firstItem="JxN-lT-to0" firstAttribute="top" secondItem="tpd-V8-E7v" secondAttribute="bottom" constant="30" id="Lju-8d-tds"/>
+                            <constraint firstItem="GNg-Lg-NoB" firstAttribute="centerX" secondItem="xCf-cG-Xca" secondAttribute="centerX" id="Zq8-mr-zBE"/>
+                            <constraint firstItem="GNg-Lg-NoB" firstAttribute="centerY" secondItem="xCf-cG-Xca" secondAttribute="centerY" id="aHI-HU-EEv"/>
                             <constraint firstAttribute="centerX" secondItem="JxN-lT-to0" secondAttribute="centerX" id="e3f-Yp-OJL"/>
                             <constraint firstItem="Y1i-fc-ZeO" firstAttribute="leading" secondItem="xCf-cG-Xca" secondAttribute="leadingMargin" constant="158" id="emv-bU-aRt"/>
                             <constraint firstAttribute="centerY" secondItem="dBX-74-phz" secondAttribute="centerY" id="fkM-tG-V4Z"/>
@@ -820,6 +822,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="BtT-53-AmP"/>
-        <segue reference="Wv9-O1-Aba"/>
+        <segue reference="NOd-f5-VfY"/>
     </inferredMetricsTieBreakers>
 </document>
