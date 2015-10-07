@@ -9,11 +9,11 @@
 import UIKit
 
 class Character {
-    let text1:[String]=["くらえ！","ゴブリンか","やったな","姫を返せ","なんだここは","やけに寒い場所だな"]
-    let text2:[String]=["明鏡止水","不撓不屈","かかってこい"]
-    let text3:[String]=["お腹すいてきた","よーしレベルが上がったぞ"]
-    let text4:[String]=["早くお家に帰りたい","体力がなくなってきた"]
-    let text5:[String]=["出たな魔王！","今日こそお前を倒してくれる","くっ肋骨を6本やられた","まだこんなところで死ぬわけにはいかない"]
+    let text1:[String]=["a","b","c","d","e"]
+    let text2:[String]=["ab","ac","ad","ae","af","ag"]
+    let text3:[String]=["ba","bb","bc"]
+    let text4:[String]=["ca","cb","cc","cd","ce","cf","cr","ck","cg","cx","cj"]
+    let text5:[String]=["aaa","bbb","ccc","ddd","eee","fff"]
     
     
     
