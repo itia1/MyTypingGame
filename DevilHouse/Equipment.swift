@@ -6,12 +6,9 @@
 //  Copyright © 2015年 Itia. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class Equipment:NSObject{
-    
-    var bag=0
     
     //保存された武器情報を返す関数
     func readCurrentWeaponInfo() -> [(name:String,possesion:Bool)]{

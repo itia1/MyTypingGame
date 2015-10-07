@@ -26,6 +26,7 @@
 		EF3A72D51BC55C8C00799F93 /* number1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3A72D41BC55C8C00799F93 /* number1-2.png */; settings = {ASSET_TAGS = (); }; };
 		EF3A72D81BC55C9700799F93 /* number3-2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3A72D61BC55C9700799F93 /* number3-2.png */; settings = {ASSET_TAGS = (); }; };
 		EF3A72D91BC55C9700799F93 /* number2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3A72D71BC55C9700799F93 /* number2-2.png */; settings = {ASSET_TAGS = (); }; };
+		EF3A72DF1BC55EEF00799F93 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A72DE1BC55EEF00799F93 /* Character.swift */; settings = {ASSET_TAGS = (); }; };
 		EF5055641BC18A1A0060ECC9 /* town3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055631BC18A1A0060ECC9 /* town3.png */; };
 		EF5055661BC18A470060ECC9 /* title3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055651BC18A470060ECC9 /* title3.png */; };
 		EF5055681BC18A7D0060ECC9 /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055671BC18A7D0060ECC9 /* battle.png */; };
@@ -76,6 +77,7 @@
 		EF3A72D41BC55C8C00799F93 /* number1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number1-2.png"; sourceTree = "<group>"; };
 		EF3A72D61BC55C9700799F93 /* number3-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number3-2.png"; sourceTree = "<group>"; };
 		EF3A72D71BC55C9700799F93 /* number2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number2-2.png"; sourceTree = "<group>"; };
+		EF3A72DE1BC55EEF00799F93 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		EF5055631BC18A1A0060ECC9 /* town3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = town3.png; sourceTree = "<group>"; };
 		EF5055651BC18A470060ECC9 /* title3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title3.png; sourceTree = "<group>"; };
 		EF5055671BC18A7D0060ECC9 /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				EF89E39B1BB283CD00E9FFD5 /* MainViewController.swift */,
 				EF89E39C1BB283CD00E9FFD5 /* ProtectViewController.swift */,
 				EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */,
+				EF3A72DE1BC55EEF00799F93 /* Character.swift */,
 				EF89E39D1BB283CD00E9FFD5 /* StartViewController.swift */,
 				EF89E39E1BB283CD00E9FFD5 /* TownViewController.swift */,
 				EF89E39F1BB283CD00E9FFD5 /* ViewController.swift */,
@@ -358,6 +361,7 @@
 			files = (
 				EF89E3A41BB283CD00E9FFD5 /* StartViewController.swift in Sources */,
 				EF89E3A21BB283CD00E9FFD5 /* MainViewController.swift in Sources */,
+				EF3A72DF1BC55EEF00799F93 /* Character.swift in Sources */,
 				EF89E3A11BB283CD00E9FFD5 /* ConfigViewController.swift in Sources */,
 				EF89E3A31BB283CD00E9FFD5 /* ProtectViewController.swift in Sources */,
 				0067FC551BC2CD5400C14266 /* Equipment.swift in Sources */,
