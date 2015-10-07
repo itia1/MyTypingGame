@@ -60,6 +60,8 @@ class Equipment:NSObject{
                 }else{
                     weaponPossesions?[i] = true
                 }
+                defaults.setObject(weaponPossesions, forKey: "key-weaponPossesions")
+                defaults.synchronize()
             //該当武器がないとき
             }else if(i == weapons?.count){
                 return ErrorCheck.Error

@@ -8,16 +8,20 @@
 
 import UIKit
 
+
+
 class NextViewController: UIViewController {
+    
+    var timer : NSTimer!
     var count = 2
     @IBOutlet weak var countPicture: UIImageView!
-    var countPicture1 = UIImage(named:"number1.png")
-    var countPicture2 = UIImage(named:"number2.png")
-    var countPicture3 = UIImage(named:"number3.png")
+    var countPicture1 = UIImage(named:"number1-1.png")
+    var countPicture2 = UIImage(named:"number2-1.png")
+    var countPicture3 = UIImage(named:"number3-1.png")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         NSTimer.scheduledTimerWithTimeInterval(0.7, target: self, selector: "countdown", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.7, target: self, selector: "countdown", userInfo: nil, repeats: true)
         countPicture.image = countPicture3
     }
 
@@ -42,6 +46,8 @@ class NextViewController: UIViewController {
             next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
                 
             self.presentViewController(next, animated: true, completion: nil)
+            
+             timer.invalidate()
 
         }
         
