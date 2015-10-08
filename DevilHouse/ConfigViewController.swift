@@ -21,6 +21,9 @@ class ConfigViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func exitButtom(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

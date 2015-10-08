@@ -235,4 +235,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         return true
     }
     
+    
+    @IBAction func exitButtom(sender: AnyObject) {
+        self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true,completion: nil)
+    }
+    
 }

@@ -25,6 +25,10 @@
 		EF0AB0041BBD98A7000BA6B4 /* number2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0AB0031BBD98A7000BA6B4 /* number2.png */; };
 		EF0AB0061BBD98B3000BA6B4 /* number3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0AB0051BBD98B3000BA6B4 /* number3.png */; };
 		EF0AB0081BBD98BD000BA6B4 /* number1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0AB0071BBD98BD000BA6B4 /* number1.png */; };
+		EF3A72CD1BC2D4C400799F93 /* number1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3A72CC1BC2D4C400799F93 /* number1-1.png */; settings = {ASSET_TAGS = (); }; };
+		EF3A72CF1BC2D4D300799F93 /* number2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3A72CE1BC2D4D300799F93 /* number2-1.png */; settings = {ASSET_TAGS = (); }; };
+		EF3A72D11BC2D4DD00799F93 /* number3-1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3A72D01BC2D4DD00799F93 /* number3-1.png */; settings = {ASSET_TAGS = (); }; };
+		EF3A72D31BC2D74700799F93 /* battle2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3A72D21BC2D74700799F93 /* battle2.png */; settings = {ASSET_TAGS = (); }; };
 		EF5055641BC18A1A0060ECC9 /* town3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055631BC18A1A0060ECC9 /* town3.png */; };
 		EF5055661BC18A470060ECC9 /* title3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055651BC18A470060ECC9 /* title3.png */; };
 		EF5055681BC18A7D0060ECC9 /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055671BC18A7D0060ECC9 /* battle.png */; };
@@ -74,6 +78,10 @@
 		EF0AB0031BBD98A7000BA6B4 /* number2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number2.png; sourceTree = "<group>"; };
 		EF0AB0051BBD98B3000BA6B4 /* number3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number3.png; sourceTree = "<group>"; };
 		EF0AB0071BBD98BD000BA6B4 /* number1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number1.png; sourceTree = "<group>"; };
+		EF3A72CC1BC2D4C400799F93 /* number1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number1-1.png"; sourceTree = "<group>"; };
+		EF3A72CE1BC2D4D300799F93 /* number2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number2-1.png"; sourceTree = "<group>"; };
+		EF3A72D01BC2D4DD00799F93 /* number3-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number3-1.png"; sourceTree = "<group>"; };
+		EF3A72D21BC2D74700799F93 /* battle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle2.png; sourceTree = "<group>"; };
 		EF5055631BC18A1A0060ECC9 /* town3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = town3.png; sourceTree = "<group>"; };
 		EF5055651BC18A470060ECC9 /* title3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title3.png; sourceTree = "<group>"; };
 		EF5055671BC18A7D0060ECC9 /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
@@ -121,6 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				EF0AB0051BBD98B3000BA6B4 /* number3.png */,
+				EF3A72CC1BC2D4C400799F93 /* number1-1.png */,
+				EF3A72D01BC2D4DD00799F93 /* number3-1.png */,
+				EF3A72CE1BC2D4D300799F93 /* number2-1.png */,
 				EF0AB0071BBD98BD000BA6B4 /* number1.png */,
 				EF0AB0031BBD98A7000BA6B4 /* number2.png */,
 			);
@@ -220,6 +231,7 @@
 				EF50556C1BC195FB0060ECC9 /* Monster */,
 				EF50556B1BC195E20060ECC9 /* CountDown */,
 				EF5055691BC195A60060ECC9 /* bukiya3.1.png */,
+				EF3A72D21BC2D74700799F93 /* battle2.png */,
 				EF5055651BC18A470060ECC9 /* title3.png */,
 				EF5055631BC18A1A0060ECC9 /* town3.png */,
 				EF5055671BC18A7D0060ECC9 /* battle.png */,
@@ -314,6 +326,7 @@
 				EF5055681BC18A7D0060ECC9 /* battle.png in Resources */,
 				EF0AB0061BBD98B3000BA6B4 /* number3.png in Resources */,
 				00EAFEEF1BC247F1007040F1 /* monster5damage.png in Resources */,
+				EF3A72CD1BC2D4C400799F93 /* number1-1.png in Resources */,
 				EF89E3EA1BB2847000E9FFD5 /* Main.storyboard in Resources */,
 				00EAFEEA1BC247F1007040F1 /* monster3.png in Resources */,
 				00F06B441BBC2A940097C1BA /* attack2.png in Resources */,
@@ -322,14 +335,17 @@
 				00F06B431BBC2A940097C1BA /* attack1.png in Resources */,
 				EF50556A1BC195A60060ECC9 /* bukiya3.1.png in Resources */,
 				00EAFEE21BC2301C007040F1 /* monster2damage.png in Resources */,
+				EF3A72D31BC2D74700799F93 /* battle2.png in Resources */,
 				EF89E37F1BB2833200E9FFD5 /* Images.xcassets in Resources */,
 				EF5055641BC18A1A0060ECC9 /* town3.png in Resources */,
 				EF0AB0041BBD98A7000BA6B4 /* number2.png in Resources */,
 				00F06B481BBC32700097C1BA /* monster1damage.png in Resources */,
 				00EAFEEB1BC247F1007040F1 /* monster3damage.png in Resources */,
+				EF3A72CF1BC2D4D300799F93 /* number2-1.png in Resources */,
 				EFDB288A1BBC3F630051C3C1 /* load.png in Resources */,
 				00EAFEE31BC2301C007040F1 /* monster2.png in Resources */,
 				00EAFEEC1BC247F1007040F1 /* monster4.png in Resources */,
+				EF3A72D11BC2D4DD00799F93 /* number3-1.png in Resources */,
 				EF0AB0081BBD98BD000BA6B4 /* number1.png in Resources */,
 				00EAFEED1BC247F1007040F1 /* monster4damage.png in Resources */,
 				00F06B451BBC2A940097C1BA /* attack3.png in Resources */,

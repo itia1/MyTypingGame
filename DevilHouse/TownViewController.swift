@@ -22,6 +22,9 @@ class TownViewController: UIViewController {
     }
     
 
+    @IBAction func exitTown(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
