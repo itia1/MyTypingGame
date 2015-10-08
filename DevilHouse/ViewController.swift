@@ -122,7 +122,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
         myHpBar.setProgress(myHpBar.progress - 0.05, animated: true)
             }
             if(myhp <= 0){
-                //ゲームオーバーの処理
+                let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("GameClearViewController")
+                
+                next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+                
+                self.presentViewController(next, animated: true, completion: nil)
              }
         }
     }
@@ -165,8 +171,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 }
                 
                 if(counter == 6){
-                    //ゲームクリアの処理
+                    let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     
+                    let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
+                    
+                    next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+                    
+                    self.presentViewController(next, animated: true, completion: nil)
                 }
                 
                 hp = 100 + counter*10
