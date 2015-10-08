@@ -92,7 +92,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         character = Character()
         text = character!.text1
-        var randInt = Int(arc4random_uniform(UInt32(text.count)))
+        let randInt = Int(arc4random_uniform(UInt32(text.count)))
         trueText.text = text[randInt]
         Count.text = String(counter)
         HitPoint.text = String(hp)
@@ -221,7 +221,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     Picture.image = bug
             }
             
-            var randInt2 = Int(arc4random_uniform(UInt32(text.count)))
+            let randInt2 = Int(arc4random_uniform(UInt32(text.count)))
             trueText.text = text[randInt2]
             Count.text = String(counter)
             HitPoint.text = String(hp)
