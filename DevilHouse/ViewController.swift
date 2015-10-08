@@ -225,7 +225,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             trueText.text = text[randInt2]
             Count.text = String(counter)
             HitPoint.text = String(hp)
-        }
+        } 
         self.textField.text=""
         textField.resignFirstResponder()
         return true
