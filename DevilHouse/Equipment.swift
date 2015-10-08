@@ -6,12 +6,9 @@
 //  Copyright © 2015年 Itia. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class Equipment:NSObject{
-    
-    var bag=0
     
     //保存された武器情報を返す関数
     func readCurrentWeaponInfo() -> [(name:String,possesion:Bool)]{
@@ -22,7 +19,7 @@ class Equipment:NSObject{
         
         //この関数を初めて呼んだときに武器情報を初期化して保存
         if ((weapons == nil) || (weaponPossesions == nil)){
-            weapons = ["魔法の剣","魔法の杖"]
+            weapons = ["木の剣","勇者の剣","ロンギヌス","エクスカリバー","課金の剣"]
             weaponPossesions = [false,false]
             
             defaults.setObject(weapons, forKey: "key-weapons")

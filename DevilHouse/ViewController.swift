@@ -32,10 +32,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var myHpBar: UIProgressView!
     
     var test = 1
-    
-    var counter = 0
+    var character:Character?
+    var counter = 1
     var hp = 100
-    var text:[String]=["a","b","c","d","e","f","g"]
+    var text:[String]=[]
     var startTime: NSTimeInterval? = nil
     var timer: NSTimer?
     var startTime2: NSTimeInterval? = nil 
@@ -90,8 +90,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
         self.textField.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
-        var randInt = Int(arc4random_uniform(UInt32(text.count)))
-        randInt = randInt%2
+        character = Character()
+        text = character!.text1
+        let randInt = Int(arc4random_uniform(UInt32(text.count)))
         trueText.text = text[randInt]
         Count.text = String(counter)
         HitPoint.text = String(hp)
@@ -101,14 +102,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         self.startTime2 = NSDate.timeIntervalSinceReferenceDate()
         self.timer2 = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("attack"), userInfo: nil, repeats: true)
         
-       
-        
         HpBar.progress = 1.0
         myHpBar.progress = 1.0
- 
         Picture.image = monster1
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -127,12 +123,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
             }
             if(myhp <= 0){
                 //ゲームオーバーの処理
-                
-                
-                
-                
-                
-                
              }
         }
     }
@@ -161,13 +151,21 @@ class ViewController: UIViewController,UITextFieldDelegate {
             if( hp <= 0){
                 counter++
                 
+                if(counter == 2){
+                    text = character!.text2
+                }
+                if(counter == 3){
+                    text = character!.text3
+                }
+                if(counter == 4){
+                    text = character!.text4
+                }
                 if(counter == 5){
+                    text = character!.text5
+                }
+                
+                if(counter == 6){
                     //ゲームクリアの処理
-                    
-                    
-                    
-                    
-                    
                     
                 }
                 
@@ -188,7 +186,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 default:
                     Picture.image = bug
                 }
-  
+                
 
             }
             
@@ -223,9 +221,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     Picture.image = bug
             }
             
-            var randInt2 = Int(arc4random_uniform(UInt32(text.count)))
-            randInt2 = randInt2%2
-            randInt2 = randInt2 + counter;
+            let randInt2 = Int(arc4random_uniform(UInt32(text.count)))
             trueText.text = text[randInt2]
             Count.text = String(counter)
             HitPoint.text = String(hp)

@@ -15,9 +15,9 @@ class NextViewController: UIViewController {
     var timer : NSTimer!
     var count = 2
     @IBOutlet weak var countPicture: UIImageView!
-    var countPicture1 = UIImage(named:"number1-1.png")
-    var countPicture2 = UIImage(named:"number2-1.png")
-    var countPicture3 = UIImage(named:"number3-1.png")
+    var countPicture1 = UIImage(named:"number1-2.png")
+    var countPicture2 = UIImage(named:"number2-2.png")
+    var countPicture3 = UIImage(named:"number3-2.png")
     
     override func viewDidLoad() {
         super.viewDidLoad()
