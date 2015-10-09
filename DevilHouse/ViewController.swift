@@ -117,14 +117,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
             let time: Double = NSDate.timeIntervalSinceReferenceDate() - t
             let sec: Int = Int(time)
             if(sec%5 == 0){
-        myhp = myhp - 5
+        myhp = myhp - 100
         myHitPoint.text = String(myhp)
         myHpBar.setProgress(myHpBar.progress - 0.05, animated: true)
             }
             if(myhp <= 0){
                 let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 
-                let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("GameClearViewController")
+                let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("GameOverViewController")
                 
                 next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
                 

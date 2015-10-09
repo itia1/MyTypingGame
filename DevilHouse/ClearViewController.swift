@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class ClearViewController: UIViewController {
 
@@ -21,5 +22,10 @@ class ClearViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func postTwitter(sender: AnyObject) {
+        let twitter = SLComposeViewController(forServiceType:SLServiceTypeTwitter)
+        twitter.setInitialText("魔王の城：クリアしました。")
+        self.presentViewController(twitter, animated: true, completion: nil)
+    }
 
 }

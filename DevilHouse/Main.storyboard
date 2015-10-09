@@ -662,28 +662,53 @@
             </objects>
             <point key="canvasLocation" x="829" y="1254"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Over View Controller-->
         <scene sceneID="sx8-jE-Fh2">
             <objects>
-                <viewController storyboardIdentifier="GameOverViewController" id="b8Z-dZ-LBm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameOverViewController" id="b8Z-dZ-LBm" customClass="GameOverViewController" customModule="DevilHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="k1q-XK-dob"/>
                         <viewControllerLayoutGuide type="bottom" id="kex-Ah-haZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nv3-Hd-JYR">
+                    <view key="view" contentMode="scaleAspectFit" id="Nv3-Hd-JYR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSG-bI-ypF">
+                                <rect key="frame" x="440" y="460" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="16e-RW-UIG"/>
+                                    <constraint firstAttribute="width" constant="70" id="hdH-eb-65C"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="IconTwi.png"/>
+                                <connections>
+                                    <action selector="postTwitter:" destination="b8Z-dZ-LBm" eventType="touchUpInside" id="abe-YK-YIB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kex-Ah-haZ" firstAttribute="top" secondItem="JSG-bI-ypF" secondAttribute="bottom" constant="70" id="Cjs-Zr-Fvb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JSG-bI-ypF" secondAttribute="trailing" constant="70" id="Ip5-QZ-3wN"/>
+                            <constraint firstItem="kex-Ah-haZ" firstAttribute="top" secondItem="JSG-bI-ypF" secondAttribute="bottom" constant="70" id="ha4-iM-arh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JSG-bI-ypF" secondAttribute="trailing" constant="70" id="yQr-mY-WWI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Cjs-Zr-Fvb"/>
+                                <exclude reference="yQr-mY-WWI"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Neo-Lw-Fha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1532" y="1006"/>
         </scene>
-        <!--View Controller-->
+        <!--Clear View Controller-->
         <scene sceneID="xgY-04-OTk">
             <objects>
-                <viewController storyboardIdentifier="ClearViewController" id="KO8-xy-1YF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClearViewController" id="KO8-xy-1YF" customClass="ClearViewController" customModule="DevilHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uaV-gi-Quh"/>
                         <viewControllerLayoutGuide type="bottom" id="QSW-RM-e4M"/>
@@ -691,7 +716,30 @@
                     <view key="view" contentMode="scaleToFill" id="x5n-62-qY5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3V-bk-AHQ">
+                                <rect key="frame" x="440" y="460" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="XeE-7s-kR7"/>
+                                    <constraint firstAttribute="height" constant="70" id="t9u-AF-jhp"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="IconTwi.png"/>
+                                <connections>
+                                    <action selector="postTwitter:" destination="KO8-xy-1YF" eventType="touchUpInside" id="Zsg-22-7oV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="P3V-bk-AHQ" secondAttribute="trailing" constant="294" id="HOd-6l-OWu"/>
+                            <constraint firstItem="QSW-RM-e4M" firstAttribute="top" secondItem="P3V-bk-AHQ" secondAttribute="bottom" constant="70" id="cLL-jj-GTm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P3V-bk-AHQ" secondAttribute="trailing" constant="70" id="pCw-0e-IA0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HOd-6l-OWu"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6be-jW-HbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -971,6 +1019,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IconTwi.png" width="512" height="512"/>
         <image name="battle2.png" width="414" height="736"/>
         <image name="bukiya3.1.png" width="414" height="736"/>
         <image name="load.png" width="414" height="736"/>
