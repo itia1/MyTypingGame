@@ -920,10 +920,10 @@
             </objects>
             <point key="canvasLocation" x="-738" y="-81"/>
         </scene>
-        <!--View Controller-->
+        <!--Equip View Controller-->
         <scene sceneID="xOG-6K-SzO">
             <objects>
-                <viewController id="ofN-ed-5cn" sceneMemberID="viewController">
+                <viewController id="ofN-ed-5cn" customClass="EquipViewController" customModule="DevilHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W8f-0p-ZXb"/>
                         <viewControllerLayoutGuide type="bottom" id="5AQ-U0-gzI"/>
@@ -1008,6 +1008,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avR-GN-ieb">
                                 <rect key="frame" x="30" y="30" width="30" height="30"/>
                                 <state key="normal" title="exit"/>
+                                <connections>
+                                    <action selector="exitButtom:" destination="ofN-ed-5cn" eventType="touchUpInside" id="YOX-N4-pCt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUa-6k-AiO">
                                 <rect key="frame" x="295" y="385" width="10" height="10"/>
@@ -1194,10 +1197,10 @@
             </objects>
             <point key="canvasLocation" x="-505" y="660"/>
         </scene>
-        <!--View Controller-->
+        <!--State View Controller-->
         <scene sceneID="KFb-lO-Ec2">
             <objects>
-                <viewController id="bqw-EU-2py" sceneMemberID="viewController">
+                <viewController id="bqw-EU-2py" customClass="StateViewController" customModule="DevilHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="x1u-pM-27N"/>
                         <viewControllerLayoutGuide type="bottom" id="qTd-wD-oQO"/>
@@ -1230,11 +1233,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rn3-pN-oti">
-                                <rect key="frame" x="150" y="26" width="140" height="249"/>
+                                <rect key="frame" x="150" y="75" width="140" height="200"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="GW0-e0-o3d"/>
                                     <constraint firstAttribute="height" constant="249" id="S9e-y9-CE3"/>
                                     <constraint firstAttribute="width" constant="140" id="qKz-Xh-ysC"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="S9e-y9-CE3"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntC-Ht-zgM">
                                 <rect key="frame" x="295" y="100" width="10" height="10"/>
@@ -1476,6 +1485,13 @@
                                 <rect key="frame" x="40" y="550" width="30" height="30"/>
                                 <state key="normal" title="exit"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtV-XS-DHK">
+                                <rect key="frame" x="40" y="40" width="30" height="30"/>
+                                <state key="normal" title="exit"/>
+                                <connections>
+                                    <action selector="exitButtom:" destination="bqw-EU-2py" eventType="touchUpInside" id="RW9-Gx-KD3"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スキル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ib1-JY-zQ0">
                                 <rect key="frame" x="195" y="391" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1535,6 +1551,7 @@
                             <constraint firstItem="Uqb-WO-QlZ" firstAttribute="top" secondItem="Ib1-JY-zQ0" secondAttribute="bottom" constant="30" id="XEG-6U-Har"/>
                             <constraint firstItem="Zd8-26-K3y" firstAttribute="centerX" secondItem="794-IB-hf9" secondAttribute="centerX" id="XhF-Ua-jxO"/>
                             <constraint firstItem="G3x-FI-law" firstAttribute="top" secondItem="zof-KV-1MD" secondAttribute="bottom" constant="40" id="YTk-QF-Xa9"/>
+                            <constraint firstItem="HtV-XS-DHK" firstAttribute="top" secondItem="x1u-pM-27N" secondAttribute="bottom" constant="20" id="ZY0-IH-BUO"/>
                             <constraint firstItem="ntC-Ht-zgM" firstAttribute="top" secondItem="80s-dG-Bn4" secondAttribute="bottom" constant="40" id="Zgs-b8-ZIx"/>
                             <constraint firstItem="Ib1-JY-zQ0" firstAttribute="top" secondItem="F9x-9G-EBF" secondAttribute="bottom" constant="40" id="abh-ZH-eU2"/>
                             <constraint firstItem="Cex-Ur-0Wo" firstAttribute="top" secondItem="qQM-yy-xzK" secondAttribute="bottom" constant="30" id="cUu-2n-Ea9"/>
@@ -1576,6 +1593,7 @@
                             <constraint firstItem="R6r-W7-rqO" firstAttribute="top" secondItem="x2u-c3-l0A" secondAttribute="bottom" constant="40" id="xYW-Xj-FF9"/>
                             <constraint firstItem="nK5-vS-VPL" firstAttribute="centerX" secondItem="794-IB-hf9" secondAttribute="centerX" id="xYs-pl-zeK"/>
                             <constraint firstItem="qhN-g7-146" firstAttribute="top" secondItem="R6r-W7-rqO" secondAttribute="bottom" constant="40" id="yU3-9P-EdY"/>
+                            <constraint firstItem="HtV-XS-DHK" firstAttribute="leading" secondItem="794-IB-hf9" secondAttribute="leadingMargin" constant="20" id="yxH-Er-Niu"/>
                             <constraint firstItem="F9x-9G-EBF" firstAttribute="top" secondItem="eOY-Vi-fyE" secondAttribute="bottom" constant="30" id="z0B-1j-ebh"/>
                             <constraint firstItem="HuA-EB-agb" firstAttribute="centerX" secondItem="794-IB-hf9" secondAttribute="centerX" id="z53-no-70h"/>
                             <constraint firstItem="0d8-WC-sdt" firstAttribute="centerX" secondItem="794-IB-hf9" secondAttribute="centerX" id="z8v-IZ-ayl"/>
@@ -1586,8 +1604,8 @@
                                 <exclude reference="FQD-r5-nJV"/>
                                 <exclude reference="Ou7-nD-zST"/>
                                 <exclude reference="dNM-Um-gYL"/>
-                                <exclude reference="6HK-8V-fkX"/>
                                 <exclude reference="n0L-5R-xFS"/>
+                                <exclude reference="6HK-8V-fkX"/>
                                 <exclude reference="Dqd-fn-Ey6"/>
                                 <exclude reference="abh-ZH-eU2"/>
                                 <exclude reference="miu-vD-g8Q"/>
@@ -1611,12 +1629,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ip-Mc-ggn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-836" y="1361"/>
+            <point key="canvasLocation" x="-575" y="1321"/>
         </scene>
-        <!--View Controller-->
+        <!--Skill View Controller-->
         <scene sceneID="1RK-i8-1qn">
             <objects>
-                <viewController id="Q2a-yz-wKP" sceneMemberID="viewController">
+                <viewController id="Q2a-yz-wKP" customClass="SkillViewController" customModule="DevilHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iAN-kQ-vno"/>
                         <viewControllerLayoutGuide type="bottom" id="C0B-JI-rFc"/>
@@ -1697,9 +1715,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEV-EW-7GL">
+                                <rect key="frame" x="70" y="40" width="180" height="30"/>
+                                <state key="normal" title="exit"/>
+                                <connections>
+                                    <action selector="exitButtom:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="kBV-iR-3g6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wEV-EW-7GL" firstAttribute="top" secondItem="iAN-kQ-vno" secondAttribute="bottom" constant="20" id="1Fm-uz-rrN"/>
                             <constraint firstItem="Kc1-K7-ZZn" firstAttribute="top" secondItem="93t-Dn-igw" secondAttribute="bottom" constant="20" id="5O9-k3-hMZ"/>
                             <constraint firstItem="Fg5-Nc-pcW" firstAttribute="top" secondItem="mfR-vk-bTX" secondAttribute="bottom" constant="20" id="8EW-Bo-jeO"/>
                             <constraint firstItem="KxU-Dg-TmB" firstAttribute="centerY" secondItem="5DD-GR-8TP" secondAttribute="centerY" id="8zN-JB-fbR"/>
@@ -1708,6 +1734,7 @@
                             <constraint firstItem="5No-Al-1Nt" firstAttribute="centerX" secondItem="5DD-GR-8TP" secondAttribute="centerX" id="FX1-Ts-dgw"/>
                             <constraint firstItem="Wn6-5h-7rK" firstAttribute="top" secondItem="42x-c9-k2F" secondAttribute="bottom" constant="10" id="GSY-cB-IN4"/>
                             <constraint firstItem="Kc1-K7-ZZn" firstAttribute="centerX" secondItem="5DD-GR-8TP" secondAttribute="centerX" id="Gfi-aH-iGM"/>
+                            <constraint firstItem="wEV-EW-7GL" firstAttribute="leading" secondItem="5DD-GR-8TP" secondAttribute="leadingMargin" constant="66" id="JYe-s6-Jad"/>
                             <constraint firstItem="KxU-Dg-TmB" firstAttribute="top" secondItem="Kc1-K7-ZZn" secondAttribute="bottom" constant="20" id="K4T-N2-780"/>
                             <constraint firstItem="5No-Al-1Nt" firstAttribute="centerY" secondItem="5DD-GR-8TP" secondAttribute="centerY" id="LAi-iR-o1V"/>
                             <constraint firstItem="mfR-vk-bTX" firstAttribute="centerX" secondItem="5DD-GR-8TP" secondAttribute="centerX" id="YFW-H6-aNb"/>
@@ -1717,13 +1744,19 @@
                             <constraint firstItem="KxU-Dg-TmB" firstAttribute="centerX" secondItem="5DD-GR-8TP" secondAttribute="centerX" id="mHd-Pq-rga"/>
                             <constraint firstItem="Fg5-Nc-pcW" firstAttribute="centerX" secondItem="5DD-GR-8TP" secondAttribute="centerX" id="mYj-pn-vd0"/>
                             <constraint firstItem="mfR-vk-bTX" firstAttribute="top" secondItem="KxU-Dg-TmB" secondAttribute="bottom" constant="20" id="skU-Tn-HEM"/>
+                            <constraint firstItem="wEV-EW-7GL" firstAttribute="leading" secondItem="5DD-GR-8TP" secondAttribute="leadingMargin" constant="20" id="xIj-kK-gm1"/>
                             <constraint firstItem="93t-Dn-igw" firstAttribute="top" secondItem="Wn6-5h-7rK" secondAttribute="bottom" constant="20" id="xpK-2P-Xta"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JYe-s6-Jad"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDR-n6-S2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1370" y="1800"/>
+            <point key="canvasLocation" x="-1016" y="1595"/>
         </scene>
     </scenes>
     <resources>

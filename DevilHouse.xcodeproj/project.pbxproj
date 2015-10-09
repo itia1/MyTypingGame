@@ -30,6 +30,9 @@
 		EF3A72ED1BC6A22800799F93 /* ClearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A72EC1BC6A22800799F93 /* ClearViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EF3A72EF1BC6A26A00799F93 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A72EE1BC6A26A00799F93 /* GameOverViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EF3A72F11BC6A89B00799F93 /* all3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3A72F01BC6A89B00799F93 /* all3.png */; settings = {ASSET_TAGS = (); }; };
+		EF3A72F31BC78CA800799F93 /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A72F21BC78CA800799F93 /* StateViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EF3A72F51BC78E1B00799F93 /* EquipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A72F41BC78E1B00799F93 /* EquipViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		EF3A72F71BC78E3C00799F93 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3A72F61BC78E3C00799F93 /* SkillViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		EF5055641BC18A1A0060ECC9 /* town3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055631BC18A1A0060ECC9 /* town3.png */; };
 		EF5055661BC18A470060ECC9 /* title3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055651BC18A470060ECC9 /* title3.png */; };
 		EF5055681BC18A7D0060ECC9 /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055671BC18A7D0060ECC9 /* battle.png */; };
@@ -84,6 +87,9 @@
 		EF3A72EC1BC6A22800799F93 /* ClearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearViewController.swift; sourceTree = "<group>"; };
 		EF3A72EE1BC6A26A00799F93 /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		EF3A72F01BC6A89B00799F93 /* all3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = all3.png; sourceTree = "<group>"; };
+		EF3A72F21BC78CA800799F93 /* StateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
+		EF3A72F41BC78E1B00799F93 /* EquipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipViewController.swift; sourceTree = "<group>"; };
+		EF3A72F61BC78E3C00799F93 /* SkillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		EF5055631BC18A1A0060ECC9 /* town3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = town3.png; sourceTree = "<group>"; };
 		EF5055651BC18A470060ECC9 /* title3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title3.png; sourceTree = "<group>"; };
 		EF5055671BC18A7D0060ECC9 /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
@@ -185,9 +191,12 @@
 				0067FC541BC2CD5400C14266 /* Equipment.swift */,
 				EF3A72EC1BC6A22800799F93 /* ClearViewController.swift */,
 				EF89E39B1BB283CD00E9FFD5 /* MainViewController.swift */,
+				EF3A72F41BC78E1B00799F93 /* EquipViewController.swift */,
 				EF89E39C1BB283CD00E9FFD5 /* ProtectViewController.swift */,
 				EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */,
 				EF3A72EE1BC6A26A00799F93 /* GameOverViewController.swift */,
+				EF3A72F61BC78E3C00799F93 /* SkillViewController.swift */,
+				EF3A72F21BC78CA800799F93 /* StateViewController.swift */,
 				EF3A72DE1BC55EEF00799F93 /* Character.swift */,
 				EF89E39D1BB283CD00E9FFD5 /* StartViewController.swift */,
 				EF89E39E1BB283CD00E9FFD5 /* TownViewController.swift */,
@@ -371,8 +380,10 @@
 			files = (
 				EF89E3A41BB283CD00E9FFD5 /* StartViewController.swift in Sources */,
 				EF89E3A21BB283CD00E9FFD5 /* MainViewController.swift in Sources */,
+				EF3A72F71BC78E3C00799F93 /* SkillViewController.swift in Sources */,
 				EF3A72DF1BC55EEF00799F93 /* Character.swift in Sources */,
 				EF89E3A11BB283CD00E9FFD5 /* ConfigViewController.swift in Sources */,
+				EF3A72F31BC78CA800799F93 /* StateViewController.swift in Sources */,
 				EF89E3A31BB283CD00E9FFD5 /* ProtectViewController.swift in Sources */,
 				0067FC551BC2CD5400C14266 /* Equipment.swift in Sources */,
 				EF89E3A61BB283CD00E9FFD5 /* ViewController.swift in Sources */,
@@ -381,6 +392,7 @@
 				EFA6AC441BBD8D0D00F86B1F /* NextViewController.swift in Sources */,
 				EF3A72ED1BC6A22800799F93 /* ClearViewController.swift in Sources */,
 				EF89E3991BB283AE00E9FFD5 /* AppDelegate.swift in Sources */,
+				EF3A72F51BC78E1B00799F93 /* EquipViewController.swift in Sources */,
 				EF3A72EF1BC6A26A00799F93 /* GameOverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
