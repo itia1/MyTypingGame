@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0016608C1BD2AB20001FFC0C /* comma.png in Resources */ = {isa = PBXBuildFile; fileRef = 0016608B1BD2AB20001FFC0C /* comma.png */; settings = {ASSET_TAGS = (); }; };
 		0067FC551BC2CD5400C14266 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0067FC541BC2CD5400C14266 /* Equipment.swift */; settings = {ASSET_TAGS = (); }; };
 		00EAFEE21BC2301C007040F1 /* monster2damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EAFEE01BC2301C007040F1 /* monster2damage.png */; settings = {ASSET_TAGS = (); }; };
 		00EAFEE31BC2301C007040F1 /* monster2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EAFEE11BC2301C007040F1 /* monster2.png */; settings = {ASSET_TAGS = (); }; };
@@ -77,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0016608B1BD2AB20001FFC0C /* comma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comma.png; sourceTree = "<group>"; };
 		0067FC541BC2CD5400C14266 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		00EAFEE01BC2301C007040F1 /* monster2damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster2damage.png; sourceTree = "<group>"; };
 		00EAFEE11BC2301C007040F1 /* monster2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster2.png; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		00F2619E1BD27F3D0003FD37 /* etc */ = {
 			isa = PBXGroup;
 			children = (
+				0016608B1BD2AB20001FFC0C /* comma.png */,
 				00F2619F1BD27F4D0003FD37 /* TwiIcon.png */,
 			);
 			name = etc;
@@ -419,6 +422,7 @@
 				00EAFEE31BC2301C007040F1 /* monster2.png in Resources */,
 				00EAFEEC1BC247F1007040F1 /* monster4.png in Resources */,
 				EF3A72D91BC55C9700799F93 /* number2-2.png in Resources */,
+				0016608C1BD2AB20001FFC0C /* comma.png in Resources */,
 				00EAFEED1BC247F1007040F1 /* monster4damage.png in Resources */,
 				00F06B451BBC2A940097C1BA /* attack3.png in Resources */,
 				00F06B461BBC2A940097C1BA /* attack4.png in Resources */,
