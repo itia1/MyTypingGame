@@ -10,16 +10,12 @@ import UIKit
 import Social
 
 class GameOverViewController: UIViewController {
-    
-    var result:ViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
-        
-        
-    
-      }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -28,11 +24,8 @@ class GameOverViewController: UIViewController {
 
     
     @IBAction func postTwitter(sender: AnyObject) {
-        let twitter = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
-        twitter.setInitialText("魔王の城:負けました。。。")
+        let twitter:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
+        twitter.setInitialText("魔王の城：クリアできませんでした。。。。")
         self.presentViewController(twitter, animated: true, completion: nil)
     }
-
-        
-    
 }

@@ -84,16 +84,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
                         UIImage(named:"attack4.png")!
                         ]
     
-    var nextfloor = [
-                        UIImage(named: "一拍1.png")!,
-        UIImage(named: "一拍2.png")!,
-        UIImage(named: "一拍3.png")!,
-        UIImage(named: "一拍4.png")!,
-        UIImage(named: "一拍5.png")!,
-        UIImage(named: "一拍6.png")!,
-        UIImage(named: "一拍7.png")!,
-        UIImage(named: "一拍8.png")!
-    ]
+    var stairs = [
+        UIImage(named:"一拍1.png")!,
+        UIImage(named:"一拍2.png")!,
+        UIImage(named:"一拍3.png")!,
+        UIImage(named:"一拍4.png")!,
+        UIImage(named:"一拍5.png")!,
+        UIImage(named:"一拍6.png")!,
+        UIImage(named:"一拍7.png")!,
+        UIImage(named:"一拍8.png")!,
+                  ]
+    
     
     var bug = UIImage(named:"number1.png")
 
@@ -165,14 +166,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
             hp = hp-50;
             HpBar.setProgress(Float(hp) * 0.01 - 0.05, animated: true)
             
+            
             AttackEffect.animationImages = attackeffect
             AttackEffect.animationRepeatCount = 1
             AttackEffect.animationDuration = 0.3
             AttackEffect.startAnimating()
             
+            
 
             if( hp <= 0){
-                AttackEffect.animationImages = nextfloor
+                
+                AttackEffect.animationImages = stairs
                 AttackEffect.animationDuration = 0.6
                 AttackEffect.startAnimating()
                 

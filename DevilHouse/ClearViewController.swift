@@ -10,8 +10,6 @@ import UIKit
 import Social
 
 class ClearViewController: UIViewController {
-    
-    var result:ViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +23,9 @@ class ClearViewController: UIViewController {
     }
 
     @IBAction func postTwitter(sender: AnyObject) {
-        let twitter = SLComposeViewController(forServiceType:SLServiceTypeTwitter)
-        twitter.setInitialText("魔王の城：クリアしました。")
-        self.presentViewController(twitter, animated: true, completion: nil)
+        let Twitter:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
+        Twitter.setInitialText("魔王の城：クリアしました！！！")
+        self.presentViewController(Twitter, animated: true, completion: nil)
     }
 
 }
