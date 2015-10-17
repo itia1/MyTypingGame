@@ -30,8 +30,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var myHitPoint: UILabel!
     @IBOutlet weak var HpBar: UIProgressView!
     @IBOutlet weak var myHpBar: UIProgressView!
-    
-    var aaa = 1
+    @IBOutlet weak var Cutin: UIImageView!
     
     var test = 1
     var character:Character?
@@ -99,11 +98,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     
     var bug = UIImage(named:"number1.png")
-
+    var comma = UIImage(named:"comma.png")
     
     
     @IBAction func SkillAction(sender: AnyObject) {
-        
+        Cutin.image = comma
     }
     
     override func viewDidLoad() {
