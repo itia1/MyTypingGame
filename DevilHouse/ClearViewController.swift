@@ -10,6 +10,8 @@ import UIKit
 import Social
 
 class ClearViewController: UIViewController {
+    
+    var result:ViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()

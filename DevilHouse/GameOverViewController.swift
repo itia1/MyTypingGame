@@ -10,6 +10,8 @@ import UIKit
 import Social
 
 class GameOverViewController: UIViewController {
+    
+    var result:ViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()

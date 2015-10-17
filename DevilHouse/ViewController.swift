@@ -33,7 +33,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     var test = 1
     var character:Character?
-    var counter = 1
+    var counter = 0
     var hp = 100
     var text:[String]=[]
     var startTime: NSTimeInterval? = nil
@@ -84,6 +84,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
                         UIImage(named:"attack4.png")!
                         ]
     
+    var nextfloor = [
+                        UIImage(named: "一拍1.png")!,
+        UIImage(named: "一拍2.png")!,
+        UIImage(named: "一拍3.png")!,
+        UIImage(named: "一拍4.png")!,
+        UIImage(named: "一拍5.png")!,
+        UIImage(named: "一拍6.png")!,
+        UIImage(named: "一拍7.png")!,
+        UIImage(named: "一拍8.png")!
+    ]
+    
     var bug = UIImage(named:"number1.png")
 
     override func viewDidLoad() {
@@ -117,7 +128,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             let time: Double = NSDate.timeIntervalSinceReferenceDate() - t
             let sec: Int = Int(time)
             if(sec%5 == 0){
-        myhp = myhp - 100
+        myhp = myhp - 5
         myHitPoint.text = String(myhp)
         myHpBar.setProgress(myHpBar.progress - 0.05, animated: true)
             }
@@ -155,22 +166,26 @@ class ViewController: UIViewController,UITextFieldDelegate {
             
 
             if( hp <= 0){
+                AttackEffect.animationImages = nextfloor
+                AttackEffect.animationDuration = 0.6
+                AttackEffect.startAnimating()
+                
                 counter++
                 
-                if(counter == 2){
+                if(counter == 1){
                     text = character!.text2
                 }
-                if(counter == 3){
+                if(counter == 2){
                     text = character!.text3
                 }
-                if(counter == 4){
+                if(counter == 3){
                     text = character!.text4
                 }
-                if(counter == 5){
+                if(counter == 4){
                     text = character!.text5
                 }
                 
-                if(counter == 6){
+                if(counter == 5){
                     let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     
                     let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
