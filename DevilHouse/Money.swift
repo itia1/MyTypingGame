@@ -34,13 +34,5 @@ class MoneyGet:NSObject{
         userDefaults.setInteger(moneyCount, forKey: "moneyCount")
         
     }
-    
-    func MoneyAppear() {
-        let userDefaults = NSUserDefaults.standardUserDefaults()
-        let moneyCount:Int = userDefaults.integerForKey("moneyCount")
-        //Label.text = String(moneyCount)
-        
-        
-    }
 
 }

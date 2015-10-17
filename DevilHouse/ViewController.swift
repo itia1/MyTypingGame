@@ -25,11 +25,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var trueText: UILabel!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var Picture: UIImageView!
-    @IBOutlet weak var AttackEffect: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var myHitPoint: UILabel!
     @IBOutlet weak var HpBar: UIProgressView!
     @IBOutlet weak var myHpBar: UIProgressView!
+    @IBOutlet weak var Hissatu: UIImageView!
+    @IBOutlet weak var AttackEffect: UIImageView!
     
     var test = 1
     var character:Character?
@@ -97,11 +98,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     
     var bug = UIImage(named:"number1.png")
+    
+    var commma = UIImage(named:"comma.png")
 
     
     
     @IBAction func SkillAction(sender: AnyObject) {
-        
+        Hissatu.image = commma
     }
     
     override func viewDidLoad() {
@@ -272,4 +275,5 @@ class ViewController: UIViewController,UITextFieldDelegate {
         self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true,completion: nil)
     }
     
+
 }
