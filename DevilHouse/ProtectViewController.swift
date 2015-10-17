@@ -10,7 +10,9 @@ import UIKit
 
 class ProtectViewController: UIViewController {
     
-
+    var equipment:Equipment?
+    var protectInfo:[(name:String,possesion:Bool)]=[]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         equipment = Equipment()
