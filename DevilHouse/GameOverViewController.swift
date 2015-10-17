@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class GameOverViewController: UIViewController {
 
@@ -22,4 +23,9 @@ class GameOverViewController: UIViewController {
     }
 
     
+    @IBAction func postTwitter(sender: AnyObject) {
+        let twitter:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
+        twitter.setInitialText("魔王の城：クリアできませんでした。。。。")
+        self.presentViewController(twitter, animated: true, completion: nil)
+    }
 }
