@@ -97,6 +97,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     var bug = UIImage(named:"number1.png")
 
+    
+    
+    @IBAction func SkillAction(sender: AnyObject) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.textField.delegate = self
