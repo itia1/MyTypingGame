@@ -14,10 +14,6 @@ class Character {
     let text3:[String]=["ba","bb","bc"]
     let text4:[String]=["ca","cb","cc","cd","ce","cf","cr","ck","cg","cx","cj"]
     let text5:[String]=["aaa","bbb","ccc","ddd","eee","fff"]
-    
-    
-    
-    
 
     
 }

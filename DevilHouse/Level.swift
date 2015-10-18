@@ -42,7 +42,13 @@ class Level: NSObject {
             hp = 100
             def = 10
             spd = 10
-            level++
+            level = 1
+            var equipmentWeapon = userDefaults.integerForKey("equipmentWeapon")
+            var equipmentProtect = userDefaults.integerForKey("equipmentProtect")
+            equipmentWeapon = 5
+            equipmentProtect = 5
+            userDefaults.setInteger(equipmentWeapon, forKey: "equipmentWeapon")
+            userDefaults.setInteger(equipmentProtect, forKey: "equipmentProtect")
         }else if(0 == level%4){
             hp++
             def++
