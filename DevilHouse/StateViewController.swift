@@ -20,32 +20,37 @@ class StateViewController: UIViewController {
     @IBOutlet weak var skillLabel: UILabel!
     @IBOutlet weak var protectLabel: UILabel!
     @IBOutlet weak var weaponLabel: UILabel!
-    
     var levelfunc:Level?
-       
+    var EquipmentData:equipmentData?
+    var weaponData:Int = 0
+    var protectData:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         levelfunc = Level()
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        var level:Int = userDefaults.integerForKey("level")
+        let level:Int = userDefaults.integerForKey("level")
         if(level == 0){
             levelfunc!.levelup()
             var upExp:Int = userDefaults.integerForKey("upExp")
             upExp = 100;
              userDefaults.setInteger(upExp, forKey: "upExp")
         }
-            let leveltext:Int = userDefaults.integerForKey("level")
-            let attack:Int =  userDefaults.integerForKey("attack")
-            let hp:Int = userDefaults.integerForKey("hp")
-            let def:Int = userDefaults.integerForKey("def")
-            let spd:Int = userDefaults.integerForKey("spd")
-            levelLabel.text = String(leveltext)
-            hpLabel.text = String(hp)
-            attackLabel.text = String(attack)
-            defLabel.text = String(def)
-            speLabel.text = String(spd)
+        let equipmentWeapon:Int = userDefaults.integerForKey("equipmentWeapon")
+        let equipmentProtect:Int = userDefaults.integerForKey("equipmentProtect")
+        EquipmentData = equipmentData()
+        weaponData = EquipmentData!.weaponsData(equipmentWeapon)
+        protectData = EquipmentData!.protectData(equipmentProtect)
+        let leveltext:Int = userDefaults.integerForKey("level")
+        let attack:Int =  userDefaults.integerForKey("attack")
+        let hp:Int = userDefaults.integerForKey("hp")
+        let def:Int = userDefaults.integerForKey("def")
+        let spd:Int = userDefaults.integerForKey("spd")
+        levelLabel.text = String(leveltext)
+        hpLabel.text = String(hp)
+        attackLabel.text = String(attack+weaponData)
+        defLabel.text = String(def+protectData)
+        speLabel.text = String(spd)
         
-        let equipmentWeapon = userDefaults.integerForKey("equipmentWeapon")
         
         switch equipmentWeapon{
         case 0:
@@ -63,8 +68,6 @@ class StateViewController: UIViewController {
         default:
             break
         }
-        
-        let equipmentProtect = userDefaults.integerForKey("equipmentProtect")
         
         switch equipmentProtect{
         case 0:

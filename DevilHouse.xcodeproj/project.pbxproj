@@ -64,6 +64,7 @@
 		EF89E3A71BB283CD00E9FFD5 /* WeaponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89E3A01BB283CD00E9FFD5 /* WeaponViewController.swift */; };
 		EF89E3EA1BB2847000E9FFD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF89E3E91BB2847000E9FFD5 /* Main.storyboard */; };
 		EF9AB2ED1BD2B6D5003E7903 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AB2EC1BD2B6D5003E7903 /* Level.swift */; settings = {ASSET_TAGS = (); }; };
+		EF9AB2EF1BD4E925003E7903 /* equipmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AB2EE1BD4E925003E7903 /* equipmentData.swift */; settings = {ASSET_TAGS = (); }; };
 		EFA6AC441BBD8D0D00F86B1F /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */; };
 		EFC5A66A1BD274A900EBE7C1 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5A6691BD274A900EBE7C1 /* Money.swift */; settings = {ASSET_TAGS = (); }; };
 		EFDB288A1BBC3F630051C3C1 /* load.png in Resources */ = {isa = PBXBuildFile; fileRef = EFDB28891BBC3F630051C3C1 /* load.png */; };
@@ -142,6 +143,7 @@
 		EF89E3A01BB283CD00E9FFD5 /* WeaponViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponViewController.swift; sourceTree = "<group>"; };
 		EF89E3E91BB2847000E9FFD5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EF9AB2EC1BD2B6D5003E7903 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		EF9AB2EE1BD4E925003E7903 /* equipmentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = equipmentData.swift; sourceTree = "<group>"; };
 		EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NextViewController.swift; path = ../NextViewController.swift; sourceTree = "<group>"; };
 		EFC5A6691BD274A900EBE7C1 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		EFDB28891BBC3F630051C3C1 /* load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = load.png; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				EF89E3981BB283AE00E9FFD5 /* AppDelegate.swift */,
 				EF89E39A1BB283CD00E9FFD5 /* ConfigViewController.swift */,
 				0067FC541BC2CD5400C14266 /* Equipment.swift */,
+				EF9AB2EE1BD4E925003E7903 /* equipmentData.swift */,
 				EF3A72EC1BC6A22800799F93 /* ClearViewController.swift */,
 				EFC5A6691BD274A900EBE7C1 /* Money.swift */,
 				EF9AB2EC1BD2B6D5003E7903 /* Level.swift */,
@@ -466,6 +469,7 @@
 			files = (
 				EF89E3A41BB283CD00E9FFD5 /* StartViewController.swift in Sources */,
 				EF89E3A21BB283CD00E9FFD5 /* MainViewController.swift in Sources */,
+				EF9AB2EF1BD4E925003E7903 /* equipmentData.swift in Sources */,
 				EF3A72F71BC78E3C00799F93 /* SkillViewController.swift in Sources */,
 				EF3A72DF1BC55EEF00799F93 /* Character.swift in Sources */,
 				EF89E3A11BB283CD00E9FFD5 /* ConfigViewController.swift in Sources */,
