@@ -745,7 +745,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="TwiIcon.png"/>
                                 <connections>
-                                    <action selector="Twitter:" destination="b8Z-dZ-LBm" eventType="touchUpInside" id="bAp-tK-Hc4"/>
+                                    <action selector="postTwitter:" destination="b8Z-dZ-LBm" eventType="touchUpInside" id="zin-Ox-n6B"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="がめおべあ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlB-cF-g1u">
