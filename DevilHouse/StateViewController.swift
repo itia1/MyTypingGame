@@ -27,7 +27,7 @@ class StateViewController: UIViewController {
         super.viewDidLoad()
         levelfunc = Level()
         let userDefaults = NSUserDefaults.standardUserDefaults()
-        var level:Int = userDefaults.integerForKey("level")
+        let level:Int = userDefaults.integerForKey("level")
         if(level == 0){
             levelfunc!.levelup()
             var upExp:Int = userDefaults.integerForKey("upExp")
