@@ -20,6 +20,7 @@ class SkillViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         var equipmentSkill:Int = defaults.integerForKey("equipmentSkill")
         let level:Int = defaults.integerForKey("level")
+    /*
         if(level < 10){
             self.skillButton1.enabled = false
             skillButton1.setTitle("レベルが足りません", forState: .Normal)
@@ -36,7 +37,7 @@ class SkillViewController: UIViewController {
             self.skillButton0.enabled = false
             skillButton4.setTitle("レベルが足りません", forState: .Normal)
         }
-        
+      */
         switch equipmentSkill{
         case 0:
             self.skillButton0.enabled = false
@@ -46,16 +47,17 @@ class SkillViewController: UIViewController {
             skillButton1.setTitle("装備中", forState: .Normal)
         case 2:
             self.skillButton2.enabled = false
-            skillButton2.setTitle("レベルが足りません", forState: .Normal)
+            skillButton2.setTitle("装備中", forState: .Normal)
         case 3:
             self.skillButton3.enabled = false
-            skillButton3.setTitle("レベルが足りません", forState: .Normal)
+            skillButton3.setTitle("装備中", forState: .Normal)
         case 4:
             self.skillButton0.enabled = false
-            skillButton4.setTitle("レベルが足りません", forState: .Normal)
+            skillButton4.setTitle("装備中", forState: .Normal)
         default:
             break
         }
+        defaults.setInteger(equipmentSkill, forKey: "equipmentSkill")
         // Do any additional setup after loading the view.
     }
     
@@ -64,10 +66,49 @@ class SkillViewController: UIViewController {
         let num:Int = sender.tag
         let defaults = NSUserDefaults.standardUserDefaults()
         var equipmentSkill = defaults.integerForKey("equipmentSkill")
-       /* switch equipmentSkill{
-            
+        switch equipmentSkill{
+        case 0:
+            self.skillButton0.enabled = true
+            skillButton0.setTitle("AAAA", forState: .Normal)
+        case 1:
+            self.skillButton1.enabled = true
+            skillButton1.setTitle("AAAA", forState: .Normal)
+        case 2:
+            self.skillButton2.enabled = true
+            skillButton2.setTitle("AAAA", forState: .Normal)
+        case 3:
+            self.skillButton3.enabled = true
+            skillButton3.setTitle("AAAA", forState: .Normal)
+        case 4:
+            self.skillButton4.enabled = true
+            skillButton4.setTitle("AAAA", forState: .Normal)
+        default:
+            break
         }
-*/
+        equipmentSkill = num
+        switch equipmentSkill{
+        case 0:
+            self.skillButton0.enabled = false
+            skillButton0.setTitle("装備中", forState: .Normal)
+        case 1:
+            self.skillButton1.enabled = false
+            skillButton1.setTitle("装備中", forState: .Normal)
+        case 2:
+            self.skillButton2.enabled = false
+            skillButton2.setTitle("装備中", forState: .Normal)
+        case 3:
+            self.skillButton3.enabled = false
+            skillButton3.setTitle("装備中", forState: .Normal)
+        case 4:
+            self.skillButton4.enabled = false
+            skillButton4.setTitle("装備中", forState: .Normal)
+        default:
+            break
+        }
+        defaults.setInteger(equipmentSkill, forKey: "equipmentSkill")
+        
+        
+
     }
     
     
