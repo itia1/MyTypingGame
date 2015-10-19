@@ -17,7 +17,17 @@
 //     被ダメージ時の点滅は画像の階層数値の後ろにdamageを付けて突っ込んで下さい
 //     今は明転で点滅をやってるけどもっといい感じのやつがあるかもしれない
 
+
+
+//　2015/10/19 BGM,SE（仮）
+//　　　適当にやった
+//     後で書き直す
+//     名前変えて入れて　攻撃時のSE：hit.mp3　BGM：bgm.mp3
+
+
+
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var HitPoint: UILabel!
@@ -34,7 +44,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     var test = 1
     var character:Character?
-    var counter = 0
+    internal var counter = 0
     var hp = 100
     var text:[String]=[]
     var startTime: NSTimeInterval? = nil
@@ -43,6 +53,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var timer2: NSTimer?
     var myhp = 100
     var ctintmr:NSTimer?
+    var player = AVAudioPlayer()
+    var bgmplayer = AVAudioPlayer()
+    
+    // var se_attack1 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hit", ofType: "mp3")!)
+    // var bgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bgm", ofType: "mp3")!)
     
     var monster1 = UIImage(named:"monster1.png")
     
@@ -131,6 +146,15 @@ class ViewController: UIViewController,UITextFieldDelegate {
         HpBar.progress = 1.0
         myHpBar.progress = 1.0
         Picture.image = monster1
+        
+       // player = try! AVAudioPlayer(contentsOfURL: se_attack1)
+       // player.prepareToPlay()
+       // bgmplayer = try! AVAudioPlayer(contentsOfURL: bgm)
+       // bgmplayer.numberOfLoops = -1
+       // bgmplayer.prepareToPlay()
+       // bgmplayer.play()
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -180,7 +204,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
             AttackEffect.animationDuration = 0.3
             AttackEffect.startAnimating()
             
-            
+            player.play()
+
 
             if( hp <= 0){
                 
