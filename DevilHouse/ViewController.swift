@@ -42,7 +42,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var startTime2: NSTimeInterval? = nil 
     var timer2: NSTimer?
     var myhp = 100
-    
+    var ctintmr:NSTimer?
     
     var monster1 = UIImage(named:"monster1.png")
     
@@ -103,7 +103,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func SkillAction(sender: AnyObject) {
         Cutin.image = comma
+        ctintmr = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "cutin", userInfo: nil, repeats: false)
     }
+    
+    func cutin(){
+        Cutin.removeFromSuperview()
+        ctintmr?.invalidate()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
