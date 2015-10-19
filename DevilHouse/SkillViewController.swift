@@ -20,7 +20,7 @@ class SkillViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         var equipmentSkill:Int = defaults.integerForKey("equipmentSkill")
         let level:Int = defaults.integerForKey("level")
-    /*
+    
         if(level < 10){
             self.skillButton1.enabled = false
             skillButton1.setTitle("レベルが足りません", forState: .Normal)
@@ -37,7 +37,7 @@ class SkillViewController: UIViewController {
             self.skillButton0.enabled = false
             skillButton4.setTitle("レベルが足りません", forState: .Normal)
         }
-      */
+      
         switch equipmentSkill{
         case 0:
             self.skillButton0.enabled = false
