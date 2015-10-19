@@ -56,8 +56,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var player = AVAudioPlayer()
     var bgmplayer = AVAudioPlayer()
     
-    var se_attack1 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hit", ofType: "mp3")!)
-    var bgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bgm", ofType: "mp3")!)
+    // var se_attack1 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hit", ofType: "mp3")!)
+    // var bgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bgm", ofType: "mp3")!)
     
     var monster1 = UIImage(named:"monster1.png")
     
@@ -147,12 +147,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
         myHpBar.progress = 1.0
         Picture.image = monster1
         
-        player = try! AVAudioPlayer(contentsOfURL: se_attack1)
-        player.prepareToPlay()
-        bgmplayer = try! AVAudioPlayer(contentsOfURL: bgm)
-        bgmplayer.numberOfLoops = -1
-        bgmplayer.prepareToPlay()
-        bgmplayer.play()
+       // player = try! AVAudioPlayer(contentsOfURL: se_attack1)
+       // player.prepareToPlay()
+       // bgmplayer = try! AVAudioPlayer(contentsOfURL: bgm)
+       // bgmplayer.numberOfLoops = -1
+       // bgmplayer.prepareToPlay()
+       // bgmplayer.play()
         
 
     }
