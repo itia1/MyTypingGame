@@ -32,11 +32,9 @@ class WeaponViewController: UIViewController {
     }
     
     @IBAction func buttonTapped(sender : AnyObject) {
-        // UIAlertController
         let alertController:UIAlertController = UIAlertController(title: "Alert", message: "Test UIAlertController", preferredStyle: .Alert)
         
-        // 選択肢
-        // 異なる方法でactionを設定してみた
+       
         let actionOK = UIAlertAction(title: "OK", style: .Default){
             action in
             let num:Int = sender.tag
@@ -48,11 +46,9 @@ class WeaponViewController: UIViewController {
            
         }
         
-        // actionを追加
         alertController.addAction(actionCancel)
         alertController.addAction(actionOK)
         
-        // UIAlertの起動
         presentViewController(alertController, animated: true, completion: nil)
     }
     
