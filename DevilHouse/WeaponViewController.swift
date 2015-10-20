@@ -30,29 +30,30 @@ class WeaponViewController: UIViewController {
     @IBAction func exitButton(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    @IBAction func buying(sender: UIButton) {
-        let num:Int = sender.tag
-        let weapon:(name:String,possesion:Bool) = weaponInfo[num-1]
-        let fuckError:Equipment.ErrorCheck = (equipment?.changeWeaponPossesion(weapon.name))!
+    
+    @IBAction func buttonTapped(sender : AnyObject) {
+        // UIAlertController
+        let alertController:UIAlertController = UIAlertController(title: "Alert", message: "Test UIAlertController", preferredStyle: .Alert)
         
-        if fuckError == Equipment.ErrorCheck.Error{
-            print("this is error");
+        // 選択肢
+        // 異なる方法でactionを設定してみた
+        let actionOK = UIAlertAction(title: "OK", style: .Default){
+            action in
+            let num:Int = sender.tag
+            
+         let weapon:(name:String,possesion:Bool) = self.weaponInfo[num-1]
         }
+        let actionCancel = UIAlertAction(title: "Cancel", style: .Cancel){
+            (action) -> Void in
+           
+        }
+        
+        // actionを追加
+        alertController.addAction(actionCancel)
+        alertController.addAction(actionOK)
+        
+        // UIAlertの起動
+        presentViewController(alertController, animated: true, completion: nil)
     }
     
-  /*  @IBAction func Weapon1(sender: AnyObject) {
-        var appDelegate0:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
-        appDelegate0.weapon[0] = "1"
-    }
-*/
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

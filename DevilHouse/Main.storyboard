@@ -241,7 +241,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buying:" destination="WGc-rD-xEr" eventType="touchUpInside" id="xsx-W5-Ta1"/>
+                                    <action selector="buttonTapped:" destination="WGc-rD-xEr" eventType="touchUpInside" id="7YS-Hy-Rgv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ya-CV-89R">
@@ -254,7 +254,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buying:" destination="WGc-rD-xEr" eventType="touchUpInside" id="L4G-pl-UxL"/>
+                                    <action selector="buttonTapped:" destination="WGc-rD-xEr" eventType="touchUpInside" id="QKS-sv-KWI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vm6-Km-W5H">
@@ -267,7 +267,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buying:" destination="WGc-rD-xEr" eventType="touchUpInside" id="h0o-xB-PLE"/>
+                                    <action selector="buttonTapped:" destination="WGc-rD-xEr" eventType="touchUpInside" id="iUF-NX-05c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYW-2g-kXL">
@@ -280,7 +280,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buying:" destination="WGc-rD-xEr" eventType="touchUpInside" id="7Gg-g6-maD"/>
+                                    <action selector="buttonTapped:" destination="WGc-rD-xEr" eventType="touchUpInside" id="fNa-Fh-bZx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hsd-Mz-7lt">
@@ -303,7 +303,7 @@
                                 </constraints>
                                 <state key="normal" title="木の剣"/>
                                 <connections>
-                                    <action selector="buying:" destination="WGc-rD-xEr" eventType="touchUpInside" id="1Ib-lA-fcm"/>
+                                    <action selector="buttonTapped:" destination="WGc-rD-xEr" eventType="touchUpInside" id="Opr-DP-fhH"/>
                                 </connections>
                             </button>
                         </subviews>
