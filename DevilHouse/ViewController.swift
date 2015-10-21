@@ -302,7 +302,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             
             switch counter{
                 
-            case 1:
+            case 1: 
                     Picture.animationImages = monster2damage
                     Picture.animationRepeatCount = 3
                     Picture.animationDuration = 0.2
