@@ -34,7 +34,7 @@ class EquipViewController: UIViewController {
         for(var i = 0;i<5;i++){
             let weapon:(name:String,possesion:Bool) = weaponInfo[i]
             let protect:(name:String,possesion:Bool) = protectInfo[i]
-        /*
+        
             if(weapon.possesion == false){
                 switch i{
                 case 0:
@@ -56,6 +56,7 @@ class EquipViewController: UIViewController {
                     break
                 }
             }
+            /*
             if(protect.possesion == false){
                 switch i{
                 case 0:

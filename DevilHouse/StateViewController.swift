@@ -50,7 +50,23 @@ class StateViewController: UIViewController {
         attackLabel.text = String(attack+weaponData)
         defLabel.text = String(def+protectData)
         speLabel.text = String(spd)
+        let equipmentSkill = userDefaults.integerForKey("equipmentSkill")
         
+        switch equipmentSkill {
+        case 0:
+            skillLabel.text = "skill1"
+        case 1:
+            skillLabel.text = "skill2"
+        case 2:
+            skillLabel.text = "skill3"
+        case 3:
+            skillLabel.text = "skill4"
+        case 4:
+            skillLabel.text = "skill5"
+        default:
+            break
+            
+        }
         
         switch equipmentWeapon{
         case 0:

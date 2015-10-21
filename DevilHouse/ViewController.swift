@@ -44,14 +44,13 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     var test = 1
     var character:Character?
-    internal var counter = 0
-    var hp = 100
+    internal var counter = 0 //今いる階層を表す変数
+    var hp = 100 //敵のhpを表す変数
     var text:[String]=[]
     var startTime: NSTimeInterval? = nil
     var timer: NSTimer?
     var startTime2: NSTimeInterval? = nil 
     var timer2: NSTimer?
-    var myhp = 100
     var ctintmr:NSTimer?
     var player = AVAudioPlayer()
     var bgmplayer = AVAudioPlayer()
@@ -117,9 +116,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var comma = UIImage(named:"comma.png")
     
     
+    //スキルアクションをしたときの関数
     @IBAction func SkillAction(sender: AnyObject) {
         Cutin.image = comma
         ctintmr = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "cutin", userInfo: nil, repeats: false)
+        
+        //スキルの効果を記述
+        //攻撃力上昇
+        
     }
     
     func cutin(){
@@ -127,9 +131,34 @@ class ViewController: UIViewController,UITextFieldDelegate {
         ctintmr?.invalidate()
     }
     
+    //自分の装備の攻撃力やレベルによるステータスをみるための変数
+    let defaults = NSUserDefaults.standardUserDefaults()
+    var EquipmentData:equipmentData?
+    var attackData:Int = 0
+    var protectData:Int = 0
+    var myhp:Double = 0.0
+    var attackStates:Double = 0
+    var defStates:Double = 0
+    var spd:Double = 0.0
+    var attack:Double = 0
+    var def:Double = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        EquipmentData = equipmentData()
+        let equipmentWeapon:Int = defaults.integerForKey("equipmentWeapon")
+        let equipmentProtect:Int = defaults.integerForKey("equipmentProtect")
+        attackData = EquipmentData!.weaponsData(equipmentWeapon)
+        protectData = EquipmentData!.protectData(equipmentProtect)
+        myhp = Double(defaults.integerForKey("hp"))
+        attackStates = Double(defaults.integerForKey("attack"))
+        spd = Double(defaults.integerForKey("spd"))
+        defStates = Double(defaults.integerForKey("def"))
+        var attackInterval:Double = 1.0 //攻撃間隔の基準値
+        attackInterval += spd/1000
+        
+        attack = Double(attackData) + attackStates
+        def = Double(protectData) + defStates
         self.textField.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
         character = Character()
@@ -142,7 +171,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
          self.startTime = NSDate.timeIntervalSinceReferenceDate()
         self.timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
         self.startTime2 = NSDate.timeIntervalSinceReferenceDate()
-        self.timer2 = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("attack"), userInfo: nil, repeats: true)
+        self.timer2 = NSTimer.scheduledTimerWithTimeInterval(attackInterval, target: self, selector: Selector("attacked"), userInfo: nil, repeats: true)
         
         HpBar.progress = 1.0
         myHpBar.progress = 1.0
@@ -164,14 +193,16 @@ class ViewController: UIViewController,UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func attack() {
+    
+    // 敵から攻撃を受ける時の関数
+    func attacked() {
         if let t = self.startTime2{
             let time: Double = NSDate.timeIntervalSinceReferenceDate() - t
             let sec: Int = Int(time)
             if(sec%5 == 0){
-        myhp = myhp - 5
+        myhp = myhp - (damage-def/100)
         myHitPoint.text = String(myhp)
-        myHpBar.setProgress(myHpBar.progress - 0.05, animated: true)
+        myHpBar.setProgress((myHpBar.progress - Float(damage-def)/10000), animated: true)
             }
             if(myhp <= 0){
                 let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -185,6 +216,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
+    //タイマーの時間を管理する関数
     func update() {
         if let t = self.startTime {
             let time: Double = NSDate.timeIntervalSinceReferenceDate() - t
@@ -194,11 +226,12 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
+    //文字を打ち終えた時に管理する関数
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if(textField.text==trueText.text){
             
-            hp = hp-50;
-            HpBar.setProgress(Float(hp) * 0.01 - 0.05, animated: true)
+            hp = Int(hp - Int(attack))
+            HpBar.setProgress(Float(hp) * 0.01 - Float(attack)/100, animated: true)
             
             
             AttackEffect.animationImages = attackeffect
@@ -217,20 +250,20 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 
                 counter++
                 
-                if(counter == 1){
+                if(counter == 1){ //第２階層に入る時の処理
                     text = character!.text2
                 }
-                if(counter == 2){
+                if(counter == 2){ //第３階層に入る時の処理
                     text = character!.text3
                 }
-                if(counter == 3){
+                if(counter == 3){ //第４階層に入る時の処理
                     text = character!.text4
                 }
-                if(counter == 4){
+                if(counter == 4){ //第５階層に入る時の処理
                     text = character!.text5
                 }
                 
-                if(counter == 5){
+                if(counter == 5){ //すべての敵を倒した時に画面推移させる
                     let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     
                     let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
