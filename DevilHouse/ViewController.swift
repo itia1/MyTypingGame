@@ -478,15 +478,18 @@ class ViewController: UIViewController,UITextFieldDelegate {
         self.textField.text=""
         textField.resignFirstResponder()
         
+       
+            case 2: //文章を簡単にする
+            text = character!.text6
+            let randInt2 = Int(arc4random_uniform(UInt32(text.count)))
+            trueText.text = text[randInt2]
+                
        /*
-                case 2: //文章を簡単にする
+            case 3: //攻撃力を５秒間アップする
                 
                 
-                case 3: //時間をとめる
-                
-                
-                case 4: //攻撃力アップ
-            */    
+            case 4: //敵に大ダメージを与える
+        */
                 default:
                 break
             }
