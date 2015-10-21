@@ -56,6 +56,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var player = AVAudioPlayer()
     var bgmplayer = AVAudioPlayer()
     
+    
     // var se_attack1 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hit", ofType: "mp3")!)
     // var bgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bgm", ofType: "mp3")!)
     
@@ -154,6 +155,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
        // bgmplayer.prepareToPlay()
        // bgmplayer.play()
         
+        textField.autocorrectionType = UITextAutocorrectionType.No
 
     }
 
@@ -204,7 +206,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             AttackEffect.animationDuration = 0.3
             AttackEffect.startAnimating()
             
-            player.play()
+            // player.play()
 
 
             if( hp <= 0){
