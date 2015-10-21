@@ -54,8 +54,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var ctintmr:NSTimer?
     var player = AVAudioPlayer()
     var bgmplayer = AVAudioPlayer()
-    
-    
+    var attachment = 0 //敵の攻撃力を階層ごとに強くする変数
+    var uphp = 0  //階層ごとに敵のhpをあげるための変数
+    var damage:Double = 5
     // var se_attack1 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hit", ofType: "mp3")!)
     // var bgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bgm", ofType: "mp3")!)
     
@@ -230,8 +231,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if(textField.text==trueText.text){
             
-            hp = Int(hp - Int(attack))
-            HpBar.setProgress(Float(hp) * 0.01 - Float(attack)/100, animated: true)
+            hp = hp - Int(attack)
+            HpBar.setProgress(Float(hp) * 0.01 - Float(attack) * 0.01 , animated: true)
             
             
             AttackEffect.animationImages = attackeffect
@@ -239,7 +240,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             AttackEffect.animationDuration = 0.3
             AttackEffect.startAnimating()
             
-            // player.play()
+           // player.play()
 
 
             if( hp <= 0){
