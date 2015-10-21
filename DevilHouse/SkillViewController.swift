@@ -23,19 +23,19 @@ class SkillViewController: UIViewController {
     /*一時的に解除
         if(level < 10){
             self.skillcButton1.enabled = false
-            skillButton1.setTitle("レベルが足りません", forState: .Normal)
+            skillButton1.setTitle("未取得", forState: .Normal)
         }
         if(level < 20){
             self.skillButton2.enabled = false
-            skillButton2.setTitle("レベルが足りません", forState: .Normal)
+            skillButton2.setTitle("未取得", forState: .Normal)
         }
         if(level < 30){
             self.skillButton3.enabled = false
-            skillButton3.setTitle("レベルが足りません", forState: .Normal)
+            skillButton3.setTitle("未取得", forState: .Normal)
         }
         if(level < 40){
             self.skillButton0.enabled = false
-            skillButton4.setTitle("レベルが足りません", forState: .Normal)
+            skillButton4.setTitle("未取得", forState: .Normal)
         }
       */
         switch equipmentSkill{

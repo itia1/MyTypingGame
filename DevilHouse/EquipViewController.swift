@@ -28,9 +28,56 @@ class EquipViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let defaults = NSUserDefaults.standardUserDefaults()
         equipment = Equipment()
         weaponInfo = equipment!.readCurrentWeaponInfo()
         protectInfo = equipment!.readCurrentProtectInfo()
+        let equipmentWeapon:Int = defaults.integerForKey("equipmentWeapon")
+        
+        switch equipmentWeapon{
+        case 0:
+            self.weaponButton0.enabled = false
+            weaponButton0.setTitle("装備中", forState: .Normal)
+        case 1:
+            self.weaponButton1.enabled = false
+            weaponButton1.setTitle("装備中", forState: .Normal)
+        case 2:
+            self.weaponButton2.enabled = false
+            weaponButton2.setTitle("装備中", forState: .Normal)
+        case 3:
+            self.weaponButton3.enabled = false
+            weaponButton3.setTitle("装備中", forState: .Normal)
+        case 4:
+            self.weaponButton4.enabled = false
+            weaponButton4.setTitle("装備中", forState: .Normal)
+        default:
+            break
+        }
+        
+        let equipmentProtect:Int = defaults.integerForKey("equipmentProtect")
+        
+        switch equipmentProtect{
+        case 0:
+            self.protectButton0.enabled = false
+            protectButton0.setTitle("装備中", forState: .Normal)
+        case 1:
+            self.protectButton1.enabled = false
+            protectButton1.setTitle("装備中", forState: .Normal)
+        case 2:
+            self.protectButton2.enabled = false
+            protectButton2.setTitle("装備中", forState: .Normal)
+        case 3:
+            self.protectButton3.enabled = false
+            protectButton3.setTitle("装備中", forState: .Normal)
+        case 4:
+            self.protectButton4.enabled = false
+            protectButton4.setTitle("装備中", forState: .Normal)
+        default:
+            break
+        }
+
+    
+    
         for(var i = 0;i<5;i++){
             let weapon:(name:String,possesion:Bool) = weaponInfo[i]
             let protect:(name:String,possesion:Bool) = protectInfo[i]
@@ -39,47 +86,46 @@ class EquipViewController: UIViewController {
                 switch i{
                 case 0:
                     self.weaponButton0.enabled = false
-                    weaponButton0.setTitle("購入されてません", forState: .Normal)
+                    weaponButton0.setTitle("未購入", forState: .Normal)
                 case 1:
                     self.weaponButton1.enabled = false
-                    weaponButton1.setTitle("購入されてません", forState: .Normal)
+                    weaponButton1.setTitle("未購入", forState: .Normal)
                 case 2:
                     self.weaponButton2.enabled = false
-                    weaponButton2.setTitle("購入されてません", forState: .Normal)
+                    weaponButton2.setTitle("未購入", forState: .Normal)
                 case 3:
                     self.weaponButton3.enabled = false
-                    weaponButton3.setTitle("購入されてません", forState: .Normal)
+                    weaponButton3.setTitle("未購入", forState: .Normal)
                 case 4:
                     self.weaponButton4.enabled = false
-                    weaponButton4.setTitle("購入されてません", forState: .Normal)
+                    weaponButton4.setTitle("未購入", forState: .Normal)
                 default:
                     break
                 }
             }
-            /*
+            
             if(protect.possesion == false){
                 switch i{
                 case 0:
                     self.protectButton0.enabled = false
-                    protectButton0.setTitle("購入されてません", forState: .Normal)
+                    protectButton0.setTitle("未購入", forState: .Normal)
                 case 1:
                     self.protectButton1.enabled = false
-                    protectButton1.setTitle("購入されてません", forState: .Normal)
+                    protectButton1.setTitle("未購入", forState: .Normal)
                 case 2:
                     self.protectButton2.enabled = false
-                    protectButton2.setTitle("購入されてません", forState: .Normal)
+                    protectButton2.setTitle("未購入", forState: .Normal)
                 case 3:
                     self.protectButton3.enabled = false
-                    protectButton3.setTitle("購入されてません", forState: .Normal)
+                    protectButton3.setTitle("未購入", forState: .Normal)
                 case 4:
                     self.protectButton4.enabled = false
-                    protectButton4.setTitle("購入されてません", forState: .Normal)
+                    protectButton4.setTitle("未購入", forState: .Normal)
                 default:
                     break
-   
                 }
             }
-*/
+
         }
     
         // Do any additional setup after loading the view.
@@ -109,7 +155,7 @@ class EquipViewController: UIViewController {
             weaponButton3.setTitle("エクスカリバー", forState: .Normal)
         case 4:
             self.weaponButton4.enabled = true
-            weaponButton4.setTitle("課金の剣", forState: .Normal)
+            weaponButton4.setTitle("伝説の剣", forState: .Normal)
         default:
             break
         }
@@ -148,16 +194,16 @@ class EquipViewController: UIViewController {
         protectButton0.setTitle("木の盾", forState: .Normal)
         case 1:
         self.protectButton1.enabled = true
-        protectButton1.setTitle("アイスシールド", forState: .Normal)
+        protectButton1.setTitle("イージス", forState: .Normal)
         case 2:
         self.protectButton2.enabled = true
-        protectButton2.setTitle("ファイヤーシルード", forState: .Normal)
+        protectButton2.setTitle("プリトウェン", forState: .Normal)
         case 3:
         self.protectButton3.enabled = true
         protectButton3.setTitle("勇者の盾", forState: .Normal)
         case 4:
         self.protectButton4.enabled = true
-        protectButton4.setTitle("ダークシールド", forState: .Normal)
+        protectButton4.setTitle("伝説の盾", forState: .Normal)
         default:
         break
     }

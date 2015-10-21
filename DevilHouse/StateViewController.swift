@@ -78,7 +78,7 @@ class StateViewController: UIViewController {
         case 3:
             weaponLabel.text = "エクスカリバー"
         case 4:
-            weaponLabel.text = "課金の剣"
+            weaponLabel.text = "伝説の剣"
         case 5:
             weaponLabel.text = "装備なし"
         default:
@@ -89,13 +89,13 @@ class StateViewController: UIViewController {
         case 0:
             protectLabel.text = "木の盾"
         case 1:
-            protectLabel.text = "アイスシールド"
+            protectLabel.text = "イージス"
         case 2:
-            protectLabel.text = "ファイヤーシールド"
+            protectLabel.text = "プリトウェン"
         case 3:
             protectLabel.text = "勇者の盾"
         case 4:
-            protectLabel.text = "ダークシールド"
+            protectLabel.text = "伝説の盾"
         case 5:
             protectLabel.text = "装備なし"
         default:
