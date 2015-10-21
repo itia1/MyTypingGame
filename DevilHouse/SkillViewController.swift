@@ -22,7 +22,7 @@ class SkillViewController: UIViewController {
         let level:Int = defaults.integerForKey("level")
     /*一時的に解除
         if(level < 10){
-            self.skillButton1.enabled = false
+            self.skillcButton1.enabled = false
             skillButton1.setTitle("レベルが足りません", forState: .Normal)
         }
         if(level < 20){

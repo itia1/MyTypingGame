@@ -41,7 +41,7 @@ class WeaponViewController: UIViewController {
             
          let weapon:(name:String,possesion:Bool) = self.weaponInfo[num-1]
         }
-        let actionCancel = UIAlertAction(title: "Cancel", style: .Cancel){
+        let actionCancel = UIAlertAction(title: "Cancel", style: .Destructive){
             (action) -> Void in
            
         }
