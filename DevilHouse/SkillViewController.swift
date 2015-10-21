@@ -18,7 +18,7 @@ class SkillViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let defaults = NSUserDefaults.standardUserDefaults()
-        var equipmentSkill:Int = defaults.integerForKey("equipmentSkill")
+        let equipmentSkill:Int = defaults.integerForKey("equipmentSkill")
         let level:Int = defaults.integerForKey("level")
     /*一時的に解除
         if(level < 10){
