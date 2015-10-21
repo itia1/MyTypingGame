@@ -218,7 +218,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1i-fc-ZeO">
                                 <rect key="frame" x="40" y="40" width="30" height="30"/>
-                                <state key="normal" title="Exit">
+                                <state key="normal" title="exit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -231,52 +231,52 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-Lg-NoB">
-                                <rect key="frame" x="275" y="175" width="50" height="250"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-Lg-NoB">
+                                <rect key="frame" x="263" y="175" width="75" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="QTc-ks-Alj"/>
                                     <constraint firstAttribute="height" constant="250" id="Vt8-O9-GhC"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="ロンギヌス">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="WGc-rD-xEr" eventType="touchUpInside" id="7YS-Hy-Rgv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ya-CV-89R">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ya-CV-89R">
                                 <rect key="frame" x="395" y="175" width="50" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="1zx-6p-t1d"/>
                                     <constraint firstAttribute="width" constant="50" id="44e-sE-TLA"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="伝説の剣">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="WGc-rD-xEr" eventType="touchUpInside" id="QKS-sv-KWI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vm6-Km-W5H">
-                                <rect key="frame" x="335" y="175" width="50" height="250"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vm6-Km-W5H">
+                                <rect key="frame" x="308" y="175" width="105" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="aLl-oE-WLO"/>
                                     <constraint firstAttribute="width" constant="50" id="elS-vh-iXo"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="エクスカリバー">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="WGc-rD-xEr" eventType="touchUpInside" id="iUF-NX-05c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYW-2g-kXL">
-                                <rect key="frame" x="215" y="175" width="50" height="250"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYW-2g-kXL">
+                                <rect key="frame" x="210" y="175" width="60" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="2du-K0-j2Z"/>
                                     <constraint firstAttribute="height" constant="250" id="2gd-dZ-7ma"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="勇者の剣">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -295,12 +295,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va1-3x-VB6">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Va1-3x-VB6">
                                 <rect key="frame" x="155" y="175" width="50" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="6W7-Uz-IFK"/>
                                     <constraint firstAttribute="height" constant="250" id="zxB-Wl-Ztc"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="木の剣"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="WGc-rD-xEr" eventType="touchUpInside" id="Opr-DP-fhH"/>
@@ -366,7 +367,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W54-4D-W1h">
                                 <rect key="frame" x="40" y="40" width="30" height="30"/>
-                                <state key="normal" title="Exit">
+                                <state key="normal" title="exit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -379,21 +380,21 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEc-Kl-Vdb">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEc-Kl-Vdb">
                                 <rect key="frame" x="275" y="175" width="50" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="OiQ-Oy-4yv"/>
                                     <constraint firstAttribute="width" constant="50" id="tgL-uq-hoX"/>
                                 </constraints>
-                                <state key="normal" title="Buttom"/>
+                                <state key="normal" title="プリトウェン"/>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euc-33-Ouj">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euc-33-Ouj">
                                 <rect key="frame" x="215" y="175" width="50" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="bY5-FL-YL8"/>
                                     <constraint firstAttribute="height" constant="250" id="lNp-W6-Coj"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="イージス"/>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7z-a7-Hok">
                                 <rect key="frame" x="155" y="175" width="50" height="250"/>
@@ -401,23 +402,24 @@
                                     <constraint firstAttribute="width" constant="50" id="BHd-so-FBO"/>
                                     <constraint firstAttribute="height" constant="250" id="h2K-nW-14K"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="木の盾"/>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t45-Za-c2P">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t45-Za-c2P">
                                 <rect key="frame" x="335" y="175" width="50" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="2xb-H2-imO"/>
                                     <constraint firstAttribute="width" constant="50" id="qYh-A5-5yG"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="勇者の盾"/>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fQ-TQ-VaD">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fQ-TQ-VaD">
                                 <rect key="frame" x="395" y="175" width="50" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="EeK-1S-v67"/>
                                     <constraint firstAttribute="width" constant="50" id="Sw6-qO-MpZ"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="伝説の盾"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -560,7 +562,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWD-r8-HOs">
                                 <rect key="frame" x="40" y="20" width="30" height="30"/>
-                                <state key="normal" title="Exit">
+                                <state key="normal" title="exit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -766,7 +768,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Neo-Lw-Fha" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592" y="328"/>
+            <point key="canvasLocation" x="168" y="244"/>
         </scene>
         <!--Clear View Controller-->
         <scene sceneID="xgY-04-OTk">
@@ -809,7 +811,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6be-jW-HbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="571" y="1195"/>
+            <point key="canvasLocation" x="207" y="1039"/>
         </scene>
         <!--Config View Controller-->
         <scene sceneID="2hf-Tf-Wlr">
@@ -828,7 +830,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arK-qr-KFg">
                                 <rect key="frame" x="40" y="40" width="30" height="30"/>
-                                <state key="normal" title="Exit"/>
+                                <state key="normal" title="exit"/>
                                 <connections>
                                     <action selector="exitButtom:" destination="UIn-oR-HbU" eventType="touchUpInside" id="gBf-Eg-Eg1"/>
                                 </connections>
@@ -1064,20 +1066,26 @@
                                     <constraint firstAttribute="height" constant="70" id="4Wt-4r-Dj0"/>
                                     <constraint firstAttribute="width" constant="120" id="c7Z-MU-ayx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" title="ファイヤーシールド"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="プリトウェン"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="choiceProtect:" destination="ofN-ed-5cn" eventType="touchUpInside" id="fGG-TL-RFf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81C-j8-Ak3">
-                                <rect key="frame" x="155" y="264" width="120" height="70"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81C-j8-Ak3">
+                                <rect key="frame" x="155" y="265" width="120" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="2r9-Ug-DBb"/>
                                     <constraint firstAttribute="width" constant="120" id="3aP-bS-3hb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="ロンギヌス"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="choiceWeapon:" destination="ofN-ed-5cn" eventType="touchUpInside" id="tAQ-W5-Okp"/>
                                 </connections>
@@ -1157,8 +1165,11 @@
                                     <constraint firstAttribute="height" constant="70" id="d95-Gr-doP"/>
                                     <constraint firstAttribute="width" constant="120" id="iph-Q4-xuV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="アイスシールド"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="イージス"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="choiceProtect:" destination="ofN-ed-5cn" eventType="touchUpInside" id="WIb-1g-l7h"/>
                                 </connections>
@@ -1171,6 +1182,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="木の剣"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="choiceWeapon:" destination="ofN-ed-5cn" eventType="touchUpInside" id="WN0-f4-QBS"/>
                                 </connections>
@@ -1183,6 +1197,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="勇者の剣"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="choiceWeapon:" destination="ofN-ed-5cn" eventType="touchUpInside" id="i3o-eO-YEZ"/>
                                 </connections>
@@ -1193,7 +1210,11 @@
                                     <constraint firstAttribute="height" constant="70" id="8l4-r6-Nf7"/>
                                     <constraint firstAttribute="width" constant="120" id="Mn1-7s-glR"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="勇者の盾"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="choiceProtect:" destination="ofN-ed-5cn" eventType="touchUpInside" id="dTa-H5-D9a"/>
                                 </connections>
@@ -1204,29 +1225,49 @@
                                     <constraint firstAttribute="height" constant="70" id="mN3-9T-98a"/>
                                     <constraint firstAttribute="width" constant="120" id="st9-ou-K9c"/>
                                 </constraints>
-                                <state key="normal" title="ダークシールド"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="伝説の盾"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="choiceProtect:" destination="ofN-ed-5cn" eventType="touchUpInside" id="0A3-AD-n8E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLV-gT-MUW">
-                                <rect key="frame" x="155" y="355" width="120" height="70"/>
+                                <rect key="frame" x="128" y="355" width="147" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Tyc-QJ-0Tl"/>
+                                    <constraint firstAttribute="width" constant="147" id="fXv-D5-N0V"/>
                                     <constraint firstAttribute="height" constant="70" id="q84-2z-TdR"/>
+                                    <constraint firstAttribute="height" constant="70" id="wsI-1M-SJh"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="エクスカリバー"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Tyc-QJ-0Tl"/>
+                                        <exclude reference="q84-2z-TdR"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="choiceWeapon:" destination="ofN-ed-5cn" eventType="touchUpInside" id="KAw-Ci-mRU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4O-DE-gPD">
-                                <rect key="frame" x="155" y="444" width="120" height="70"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4O-DE-gPD">
+                                <rect key="frame" x="155" y="445" width="120" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="0cs-v5-Z1V"/>
                                     <constraint firstAttribute="width" constant="120" id="nLl-rv-1sO"/>
                                 </constraints>
-                                <state key="normal" title="課金の剣"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="伝説の剣"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="choiceWeapon:" destination="ofN-ed-5cn" eventType="touchUpInside" id="aX9-Vp-9EO"/>
                                 </connections>
@@ -1239,6 +1280,12 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="木の盾"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="choiceProtect:" destination="ofN-ed-5cn" eventType="touchUpInside" id="Pa5-AM-7eZ"/>
                                 </connections>
@@ -1350,7 +1397,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWr-Fr-VYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-827" y="2300"/>
+            <point key="canvasLocation" x="-864" y="2131"/>
         </scene>
         <!--State View Controller-->
         <scene sceneID="KFb-lO-Ec2">
@@ -1604,25 +1651,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6r-W7-rqO">
-                                <rect key="frame" x="360" y="340" width="42" height="21"/>
+                                <rect key="frame" x="335" y="340" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhN-g7-146">
-                                <rect key="frame" x="360" y="391" width="42" height="21"/>
+                                <rect key="frame" x="335" y="391" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJN-OE-STg">
-                                <rect key="frame" x="360" y="442" width="42" height="21"/>
+                                <rect key="frame" x="335" y="442" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYf-80-KEO">
-                                <rect key="frame" x="360" y="493" width="42" height="21"/>
+                                <rect key="frame" x="335" y="493" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1655,9 +1702,11 @@
                             <constraint firstItem="G3x-FI-law" firstAttribute="leading" secondItem="Ib1-JY-zQ0" secondAttribute="trailing" constant="49" id="1En-GX-vzG"/>
                             <constraint firstItem="lgR-f4-y9Z" firstAttribute="top" secondItem="Uqb-WO-QlZ" secondAttribute="bottom" constant="40" id="1vz-kB-Iv2"/>
                             <constraint firstItem="zof-KV-1MD" firstAttribute="leading" secondItem="F9x-9G-EBF" secondAttribute="trailing" constant="55" id="2um-6A-Een"/>
+                            <constraint firstItem="TYf-80-KEO" firstAttribute="leading" secondItem="FAy-V9-gpf" secondAttribute="trailing" constant="40" id="30b-DA-QXd"/>
                             <constraint firstItem="Cex-Ur-0Wo" firstAttribute="centerY" secondItem="794-IB-hf9" secondAttribute="centerY" id="3Fx-Ly-yXJ"/>
                             <constraint firstItem="FAy-V9-gpf" firstAttribute="leading" secondItem="lgR-f4-y9Z" secondAttribute="trailing" constant="55" id="3TD-jA-xzc"/>
                             <constraint firstItem="zof-KV-1MD" firstAttribute="top" secondItem="nK5-vS-VPL" secondAttribute="bottom" constant="40" id="4oI-1H-3VX"/>
+                            <constraint firstItem="WJN-OE-STg" firstAttribute="leading" secondItem="Zd8-26-K3y" secondAttribute="trailing" constant="40" id="5P7-gZ-yTp"/>
                             <constraint firstItem="F9x-9G-EBF" firstAttribute="top" secondItem="eOY-Vi-fyE" secondAttribute="bottom" constant="40" id="6HK-8V-fkX"/>
                             <constraint firstItem="ntC-Ht-zgM" firstAttribute="top" secondItem="80s-dG-Bn4" secondAttribute="bottom" constant="30" id="7rO-Y2-gSd"/>
                             <constraint firstItem="G3x-FI-law" firstAttribute="centerX" secondItem="794-IB-hf9" secondAttribute="centerX" id="8HB-Py-xRs"/>
@@ -1688,6 +1737,7 @@
                             <constraint firstItem="R6r-W7-rqO" firstAttribute="top" secondItem="x2u-c3-l0A" secondAttribute="bottom" constant="30" id="QHu-as-9Ey"/>
                             <constraint firstItem="eOY-Vi-fyE" firstAttribute="centerY" secondItem="794-IB-hf9" secondAttribute="centerY" id="QbF-Tb-lls"/>
                             <constraint firstItem="Cex-Ur-0Wo" firstAttribute="top" secondItem="qQM-yy-xzK" secondAttribute="bottom" constant="40" id="Qia-2k-5Fh"/>
+                            <constraint firstItem="qhN-g7-146" firstAttribute="leading" secondItem="G3x-FI-law" secondAttribute="trailing" constant="40" id="REg-Tb-4hl"/>
                             <constraint firstItem="BBC-zL-rlG" firstAttribute="top" secondItem="Evt-QW-IDU" secondAttribute="bottom" constant="30" id="Sgb-Cn-xpB"/>
                             <constraint firstItem="YoX-VJ-Rie" firstAttribute="top" secondItem="ntC-Ht-zgM" secondAttribute="bottom" constant="40" id="Swx-oz-dg9"/>
                             <constraint firstItem="Cex-Ur-0Wo" firstAttribute="leading" secondItem="Njp-BC-XTh" secondAttribute="trailing" constant="30" id="TAI-Z6-WBl"/>
@@ -1718,6 +1768,7 @@
                             <constraint firstItem="I4R-hf-PdT" firstAttribute="centerX" secondItem="794-IB-hf9" secondAttribute="centerX" id="jDS-VY-BoU"/>
                             <constraint firstItem="Evt-QW-IDU" firstAttribute="leading" secondItem="YoX-VJ-Rie" secondAttribute="trailing" constant="30" id="jcV-gc-3fM"/>
                             <constraint firstItem="WJN-OE-STg" firstAttribute="leading" secondItem="Zd8-26-K3y" secondAttribute="trailing" constant="55" id="jr3-Ty-r55"/>
+                            <constraint firstItem="R6r-W7-rqO" firstAttribute="leading" secondItem="zof-KV-1MD" secondAttribute="trailing" constant="40" id="kAG-QV-fTb"/>
                             <constraint firstItem="lpQ-ih-NBp" firstAttribute="top" secondItem="4TN-tW-ZeX" secondAttribute="bottom" constant="30" id="kB8-qT-Bbd"/>
                             <constraint firstItem="zof-KV-1MD" firstAttribute="leading" secondItem="F9x-9G-EBF" secondAttribute="trailing" constant="32" id="kIE-NW-FX4"/>
                             <constraint firstItem="G3x-FI-law" firstAttribute="leading" secondItem="Ib1-JY-zQ0" secondAttribute="trailing" constant="55" id="kLL-mA-PBm"/>
@@ -1732,8 +1783,11 @@
                             <constraint firstItem="Zd8-26-K3y" firstAttribute="leading" secondItem="Uqb-WO-QlZ" secondAttribute="trailing" constant="55" id="p6p-0r-O9O"/>
                             <constraint firstItem="Ib1-JY-zQ0" firstAttribute="top" secondItem="F9x-9G-EBF" secondAttribute="bottom" constant="30" id="phI-Qu-aFv"/>
                             <constraint firstItem="HtV-XS-DHK" firstAttribute="top" secondItem="x1u-pM-27N" secondAttribute="bottom" constant="10" id="q2a-sE-l9G"/>
+                            <constraint firstItem="qhN-g7-146" firstAttribute="leading" secondItem="G3x-FI-law" secondAttribute="trailing" constant="30" id="r7P-ma-EA5"/>
+                            <constraint firstItem="TYf-80-KEO" firstAttribute="leading" secondItem="FAy-V9-gpf" secondAttribute="trailing" constant="30" id="rQE-WY-kdt"/>
                             <constraint firstItem="Uqb-WO-QlZ" firstAttribute="top" secondItem="Ib1-JY-zQ0" secondAttribute="bottom" constant="40" id="rUc-2h-1YK"/>
                             <constraint firstItem="BBC-zL-rlG" firstAttribute="leading" secondItem="I4R-hf-PdT" secondAttribute="trailing" constant="30" id="rvG-sd-a0F"/>
+                            <constraint firstItem="WJN-OE-STg" firstAttribute="leading" secondItem="Zd8-26-K3y" secondAttribute="trailing" constant="30" id="rwz-hG-uaE"/>
                             <constraint firstItem="Njp-BC-XTh" firstAttribute="leading" secondItem="nK5-vS-VPL" secondAttribute="trailing" constant="30" id="tML-bE-X2z"/>
                             <constraint firstItem="7G4-b3-MoN" firstAttribute="leading" secondItem="BBC-zL-rlG" secondAttribute="trailing" constant="30" id="u8a-x4-JHp"/>
                             <constraint firstItem="ntC-Ht-zgM" firstAttribute="centerX" secondItem="794-IB-hf9" secondAttribute="centerX" id="v6a-p4-zDC"/>
@@ -1746,6 +1800,7 @@
                             <constraint firstItem="HtV-XS-DHK" firstAttribute="leading" secondItem="794-IB-hf9" secondAttribute="leadingMargin" constant="20" id="yxH-Er-Niu"/>
                             <constraint firstItem="F9x-9G-EBF" firstAttribute="top" secondItem="eOY-Vi-fyE" secondAttribute="bottom" constant="30" id="z0B-1j-ebh"/>
                             <constraint firstItem="HuA-EB-agb" firstAttribute="centerX" secondItem="794-IB-hf9" secondAttribute="centerX" id="z53-no-70h"/>
+                            <constraint firstItem="R6r-W7-rqO" firstAttribute="leading" secondItem="zof-KV-1MD" secondAttribute="trailing" constant="30" id="zZN-er-Nji"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -1763,16 +1818,24 @@
                                 <exclude reference="2um-6A-Een"/>
                                 <exclude reference="BFE-9g-oPr"/>
                                 <exclude reference="Vqq-yj-10Z"/>
+                                <exclude reference="9Rv-9D-y9s"/>
+                                <exclude reference="kAG-QV-fTb"/>
+                                <exclude reference="xYW-Xj-FF9"/>
                                 <exclude reference="rUc-2h-1YK"/>
                                 <exclude reference="Qia-2k-5Fh"/>
                                 <exclude reference="kLL-mA-PBm"/>
                                 <exclude reference="wtT-ct-JFr"/>
-                                <exclude reference="xYW-Xj-FF9"/>
+                                <exclude reference="REg-Tb-4hl"/>
+                                <exclude reference="UZc-NZ-HaX"/>
                                 <exclude reference="yU3-9P-EdY"/>
                                 <exclude reference="cWJ-zw-AWW"/>
                                 <exclude reference="1vz-kB-Iv2"/>
+                                <exclude reference="5P7-gZ-yTp"/>
                                 <exclude reference="cp2-Hf-gMC"/>
+                                <exclude reference="jr3-Ty-r55"/>
+                                <exclude reference="30b-DA-QXd"/>
                                 <exclude reference="OPg-pb-jHc"/>
+                                <exclude reference="U1H-5A-IX8"/>
                             </mask>
                         </variation>
                     </view>
@@ -1790,7 +1853,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ip-Mc-ggn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-827" y="3248"/>
+            <point key="canvasLocation" x="-820" y="3249"/>
         </scene>
         <!--Skill View Controller-->
         <scene sceneID="1RK-i8-1qn">
@@ -1814,34 +1877,46 @@
                                     <action selector="exitButtom:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="kBV-iR-3g6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViO-wm-BKH">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViO-wm-BKH">
                                 <rect key="frame" x="282" y="285" width="37" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Skill3"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="equipmentSkillButton:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="5x5-6i-Nca"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-Lv-OD2">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-Lv-OD2">
                                 <rect key="frame" x="281" y="355" width="38" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Skill4"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="equipmentSkillButton:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="xac-ce-smd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T6-nl-nU9">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T6-nl-nU9">
                                 <rect key="frame" x="282" y="425" width="37" height="30"/>
-                                <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Skill5"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="equipmentSkillButton:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="gtT-nR-m8U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjU-83-xDN">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjU-83-xDN">
                                 <rect key="frame" x="283" y="145" width="35" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Skill1"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="equipmentSkillButton:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="MNp-7R-M2x"/>
                                 </connections>
@@ -1852,10 +1927,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTd-DQ-g9X">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTd-DQ-g9X">
                                 <rect key="frame" x="282" y="215" width="37" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Skill2"/>
+                                <state key="disabled">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="equipmentSkillButton:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="8kE-oI-Wxy"/>
                                 </connections>

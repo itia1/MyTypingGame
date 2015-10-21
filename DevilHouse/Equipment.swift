@@ -19,7 +19,7 @@ class Equipment:NSObject{
         
         //この関数を初めて呼んだときに武器情報を初期化して保存
         if ((weapons == nil) || (weaponPossesions == nil)){
-            weapons = ["木の剣","勇者の剣","ロンギヌス","エクスカリバー","課金の剣"]
+            weapons = ["木の剣","勇者の剣","ロンギヌス","エクスカリバー","伝説の剣"]
             weaponPossesions = [false,false,false,false,false]
             
             defaults.setObject(weapons, forKey: "key-weapons")
@@ -76,7 +76,7 @@ class Equipment:NSObject{
         
         //この関数を初めて呼んだときに防具情報を初期化して保存
         if ((protect == nil) || (protectPossesions == nil)){
-            protect = ["木の盾","勇者の盾","アイスシールド","ファイヤーシールド","ダークシールド"]
+            protect = ["木の盾","イージス","プリトウェン","勇者の盾","伝説の盾"]
             protectPossesions = [false,false,false,false,false]
             
             defaults.setObject(protect, forKey: "key-protect")

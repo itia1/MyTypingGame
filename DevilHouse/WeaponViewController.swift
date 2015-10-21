@@ -40,6 +40,7 @@ class WeaponViewController: UIViewController {
             let num:Int = sender.tag
             
          let weapon:(name:String,possesion:Bool) = self.weaponInfo[num-1]
+            self.equipment!.changeWeaponPossesion(weapon.name)
         }
         let actionCancel = UIAlertAction(title: "Cancel", style: .Destructive){
             (action) -> Void in
