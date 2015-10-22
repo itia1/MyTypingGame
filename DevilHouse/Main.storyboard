@@ -718,6 +718,7 @@
                         <outlet property="Picture" destination="jh8-yM-TYb" id="hjZ-Ga-hb8"/>
                         <outlet property="myHitPoint" destination="BNx-yx-h3R" id="diF-WP-IxI"/>
                         <outlet property="myHpBar" destination="Xzd-0K-QTD" id="7dD-bb-Ycq"/>
+                        <outlet property="skillButton" destination="XmH-oM-XxL" id="dgE-7h-2WB"/>
                         <outlet property="textField" destination="WKD-JL-Er5" id="13P-hM-dWT"/>
                         <outlet property="timerLabel" destination="LRp-YQ-Fhh" id="wcD-Vp-qWW"/>
                         <outlet property="trueText" destination="rZf-od-fCG" id="Hye-FM-U0B"/>
@@ -1434,7 +1435,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rn3-pN-oti">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="syujinkou.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rn3-pN-oti">
                                 <rect key="frame" x="150" y="75" width="140" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="GW0-e0-o3d"/>
@@ -1993,6 +1994,7 @@
         <image name="bukiya3.1.png" width="414" height="736"/>
         <image name="haikei.png" width="414" height="736"/>
         <image name="load.png" width="414" height="736"/>
+        <image name="syujinkou.png" width="140" height="200"/>
         <image name="title3.png" width="414" height="736"/>
         <image name="town3.png" width="414" height="736"/>
     </resources>
