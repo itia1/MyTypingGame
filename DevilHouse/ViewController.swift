@@ -231,8 +231,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if(textField.text==trueText.text){
             
-            hp = hp - Int(attack)
-            HpBar.setProgress(Float(hp) * 0.01 - Float(attack) * 0.01 , animated: true)
+            hp = Int(hp - Int(attack))
+            var gageHp:Float = Float(hp)
+            gageHp = gageHp/100.0
+            HpBar.setProgress(gageHp, animated: true)
             
             
             AttackEffect.animationImages = attackeffect
