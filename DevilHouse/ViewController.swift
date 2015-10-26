@@ -41,6 +41,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var HpBar: UIProgressView!
     @IBOutlet weak var myHpBar: UIProgressView!
     @IBOutlet weak var Cutin: UIImageView!
+    @IBOutlet weak var skillButton: UIButton!
     
     var test = 1
     var character:Character?
@@ -51,7 +52,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var timer: NSTimer?
     var startTime2: NSTimeInterval? = nil 
     var timer2: NSTimer?
-    var ctintmr:NSTimer?
+    var ctintmr:NSTimer? //カットインに使われるタイマー
+    var skiitmr:NSTimer? //スキル中に使われるタイマー
     var player = AVAudioPlayer()
     var bgmplayer = AVAudioPlayer()
     var attachment = 0 //敵の攻撃力を階層ごとに強くする変数
@@ -117,20 +119,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var comma = UIImage(named:"comma.png")
     
     
-    //スキルアクションをしたときの関数
-    @IBAction func SkillAction(sender: AnyObject) {
-        Cutin.image = comma
-        ctintmr = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "cutin", userInfo: nil, repeats: false)
-        
-        //スキルの効果を記述
-        //攻撃力上昇
-        
-    }
-    
-    func cutin(){
-        Cutin.removeFromSuperview()
-        ctintmr?.invalidate()
-    }
+ 
     
     //自分の装備の攻撃力やレベルによるステータスをみるための変数
     let defaults = NSUserDefaults.standardUserDefaults()
@@ -143,6 +132,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var spd:Double = 0.0
     var attack:Double = 0
     var def:Double = 0
+    var equipmentSkill:Int = 0
+    var hphold:Int = 0// 敵の最大hpを保持させる
+    var myhphold:Int = 0 //自分の最大hpを保持させる
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -168,7 +160,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         trueText.text = text[randInt]
         Count.text = String(counter)
         HitPoint.text = String(hp)
-        myHitPoint.text = String(myhp)
+        let myHpWrite = Int(myhp)
+        myHitPoint.text = String(myHpWrite)
          self.startTime = NSDate.timeIntervalSinceReferenceDate()
         self.timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
         self.startTime2 = NSDate.timeIntervalSinceReferenceDate()
@@ -177,6 +170,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         HpBar.progress = 1.0
         myHpBar.progress = 1.0
         Picture.image = monster1
+        hphold = hp
+        myhphold = Int(myhp)
         
        // player = try! AVAudioPlayer(contentsOfURL: se_attack1)
        // player.prepareToPlay()
@@ -197,24 +192,28 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     // 敵から攻撃を受ける時の関数
     func attacked() {
-        if let t = self.startTime2{
-            let time: Double = NSDate.timeIntervalSinceReferenceDate() - t
-            let sec: Int = Int(time)
-            if(sec%5 == 0){
-        myhp = myhp - (damage-def/100)
-        myHitPoint.text = String(myhp)
-        myHpBar.setProgress((myHpBar.progress - Float(damage-def)/10000), animated: true)
+        
+            if let t = self.startTime2{
+                let time: Double = NSDate.timeIntervalSinceReferenceDate() - t
+                let sec: Int = Int(time)
+                if(sec%5 == 0){
+                    myhp = myhp - (damage-def/100)
+                    let myHpWrite = Int(myhp)
+                    myHitPoint.text = String(myHpWrite)
+                    let gageMyHp:Float = Float(myhp)/Float(myhphold)
+                    myHpBar.setProgress(gageMyHp, animated: true)
+                }
+                if(myhp <= 0){
+                    let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                    let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("GameOverViewController")
+                
+                    next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+                
+                    self.presentViewController(next, animated: true, completion: nil)
+                }
             }
-            if(myhp <= 0){
-                let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                
-                let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("GameOverViewController")
-                
-                next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-                
-                self.presentViewController(next, animated: true, completion: nil)
-             }
-        }
+        
     }
     
     //タイマーの時間を管理する関数
@@ -224,6 +223,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             let sec: Int = Int(time)
             let msec: Int = Int((time - Double(sec)) * 100.0)
              self.timerLabel.text = String(format: "%02d:%02d:%02d", sec/60, sec%60, msec)
+        
         }
     }
     
@@ -233,7 +233,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             
             hp = Int(hp - Int(attack))
             var gageHp:Float = Float(hp)
-            gageHp = gageHp/100.0
+            gageHp = gageHp/Float(hphold)
             HpBar.setProgress(gageHp, animated: true)
             
             
@@ -255,15 +255,22 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 
                 if(counter == 1){ //第２階層に入る時の処理
                     text = character!.text2
+                    uphp = 10
                 }
                 if(counter == 2){ //第３階層に入る時の処理
                     text = character!.text3
+                    uphp = 20
+                    damage = 6
                 }
                 if(counter == 3){ //第４階層に入る時の処理
                     text = character!.text4
+                    uphp = 50
+                    damage = 10
                 }
                 if(counter == 4){ //第５階層に入る時の処理
                     text = character!.text5
+                    uphp = 100
+                    damage = 20
                 }
                 
                 if(counter == 5){ //すべての敵を倒した時に画面推移させる
@@ -276,7 +283,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     self.presentViewController(next, animated: true, completion: nil)
                 }
                 
-                hp = 100 + counter*10
+                hp = 100 + uphp
+                hphold = hp
+                
                 HpBar.setProgress(1.0 ,  animated: true)
                 self.startTime2 = nil
                 self.startTime2 = NSDate.timeIntervalSinceReferenceDate()
@@ -342,5 +351,302 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBAction func exitButtom(sender: AnyObject) {
         self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true,completion: nil)
     }
+    
+    
+    //スキルアクションをしたときの動作
+    @IBAction func SkillAction(sender: AnyObject) {
+        skillButton.enabled = false
+        let equipmentSkill = defaults.integerForKey("equipmentSkill")
+        Cutin.image = comma
+        ctintmr = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "cutin", userInfo: nil, repeats: false)
+        
+        
+        switch equipmentSkill{
+        case 0: //体力回復
+            if( (myhphold - Int(myhp)) < 50){
+                myhp = Double(myhphold)
+                myHpBar.setProgress(1.0, animated: true)
+            }else{
+                myhp += 50
+                let myHpWrite:Float = Float(myhp)/Float(myhphold)
+                myHpBar.setProgress(myHpWrite, animated: true)
+            }
+        case 1:
+                hp = hp - 50
+                var gageHp:Float = Float(hp)
+                gageHp = gageHp/Float(hphold)
+                HpBar.setProgress(gageHp, animated: true)
+                
+                
+                AttackEffect.animationImages = attackeffect
+                AttackEffect.animationRepeatCount = 1
+                AttackEffect.animationDuration = 0.3
+                AttackEffect.startAnimating()
+                
+                // player.play()
+                
+                
+                if( hp <= 0){
+                    
+                    AttackEffect.animationImages = stairs
+                    AttackEffect.animationDuration = 0.6
+                    AttackEffect.startAnimating()
+                    
+                    counter++
+                    
+                    if(counter == 1){ //第２階層に入る時の処理
+                        text = character!.text2
+                        uphp = 10
+                    }
+                    if(counter == 2){ //第３階層に入る時の処理
+                        text = character!.text3
+                        uphp = 20
+                        damage = 6
+                    }
+                    if(counter == 3){ //第４階層に入る時の処理
+                        text = character!.text4
+                        uphp = 50
+                        damage = 10
+                    }
+                    if(counter == 4){ //第５階層に入る時の処理
+                        text = character!.text5
+                        uphp = 100
+                        damage = 20
+                    }
+                    
+                    if(counter == 5){ //すべての敵を倒した時に画面推移させる
+                        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        
+                        let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
+                        
+                        next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+                        
+                        self.presentViewController(next, animated: true, completion: nil)
+                    }
+                    
+                    hp = 100 + uphp
+                    hphold = hp
+                    
+                    HpBar.setProgress(1.0 ,  animated: true)
+                    self.startTime2 = nil
+                    self.startTime2 = NSDate.timeIntervalSinceReferenceDate()
+                    
+                    switch counter{
+                    case 1:
+                        Picture.image = monster2
+                    case 2:
+                        Picture.image = monster3
+                    case 3:
+                        Picture.image = monster4
+                    case 4:
+                        Picture.image = monster5
+                    default:
+                        Picture.image = bug
+                    }
+                    
+                    
+                }
+                
+                Picture.animationImages = monster1damage
+                Picture.animationRepeatCount = 3
+                Picture.animationDuration = 0.2
+                Picture.startAnimating()
+                
+                switch counter{
+                    
+                case 1:
+                    Picture.animationImages = monster2damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+                case 2:
+                    Picture.animationImages = monster3damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+                case 3:
+                    Picture.animationImages = monster4damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+                case 4:
+                    Picture.animationImages = monster5damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+                default:
+                    Picture.image = bug
+                }
+                
+                let randInt2 = Int(arc4random_uniform(UInt32(text.count)))
+                trueText.text = text[randInt2]
+                Count.text = String(counter)
+                HitPoint.text = String(hp)
+        
+        self.textField.text=""
+        textField.resignFirstResponder()
+        
+       
+            case 2: //文章を簡単にする
+            text = character!.text6
+            let randInt2 = Int(arc4random_uniform(UInt32(text.count)))
+            trueText.text = text[randInt2]
+                
+       
+            case 3: //攻撃力をあげるスキル
+            attack = attack*2
+            skiitmr = NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: "attackcut", userInfo: nil, repeats: false)
+            
+         
+            case 4: //自分もダメージを食らうが相手にも大ダメージを与えるスキル
+                if( myhp > 30){
+            myhp = myhp - 30
+            let myHpWrite = Int(myhp)
+            myHitPoint.text = String(myHpWrite)
+            let gageMyHp:Float = Float(myhp)/Float(myhphold)
+            myHpBar.setProgress(gageMyHp, animated: true)
+                }else if(myhp <= 30){
+                    myhp = 1.0
+                    let myHpWrite = Int(myhp)
+                    myHitPoint.text = String(myHpWrite)
+                    let gageMyHp:Float = Float(myhp)/Float(myhphold)
+                    myHpBar.setProgress(gageMyHp, animated: true)
+            }
+                hp = hp - 100
+                var gageHp:Float = Float(hp)
+                gageHp = gageHp/Float(hphold)
+                HpBar.setProgress(gageHp, animated: true)
+                
+                
+                AttackEffect.animationImages = attackeffect
+                AttackEffect.animationRepeatCount = 1
+                AttackEffect.animationDuration = 0.3
+                AttackEffect.startAnimating()
+                
+                // player.play()
+                
+                
+                if( hp <= 0){
+                    
+                    AttackEffect.animationImages = stairs
+                    AttackEffect.animationDuration = 0.6
+                    AttackEffect.startAnimating()
+                    
+                    counter++
+                    
+                    if(counter == 1){ //第２階層に入る時の処理
+                        text = character!.text2
+                        uphp = 10
+                    }
+                    if(counter == 2){ //第３階層に入る時の処理
+                        text = character!.text3
+                        uphp = 20
+                        damage = 6
+                    }
+                    if(counter == 3){ //第４階層に入る時の処理
+                        text = character!.text4
+                        uphp = 50
+                        damage = 10
+                    }
+                    if(counter == 4){ //第５階層に入る時の処理
+                        text = character!.text5
+                        uphp = 100
+                        damage = 20
+                    }
+                    
+                    if(counter == 5){ //すべての敵を倒した時に画面推移させる
+                        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        
+                        let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
+                        
+                        next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+                        
+                        self.presentViewController(next, animated: true, completion: nil)
+                    }
+                    
+                    hp = 100 + uphp
+                    hphold = hp
+                    
+                    HpBar.setProgress(1.0 ,  animated: true)
+                    self.startTime2 = nil
+                    self.startTime2 = NSDate.timeIntervalSinceReferenceDate()
+                    
+                    switch counter{
+                    case 1:
+                        Picture.image = monster2
+                    case 2:
+                        Picture.image = monster3
+                    case 3:
+                        Picture.image = monster4
+                    case 4:
+                        Picture.image = monster5
+                    default:
+                        Picture.image = bug
+                    }
+                    
+                    
+                }
+                
+                Picture.animationImages = monster1damage
+                Picture.animationRepeatCount = 3
+                Picture.animationDuration = 0.2
+                Picture.startAnimating()
+                
+                switch counter{
+                    
+                case 1:
+                    Picture.animationImages = monster2damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+                case 2:
+                    Picture.animationImages = monster3damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+                case 3:
+                    Picture.animationImages = monster4damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+                case 4:
+                    Picture.animationImages = monster5damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+                default:
+                    Picture.image = bug
+                }
+                
+                let randInt2 = Int(arc4random_uniform(UInt32(text.count)))
+                trueText.text = text[randInt2]
+                Count.text = String(counter)
+                HitPoint.text = String(hp)
+                
+                self.textField.text=""
+                textField.resignFirstResponder()
+            
+
+            
+        
+                default:
+                break
+            }
+
+            
+        }
+    
+    func attackcut(){
+        attack = attack/2
+        
+    }
+    
+        
+        
+    
+    func cutin(){
+        Cutin.removeFromSuperview()
+        ctintmr?.invalidate()
+        }
     
 }

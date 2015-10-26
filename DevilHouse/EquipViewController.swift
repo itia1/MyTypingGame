@@ -25,15 +25,24 @@ class EquipViewController: UIViewController {
     @IBOutlet weak var protectButton2: UIButton!
     @IBOutlet weak var protectButton3: UIButton!
     @IBOutlet weak var protectButton4: UIButton!
+    var levelfunc:Level?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        levelfunc = Level()
         let defaults = NSUserDefaults.standardUserDefaults()
         equipment = Equipment()
         weaponInfo = equipment!.readCurrentWeaponInfo()
         protectInfo = equipment!.readCurrentProtectInfo()
         let equipmentWeapon:Int = defaults.integerForKey("equipmentWeapon")
-        
+        let level = defaults.integerForKey("level")
+        if(level == 0){
+            levelfunc!.levelup()
+            var upExp:Int = defaults.integerForKey("upExp")
+            upExp = 100;
+            defaults.setInteger(upExp, forKey: "upExp")
+        }
         switch equipmentWeapon{
         case 0:
             self.weaponButton0.enabled = false
@@ -140,6 +149,7 @@ class EquipViewController: UIViewController {
         let num:Int = sender.tag
         let defaults = NSUserDefaults.standardUserDefaults()
         var equipmentWeapon:Int = defaults.integerForKey("equipmentWeapon")
+        
         switch equipmentWeapon{
         case 0:
             self.weaponButton0.enabled = true

@@ -348,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFC-c5-65O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775" y="-1397"/>
+            <point key="canvasLocation" x="-775" y="-1220"/>
         </scene>
         <!--Protect View Controller-->
         <scene sceneID="u8l-Bt-0KN">
@@ -445,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zE-N5-hWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775" y="-426"/>
+            <point key="canvasLocation" x="-775" y="-482"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -548,7 +548,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="SkillAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ozk-hp-VJ2"/>
+                                    <action selector="SkillAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wl5-xi-Qzo"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKD-JL-Er5">
@@ -572,7 +572,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="myHP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNx-yx-h3R">
                                 <rect key="frame" x="410" y="328" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l2Q-Y2-oSB">
@@ -718,6 +718,7 @@
                         <outlet property="Picture" destination="jh8-yM-TYb" id="hjZ-Ga-hb8"/>
                         <outlet property="myHitPoint" destination="BNx-yx-h3R" id="diF-WP-IxI"/>
                         <outlet property="myHpBar" destination="Xzd-0K-QTD" id="7dD-bb-Ycq"/>
+                        <outlet property="skillButton" destination="XmH-oM-XxL" id="dgE-7h-2WB"/>
                         <outlet property="textField" destination="WKD-JL-Er5" id="13P-hM-dWT"/>
                         <outlet property="timerLabel" destination="LRp-YQ-Fhh" id="wcD-Vp-qWW"/>
                         <outlet property="trueText" destination="rZf-od-fCG" id="Hye-FM-U0B"/>
@@ -963,7 +964,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEW-FS-Mkt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1735" y="2300"/>
+            <point key="canvasLocation" x="-1735" y="2134"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="ssX-8y-OKM">
@@ -1465,7 +1466,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWr-Fr-VYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-864" y="2131"/>
+            <point key="canvasLocation" x="-775" y="2134"/>
         </scene>
         <!--State View Controller-->
         <scene sceneID="KFb-lO-Ec2">
@@ -1502,7 +1503,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rn3-pN-oti">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="syujinkou.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rn3-pN-oti">
                                 <rect key="frame" x="150" y="75" width="140" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="GW0-e0-o3d"/>
@@ -1921,7 +1922,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Ip-Mc-ggn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-820" y="3249"/>
+            <point key="canvasLocation" x="-775" y="2997"/>
         </scene>
         <!--Skill View Controller-->
         <scene sceneID="1RK-i8-1qn">
@@ -2051,7 +2052,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDR-n6-S2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-827" y="1473"/>
+            <point key="canvasLocation" x="-775" y="1355"/>
         </scene>
     </scenes>
     <resources>
@@ -2061,6 +2062,7 @@
         <image name="bukiya3.1.png" width="414" height="736"/>
         <image name="haikei.png" width="414" height="736"/>
         <image name="load.png" width="414" height="736"/>
+        <image name="syujinkou.png" width="140" height="200"/>
         <image name="title3.png" width="414" height="736"/>
         <image name="town3.png" width="414" height="736"/>
     </resources>
