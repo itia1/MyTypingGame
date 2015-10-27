@@ -64,7 +64,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var se_attack1 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hit", ofType: "mp3")!)
     var bgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("normal", ofType: "mp3")!)
     
-    var bossbgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("boss", ofType: "mp3")!)
+  //  var bossbgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("boss", ofType: "mp3")!)
     
     var monster1 = UIImage(named:"monster1.png")
     
@@ -276,7 +276,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     uphp = 100
                     damage = 20
                     
-                    bgmplayer = try!AVAudioPlayer(contentsOfURL: bossbgm)
+         //           bgmplayer = try!AVAudioPlayer(contentsOfURL: bossbgm)
                     bgmplayer.prepareToPlay()
                     bgmplayer.play()
                 }
