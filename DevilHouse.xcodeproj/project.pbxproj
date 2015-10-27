@@ -18,7 +18,6 @@
 		00EAFEED1BC247F1007040F1 /* monster4damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EAFEE71BC247F1007040F1 /* monster4damage.png */; settings = {ASSET_TAGS = (); }; };
 		00EAFEEE1BC247F1007040F1 /* monster5.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EAFEE81BC247F1007040F1 /* monster5.png */; settings = {ASSET_TAGS = (); }; };
 		00EAFEEF1BC247F1007040F1 /* monster5damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EAFEE91BC247F1007040F1 /* monster5damage.png */; settings = {ASSET_TAGS = (); }; };
-		00F05A1D1BD53825004E022B /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F05A1C1BD53825004E022B /* bgm.mp3 */; settings = {ASSET_TAGS = (); }; };
 		00F06B3C1BBC1FA70097C1BA /* monster1.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B391BBC1FA70097C1BA /* monster1.png */; };
 		00F06B431BBC2A940097C1BA /* attack1.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B3F1BBC2A940097C1BA /* attack1.png */; };
 		00F06B441BBC2A940097C1BA /* attack2.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F06B401BBC2A940097C1BA /* attack2.png */; };
@@ -67,7 +66,7 @@
 		EF9AB2EF1BD4E925003E7903 /* equipmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AB2EE1BD4E925003E7903 /* equipmentData.swift */; settings = {ASSET_TAGS = (); }; };
 		EF9AB2F11BD8075D003E7903 /* syujinkou.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F01BD8075D003E7903 /* syujinkou.png */; settings = {ASSET_TAGS = (); }; };
 		EF9AB2F31BD9360E003E7903 /* ラスボスBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F21BD9360E003E7903 /* ラスボスBGM.mp3 */; settings = {ASSET_TAGS = (); }; };
-		EF9AB2F51BD93613003E7903 /* 戦闘BGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F41BD93613003E7903 /* 戦闘BGM.mp3 */; settings = {ASSET_TAGS = (); }; };
+		EF9AB2F51BD93613003E7903 /* normal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F41BD93613003E7903 /* normal.mp3 */; settings = {ASSET_TAGS = (); }; };
 		EF9AB2F71BD93637003E7903 /* BGM(アジト).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F61BD93637003E7903 /* BGM(アジト).mp3 */; settings = {ASSET_TAGS = (); }; };
 		EF9AB2F91BD93644003E7903 /* BGM(街用).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F81BD93644003E7903 /* BGM(街用).mp3 */; settings = {ASSET_TAGS = (); }; };
 		EFA6AC441BBD8D0D00F86B1F /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */; };
@@ -97,7 +96,6 @@
 		00EAFEE71BC247F1007040F1 /* monster4damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster4damage.png; sourceTree = "<group>"; };
 		00EAFEE81BC247F1007040F1 /* monster5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster5.png; sourceTree = "<group>"; };
 		00EAFEE91BC247F1007040F1 /* monster5damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster5damage.png; sourceTree = "<group>"; };
-		00F05A1C1BD53825004E022B /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		00F06B391BBC1FA70097C1BA /* monster1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster1.png; sourceTree = "<group>"; };
 		00F06B3F1BBC2A940097C1BA /* attack1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack1.png; sourceTree = "<group>"; };
 		00F06B401BBC2A940097C1BA /* attack2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attack2.png; sourceTree = "<group>"; };
@@ -151,7 +149,7 @@
 		EF9AB2EE1BD4E925003E7903 /* equipmentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = equipmentData.swift; sourceTree = "<group>"; };
 		EF9AB2F01BD8075D003E7903 /* syujinkou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syujinkou.png; sourceTree = "<group>"; };
 		EF9AB2F21BD9360E003E7903 /* ラスボスBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ラスボスBGM.mp3"; sourceTree = "<group>"; };
-		EF9AB2F41BD93613003E7903 /* 戦闘BGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "戦闘BGM.mp3"; sourceTree = "<group>"; };
+		EF9AB2F41BD93613003E7903 /* normal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = normal.mp3; sourceTree = "<group>"; };
 		EF9AB2F61BD93637003E7903 /* BGM(アジト).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BGM(アジト).mp3"; sourceTree = "<group>"; };
 		EF9AB2F81BD93644003E7903 /* BGM(街用).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BGM(街用).mp3"; sourceTree = "<group>"; };
 		EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NextViewController.swift; path = ../NextViewController.swift; sourceTree = "<group>"; };
@@ -184,8 +182,7 @@
 				EF9AB2F21BD9360E003E7903 /* ラスボスBGM.mp3 */,
 				EF9AB2F81BD93644003E7903 /* BGM(街用).mp3 */,
 				EF9AB2F61BD93637003E7903 /* BGM(アジト).mp3 */,
-				EF9AB2F41BD93613003E7903 /* 戦闘BGM.mp3 */,
-				00F05A1C1BD53825004E022B /* bgm.mp3 */,
+				EF9AB2F41BD93613003E7903 /* normal.mp3 */,
 			);
 			name = SE;
 			sourceTree = "<group>";
@@ -460,7 +457,6 @@
 				00EAFEEC1BC247F1007040F1 /* monster4.png in Resources */,
 				EF3A72D91BC55C9700799F93 /* number2-2.png in Resources */,
 				0016608C1BD2AB20001FFC0C /* comma.png in Resources */,
-				00F05A1D1BD53825004E022B /* bgm.mp3 in Resources */,
 				00EAFEED1BC247F1007040F1 /* monster4damage.png in Resources */,
 				00F06B451BBC2A940097C1BA /* attack3.png in Resources */,
 				00F06B461BBC2A940097C1BA /* attack4.png in Resources */,
@@ -469,7 +465,7 @@
 				00F2619B1BD27B870003FD37 /* 一拍6.png in Resources */,
 				EF5055661BC18A470060ECC9 /* title3.png in Resources */,
 				EF3A72D81BC55C9700799F93 /* number3-2.png in Resources */,
-				EF9AB2F51BD93613003E7903 /* 戦闘BGM.mp3 in Resources */,
+				EF9AB2F51BD93613003E7903 /* normal.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
