@@ -177,7 +177,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         hphold = hp
         myhphold = Int(myhp)
         
-        player = try! AVAudioPlayer(contentsOfURL: se_attack1)
+        player = try! AVAudioPlayer(contentsOfURL: se_attack1) 
         player.prepareToPlay()
         bgmplayer = try! AVAudioPlayer(contentsOfURL: bgm)
         bgmplayer.numberOfLoops = -1
