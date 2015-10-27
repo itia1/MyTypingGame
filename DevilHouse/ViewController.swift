@@ -23,6 +23,8 @@
 //　　　適当にやった
 //     後で書き直す
 //     名前変えて入れて　攻撃時のSE：hit.mp3　BGM：bgm.mp3
+//
+//　訂正　通常戦闘：normal.mp3　ボス：boss.mp3
 
 
 
@@ -59,8 +61,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var attachment = 0 //敵の攻撃力を階層ごとに強くする変数
     var uphp = 0  //階層ごとに敵のhpをあげるための変数
     var damage:Double = 5
-    // var se_attack1 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hit", ofType: "mp3")!)
-    // var bgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("bgm", ofType: "mp3")!)
+    var se_attack1 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hit", ofType: "mp3")!)
+    var bgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("normal", ofType: "mp3")!)
+    
+    var bossbgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("boss", ofType: "mp3")!)
     
     var monster1 = UIImage(named:"monster1.png")
     
@@ -173,13 +177,15 @@ class ViewController: UIViewController,UITextFieldDelegate {
         hphold = hp
         myhphold = Int(myhp)
         
-       // player = try! AVAudioPlayer(contentsOfURL: se_attack1)
-       // player.prepareToPlay()
-       // bgmplayer = try! AVAudioPlayer(contentsOfURL: bgm)
-       // bgmplayer.numberOfLoops = -1
-       // bgmplayer.prepareToPlay()
-       // bgmplayer.play()
+        player = try! AVAudioPlayer(contentsOfURL: se_attack1)
+        player.prepareToPlay()
+        bgmplayer = try! AVAudioPlayer(contentsOfURL: bgm)
+        bgmplayer.numberOfLoops = -1
+        bgmplayer.prepareToPlay()
+        bgmplayer.play()
         
+        textField.autocorrectionType = UITextAutocorrectionType.No
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -269,6 +275,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     text = character!.text5
                     uphp = 100
                     damage = 20
+                    
+                    bgmplayer = try!AVAudioPlayer(contentsOfURL: bossbgm)
+                    bgmplayer.prepareToPlay()
+                    bgmplayer.play()
                 }
                 
                 if(counter == 5){ //すべての敵を倒した時に画面推移させる
@@ -311,7 +321,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             
             switch counter{
                 
-            case 1:
+            case 1: 
                     Picture.animationImages = monster2damage
                     Picture.animationRepeatCount = 3
                     Picture.animationDuration = 0.2

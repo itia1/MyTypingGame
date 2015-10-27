@@ -11,6 +11,9 @@ import Social
 
 class GameOverViewController: UIViewController {
 
+    @IBOutlet weak var floor: UILabel!
+    
+    @IBOutlet weak var time: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,4 +31,5 @@ class GameOverViewController: UIViewController {
         twitter.setInitialText("魔王の城：クリアできませんでした。。。。")
         self.presentViewController(twitter, animated: true, completion: nil)
     }
+
 }
