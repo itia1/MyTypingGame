@@ -10,8 +10,18 @@ import UIKit
 
 class StartViewController: UIViewController {
 
+    var levelfunc:Level?
     override func viewDidLoad() {
         super.viewDidLoad()
+         levelfunc = Level()
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let level:Int = userDefaults.integerForKey("level")
+        if(level == 0){
+            levelfunc!.levelup()
+            var upExp:Int = userDefaults.integerForKey("upExp")
+            upExp = 100;
+            userDefaults.setInteger(upExp, forKey: "upExp")
+        }
 
         // Do any additional setup after loading the view.
     }
