@@ -48,7 +48,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var test = 1
     var character:Character?
     internal var counter = 0 //今いる階層を表す変数
-    var hp = 100 //敵のhpを表す変数
+    var hp = 100 //敵のhpを表す変数 
     var text:[String]=[]
     var startTime: NSTimeInterval? = nil
     var timer: NSTimer?
