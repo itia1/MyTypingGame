@@ -66,9 +66,7 @@
 		EF9AB2ED1BD2B6D5003E7903 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AB2EC1BD2B6D5003E7903 /* Level.swift */; settings = {ASSET_TAGS = (); }; };
 		EF9AB2EF1BD4E925003E7903 /* equipmentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AB2EE1BD4E925003E7903 /* equipmentData.swift */; settings = {ASSET_TAGS = (); }; };
 		EF9AB2F11BD8075D003E7903 /* syujinkou.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F01BD8075D003E7903 /* syujinkou.png */; settings = {ASSET_TAGS = (); }; };
-		EF9AB2F31BD9360E003E7903 /* ラスボスBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F21BD9360E003E7903 /* ラスボスBGM.mp3 */; settings = {ASSET_TAGS = (); }; };
 		EF9AB2F51BD93613003E7903 /* normal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F41BD93613003E7903 /* normal.mp3 */; settings = {ASSET_TAGS = (); }; };
-		EF9AB2F71BD93637003E7903 /* BGM(アジト).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F61BD93637003E7903 /* BGM(アジト).mp3 */; settings = {ASSET_TAGS = (); }; };
 		EF9AB2F91BD93644003E7903 /* BGM(街用).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF9AB2F81BD93644003E7903 /* BGM(街用).mp3 */; settings = {ASSET_TAGS = (); }; };
 		EFA6AC441BBD8D0D00F86B1F /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */; };
 		EFC5A66A1BD274A900EBE7C1 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC5A6691BD274A900EBE7C1 /* Money.swift */; settings = {ASSET_TAGS = (); }; };
@@ -150,9 +148,7 @@
 		EF9AB2EC1BD2B6D5003E7903 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		EF9AB2EE1BD4E925003E7903 /* equipmentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = equipmentData.swift; sourceTree = "<group>"; };
 		EF9AB2F01BD8075D003E7903 /* syujinkou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syujinkou.png; sourceTree = "<group>"; };
-		EF9AB2F21BD9360E003E7903 /* ラスボスBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ラスボスBGM.mp3"; sourceTree = "<group>"; };
 		EF9AB2F41BD93613003E7903 /* normal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = normal.mp3; sourceTree = "<group>"; };
-		EF9AB2F61BD93637003E7903 /* BGM(アジト).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BGM(アジト).mp3"; sourceTree = "<group>"; };
 		EF9AB2F81BD93644003E7903 /* BGM(街用).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BGM(街用).mp3"; sourceTree = "<group>"; };
 		EFA6AC431BBD8D0D00F86B1F /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NextViewController.swift; path = ../NextViewController.swift; sourceTree = "<group>"; };
 		EFC5A6691BD274A900EBE7C1 /* Money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
@@ -181,9 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				0080F51F1BD4C6440053DA96 /* hit.mp3 */,
-				EF9AB2F21BD9360E003E7903 /* ラスボスBGM.mp3 */,
 				EF9AB2F81BD93644003E7903 /* BGM(街用).mp3 */,
-				EF9AB2F61BD93637003E7903 /* BGM(アジト).mp3 */,
 				EF9AB2F41BD93613003E7903 /* normal.mp3 */,
 			);
 			name = SE;
@@ -442,7 +436,6 @@
 				00F2619C1BD27B870003FD37 /* 一拍7.png in Resources */,
 				EF1CF46C1BD2971800045BA6 /* haikei.png in Resources */,
 				EF3A72D51BC55C8C00799F93 /* number1-2.png in Resources */,
-				EF9AB2F31BD9360E003E7903 /* ラスボスBGM.mp3 in Resources */,
 				00F261A01BD27F4D0003FD37 /* TwiIcon.png in Resources */,
 				EF50556A1BC195A60060ECC9 /* bukiya3.1.png in Resources */,
 				00EAFEE21BC2301C007040F1 /* monster2damage.png in Resources */,
@@ -453,7 +446,6 @@
 				00F261971BD27B870003FD37 /* 一拍2.png in Resources */,
 				EF5055641BC18A1A0060ECC9 /* town3.png in Resources */,
 				00F06B481BBC32700097C1BA /* monster1damage.png in Resources */,
-				EF9AB2F71BD93637003E7903 /* BGM(アジト).mp3 in Resources */,
 				00EAFEEB1BC247F1007040F1 /* monster3damage.png in Resources */,
 				EF638E671BD291C9004E7169 /* ajito.png in Resources */,
 				EFDB288A1BBC3F630051C3C1 /* load.png in Resources */,
