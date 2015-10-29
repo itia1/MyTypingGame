@@ -251,7 +251,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             AttackEffect.animationDuration = 0.3
             AttackEffect.startAnimating()
             
-           // player.play()
+            player.play()
 
 
             if( hp <= 0){

@@ -34,6 +34,8 @@
 		00F329491BE2530300534265 /* monster4damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F329431BE2530300534265 /* monster4damage.png */; settings = {ASSET_TAGS = (); }; };
 		00F3294A1BE2530300534265 /* monster5.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F329441BE2530300534265 /* monster5.png */; settings = {ASSET_TAGS = (); }; };
 		00F3294B1BE2530300534265 /* monster5damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F329451BE2530300534265 /* monster5damage.png */; settings = {ASSET_TAGS = (); }; };
+		00F3294D1BE25B5500534265 /* ラスボスBGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F3294C1BE25B5500534265 /* ラスボスBGM.mp3 */; settings = {ASSET_TAGS = (); }; };
+		00F3294F1BE25B6C00534265 /* BGM(アジト).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F3294E1BE25B6C00534265 /* BGM(アジト).mp3 */; settings = {ASSET_TAGS = (); }; };
 		EF1CF46C1BD2971800045BA6 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = EF1CF46B1BD2971800045BA6 /* haikei.png */; settings = {ASSET_TAGS = (); }; };
 		EF3A72D31BC2D74700799F93 /* battle2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3A72D21BC2D74700799F93 /* battle2.png */; settings = {ASSET_TAGS = (); }; };
 		EF3A72D51BC55C8C00799F93 /* number1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3A72D41BC55C8C00799F93 /* number1-2.png */; settings = {ASSET_TAGS = (); }; };
@@ -112,6 +114,8 @@
 		00F329431BE2530300534265 /* monster4damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster4damage.png; sourceTree = "<group>"; };
 		00F329441BE2530300534265 /* monster5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster5.png; sourceTree = "<group>"; };
 		00F329451BE2530300534265 /* monster5damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster5damage.png; sourceTree = "<group>"; };
+		00F3294C1BE25B5500534265 /* ラスボスBGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ラスボスBGM.mp3"; sourceTree = "<group>"; };
+		00F3294E1BE25B6C00534265 /* BGM(アジト).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BGM(アジト).mp3"; sourceTree = "<group>"; };
 		EF1CF46B1BD2971800045BA6 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
 		EF3A72D21BC2D74700799F93 /* battle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle2.png; sourceTree = "<group>"; };
 		EF3A72D41BC55C8C00799F93 /* number1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number1-2.png"; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				0080F51F1BD4C6440053DA96 /* hit.mp3 */,
+				00F3294E1BE25B6C00534265 /* BGM(アジト).mp3 */,
+				00F3294C1BE25B5500534265 /* ラスボスBGM.mp3 */,
 				EF9AB2F81BD93644003E7903 /* BGM(街用).mp3 */,
 				EF9AB2F41BD93613003E7903 /* normal.mp3 */,
 			);
@@ -458,6 +464,8 @@
 				00F06B461BBC2A940097C1BA /* attack4.png in Resources */,
 				00F2619A1BD27B870003FD37 /* 一拍5.png in Resources */,
 				00F261991BD27B870003FD37 /* 一拍4.png in Resources */,
+				00F3294D1BE25B5500534265 /* ラスボスBGM.mp3 in Resources */,
+				00F3294F1BE25B6C00534265 /* BGM(アジト).mp3 in Resources */,
 				00F3292B1BE24F0F00534265 /* gameover.png in Resources */,
 				00F2619B1BD27B870003FD37 /* 一拍6.png in Resources */,
 				EF5055661BC18A470060ECC9 /* title3.png in Resources */,
