@@ -49,7 +49,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var test = 1
     var character:Character?
     internal var counter = 0 //今いる階層を表す変数
-    var hp = 100 //敵のhpを表す変数
+    var hp = 100 //敵のhpを表す変数 
     var text:[String]=[]
     var startTime: NSTimeInterval? = nil
     var timer: NSTimer?
@@ -179,7 +179,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         hphold = hp
         myhphold = Int(myhp)
         
-        player = try! AVAudioPlayer(contentsOfURL: se_attack1)
+        player = try! AVAudioPlayer(contentsOfURL: se_attack1) 
         player.prepareToPlay()
         bgmplayer = try! AVAudioPlayer(contentsOfURL: bgm)
         bgmplayer.numberOfLoops = -1
@@ -253,7 +253,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             AttackEffect.animationDuration = 0.3
             AttackEffect.startAnimating()
             
-           // player.play()
+            player.play()
 
 
             if( hp <= 0){
