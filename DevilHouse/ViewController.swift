@@ -120,7 +120,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     
     var bug = UIImage(named:"number1.png")
-    var comma = UIImage(named:"comma.png")
+    var comma = UIImage(named:"cutin2.png")
     
     
  
@@ -215,7 +215,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 
                     next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
                     let t = self.startTime
-                    var app:AppDelegate =
+                    let app:AppDelegate =
                     (UIApplication.sharedApplication().delegate as! AppDelegate)
                     app.timeCount = NSDate.timeIntervalSinceReferenceDate() - t!
                     app.hierarchy = counter
@@ -295,7 +295,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
                     
                     let t = self.startTime
-                    var app:AppDelegate =
+                    let app:AppDelegate =
                     (UIApplication.sharedApplication().delegate as! AppDelegate)
                     app.timeCount = NSDate.timeIntervalSinceReferenceDate() - t!
                     app.hierarchy = counter
@@ -369,6 +369,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     
     @IBAction func exitButtom(sender: AnyObject) {
+        bgmplayer.stop()
         self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true,completion: nil)
     }
     
@@ -442,7 +443,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                         
                         next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
                         let t = self.startTime
-                        var app:AppDelegate =
+                        let app:AppDelegate =
                         (UIApplication.sharedApplication().delegate as! AppDelegate)
                         app.timeCount = NSDate.timeIntervalSinceReferenceDate() - t!
                         app.hierarchy = counter
@@ -586,7 +587,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                         let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
                         
                         let t = self.startTime
-                        var app:AppDelegate =
+                        let app:AppDelegate =
                         (UIApplication.sharedApplication().delegate as! AppDelegate)
                         app.timeCount = NSDate.timeIntervalSinceReferenceDate() - t!
 

@@ -49,6 +49,7 @@
 		EF5055661BC18A470060ECC9 /* title3.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055651BC18A470060ECC9 /* title3.png */; };
 		EF5055681BC18A7D0060ECC9 /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055671BC18A7D0060ECC9 /* battle.png */; };
 		EF50556A1BC195A60060ECC9 /* bukiya3.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5055691BC195A60060ECC9 /* bukiya3.1.png */; };
+		EF61E0C41BDFE81F00C53347 /* cutin2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF61E0C31BDFE81F00C53347 /* cutin2.png */; settings = {ASSET_TAGS = (); }; };
 		EF638E671BD291C9004E7169 /* ajito.png in Resources */ = {isa = PBXBuildFile; fileRef = EF638E661BD291C9004E7169 /* ajito.png */; settings = {ASSET_TAGS = (); }; };
 		EF89E37F1BB2833200E9FFD5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF89E37E1BB2833200E9FFD5 /* Images.xcassets */; };
 		EF89E3821BB2833200E9FFD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF89E3801BB2833200E9FFD5 /* LaunchScreen.xib */; };
@@ -127,6 +128,7 @@
 		EF5055651BC18A470060ECC9 /* title3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title3.png; sourceTree = "<group>"; };
 		EF5055671BC18A7D0060ECC9 /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
 		EF5055691BC195A60060ECC9 /* bukiya3.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bukiya3.1.png; sourceTree = "<group>"; };
+		EF61E0C31BDFE81F00C53347 /* cutin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cutin2.png; sourceTree = "<group>"; };
 		EF638E661BD291C9004E7169 /* ajito.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ajito.png; sourceTree = "<group>"; };
 		EF89E3721BB2833200E9FFD5 /* DevilHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevilHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF89E3761BB2833200E9FFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				EF50556B1BC195E20060ECC9 /* CountDown */,
 				EF5055691BC195A60060ECC9 /* bukiya3.1.png */,
 				EF3A72D21BC2D74700799F93 /* battle2.png */,
+				EF61E0C31BDFE81F00C53347 /* cutin2.png */,
 				EF9AB2F01BD8075D003E7903 /* syujinkou.png */,
 				EF3A72F01BC6A89B00799F93 /* all3.png */,
 				EF5055651BC18A470060ECC9 /* title3.png */,
@@ -445,6 +448,7 @@
 				00EAFEE21BC2301C007040F1 /* monster2damage.png in Resources */,
 				EF3A72D31BC2D74700799F93 /* battle2.png in Resources */,
 				EF89E37F1BB2833200E9FFD5 /* Images.xcassets in Resources */,
+				EF61E0C41BDFE81F00C53347 /* cutin2.png in Resources */,
 				0080F5201BD4C6440053DA96 /* hit.mp3 in Resources */,
 				00F261971BD27B870003FD37 /* 一拍2.png in Resources */,
 				EF5055641BC18A1A0060ECC9 /* town3.png in Resources */,

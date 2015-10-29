@@ -104,6 +104,7 @@ class StateViewController: UIViewController {
             break
         }
         userDefaults.setInteger(equipmentProtect, forKey: "equipmentProtect")
+        userDefaults.synchronize()
     }
 
         // Do any additional setup after loading the view.
