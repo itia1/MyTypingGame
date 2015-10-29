@@ -208,12 +208,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     myHpBar.setProgress(gageMyHp, animated: true)
                 }
                 if(myhp <= 0){
+                    bgmplayer.stop()
                     let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 
                     let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("GameOverViewController")
                 
                     next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-                
+                    let t = self.startTime
+                    var app:AppDelegate =
+                    (UIApplication.sharedApplication().delegate as! AppDelegate)
+                    app.timeCount = NSDate.timeIntervalSinceReferenceDate() - t!
+                    app.hierarchy = counter
                     self.presentViewController(next, animated: true, completion: nil)
                 }
             }
@@ -282,13 +287,20 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 }
                 
                 if(counter == 5){ //すべての敵を倒した時に画面推移させる
+                    bgmplayer.stop()
                     let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     
                     let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
                     
                     next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
                     
+                    let t = self.startTime
+                    var app:AppDelegate =
+                    (UIApplication.sharedApplication().delegate as! AppDelegate)
+                    app.timeCount = NSDate.timeIntervalSinceReferenceDate() - t!
+                    app.hierarchy = counter
                     self.presentViewController(next, animated: true, completion: nil)
+            
                 }
                 
                 hp = 100 + uphp
@@ -351,8 +363,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
             HitPoint.text = String(hp)
         }
         self.textField.text=""
-        textField.resignFirstResponder()
-        return true
+        // textField.resignFirstResponder()
+        return false
     }
     
     
@@ -423,12 +435,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     }
                     
                     if(counter == 5){ //すべての敵を倒した時に画面推移させる
+                        bgmplayer.stop()
                         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         
                         let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
                         
                         next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-                        
+                        let t = self.startTime
+                        var app:AppDelegate =
+                        (UIApplication.sharedApplication().delegate as! AppDelegate)
+                        app.timeCount = NSDate.timeIntervalSinceReferenceDate() - t!
+                        app.hierarchy = counter
                         self.presentViewController(next, animated: true, completion: nil)
                     }
                     
@@ -492,7 +509,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 HitPoint.text = String(hp)
         
         self.textField.text=""
-        textField.resignFirstResponder()
+    //    textField.resignFirstResponder()
         
        
             case 2: //文章を簡単にする
@@ -563,12 +580,18 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     }
                     
                     if(counter == 5){ //すべての敵を倒した時に画面推移させる
+                        bgmplayer.stop()
                         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         
                         let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
                         
+                        let t = self.startTime
+                        var app:AppDelegate =
+                        (UIApplication.sharedApplication().delegate as! AppDelegate)
+                        app.timeCount = NSDate.timeIntervalSinceReferenceDate() - t!
+
                         next.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-                        
+                        app.hierarchy = counter
                         self.presentViewController(next, animated: true, completion: nil)
                     }
                     
@@ -632,11 +655,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 HitPoint.text = String(hp)
                 
                 self.textField.text=""
-                textField.resignFirstResponder()
+             //   textField.resignFirstResponder()
             
-
-            
-        
                 default:
                 break
             }

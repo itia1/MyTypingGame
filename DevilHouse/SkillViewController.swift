@@ -10,6 +10,7 @@ import UIKit
 
 class SkillViewController: UIViewController {
     
+    var levelfunc:Level?
     @IBOutlet weak var skillButton0: UIButton!
     @IBOutlet weak var skillButton1: UIButton!
     @IBOutlet weak var skillButton2: UIButton!
@@ -18,8 +19,15 @@ class SkillViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let defaults = NSUserDefaults.standardUserDefaults()
+         levelfunc = Level()
         let equipmentSkill:Int = defaults.integerForKey("equipmentSkill")
         let level:Int = defaults.integerForKey("level")
+        if(level == 0){
+            levelfunc!.levelup()
+            var upExp:Int = defaults.integerForKey("upExp")
+            upExp = 100;
+            defaults.setInteger(upExp, forKey: "upExp")
+        }
     /*一時的に解除
         if(level < 10){
             self.skillcButton1.enabled = false

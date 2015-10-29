@@ -54,19 +54,20 @@ class StateViewController: UIViewController {
         
         switch equipmentSkill {
         case 0:
-            skillLabel.text = "skill1"
+            skillLabel.text = "RecoveryLife"
         case 1:
-            skillLabel.text = "skill2"
+            skillLabel.text = "DeathBlow"
         case 2:
-            skillLabel.text = "skill3"
+            skillLabel.text = "TakeItEasy"
         case 3:
-            skillLabel.text = "skill4"
+            skillLabel.text = "UptoMe"
         case 4:
-            skillLabel.text = "skill5"
+            skillLabel.text = "DesperateExplosion"
         default:
             break
             
         }
+        userDefaults.setInteger(equipmentSkill, forKey: "equipmentSkill")
         
         switch equipmentWeapon{
         case 0:
@@ -84,6 +85,7 @@ class StateViewController: UIViewController {
         default:
             break
         }
+        userDefaults.setInteger(equipmentWeapon, forKey: "equipmentWeapon")
         
         switch equipmentProtect{
         case 0:
@@ -101,7 +103,7 @@ class StateViewController: UIViewController {
         default:
             break
         }
-            
+        userDefaults.setInteger(equipmentProtect, forKey: "equipmentProtect")
     }
 
         // Do any additional setup after loading the view.
