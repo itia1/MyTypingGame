@@ -1736,13 +1736,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJN-OE-STg">
-                                <rect key="frame" x="335" y="442" width="42" height="21"/>
+                                <rect key="frame" x="306" y="442" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYf-80-KEO">
-                                <rect key="frame" x="335" y="493" width="42" height="21"/>
+                                <rect key="frame" x="306" y="493" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1894,11 +1894,11 @@
                                 <exclude reference="Ppf-J1-b3E"/>
                                 <exclude reference="2um-6A-Een"/>
                                 <exclude reference="BFE-9g-oPr"/>
-                                <exclude reference="Vqq-yj-10Z"/>
                                 <exclude reference="9Rv-9D-y9s"/>
                                 <exclude reference="kAG-QV-fTb"/>
                                 <exclude reference="xYW-Xj-FF9"/>
                                 <exclude reference="zZN-er-Nji"/>
+                                <exclude reference="Vqq-yj-10Z"/>
                                 <exclude reference="rUc-2h-1YK"/>
                                 <exclude reference="Qia-2k-5Fh"/>
                                 <exclude reference="kLL-mA-PBm"/>
