@@ -232,7 +232,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-Lg-NoB">
-                                <rect key="frame" x="263" y="175" width="75" height="250"/>
+                                <rect key="frame" x="276" y="175" width="50" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="QTc-ks-Alj"/>
                                     <constraint firstAttribute="height" constant="250" id="Vt8-O9-GhC"/>
@@ -258,7 +258,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vm6-Km-W5H">
-                                <rect key="frame" x="308" y="175" width="105" height="250"/>
+                                <rect key="frame" x="336" y="175" width="50" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="aLl-oE-WLO"/>
                                     <constraint firstAttribute="width" constant="50" id="elS-vh-iXo"/>
@@ -271,7 +271,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYW-2g-kXL">
-                                <rect key="frame" x="210" y="175" width="60" height="250"/>
+                                <rect key="frame" x="216" y="175" width="50" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="2du-K0-j2Z"/>
                                     <constraint firstAttribute="height" constant="250" id="2gd-dZ-7ma"/>
@@ -917,13 +917,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdh-1A-Bw5">
-                                <rect key="frame" x="269" y="452" width="62" height="48"/>
+                                <rect key="frame" x="255" y="452" width="90" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Qyz-Fs-59a"/>
                                     <constraint firstAttribute="width" constant="150" id="t1C-EO-tHX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title=" Skill"/>
+                                <state key="normal" title="スキル"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Qyz-Fs-59a"/>
@@ -1948,8 +1948,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="haikei.png" translatesAutoresizingMaskIntoConstraints="NO" id="K4j-O7-AHM">
-                                <rect key="frame" x="93" y="-67" width="414" height="736"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="haikei.png" translatesAutoresizingMaskIntoConstraints="NO" id="K4j-O7-AHM">
+                                <rect key="frame" x="93" y="-68" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEV-EW-7GL">
                                 <rect key="frame" x="40" y="40" width="30" height="30"/>
@@ -1958,10 +1958,10 @@
                                     <action selector="exitButtom:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="kBV-iR-3g6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViO-wm-BKH">
-                                <rect key="frame" x="282" y="285" width="37" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Skill3"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViO-wm-BKH">
+                                <rect key="frame" x="246" y="280" width="109" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="TakeItEasy"/>
                                 <state key="disabled">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1969,10 +1969,10 @@
                                     <action selector="equipmentSkillButton:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="5x5-6i-Nca"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-Lv-OD2">
-                                <rect key="frame" x="281" y="355" width="38" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Skill4"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-Lv-OD2">
+                                <rect key="frame" x="259" y="360" width="82" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="UptoMe"/>
                                 <state key="disabled">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1981,9 +1981,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T6-nl-nU9">
-                                <rect key="frame" x="282" y="425" width="37" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Skill5"/>
+                                <rect key="frame" x="199" y="440" width="204" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="DesperateExplosion"/>
                                 <state key="disabled">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1991,10 +1991,10 @@
                                     <action selector="equipmentSkillButton:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="gtT-nR-m8U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjU-83-xDN">
-                                <rect key="frame" x="283" y="145" width="35" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Skill1"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjU-83-xDN">
+                                <rect key="frame" x="234" y="120" width="133" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="RecoveryLife"/>
                                 <state key="disabled">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -2002,16 +2002,16 @@
                                     <action selector="equipmentSkillButton:" destination="Q2a-yz-wKP" eventType="touchUpInside" id="MNp-7R-M2x"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xm-gN-fIX">
-                                <rect key="frame" x="279" y="50" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="スキル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xm-gN-fIX">
+                                <rect key="frame" x="275" y="50" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTd-DQ-g9X">
-                                <rect key="frame" x="282" y="215" width="37" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Skill2"/>
+                                <rect key="frame" x="245" y="200" width="112" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="DeathBlow"/>
                                 <state key="disabled">
                                     <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>

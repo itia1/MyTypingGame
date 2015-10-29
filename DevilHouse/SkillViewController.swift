@@ -60,12 +60,15 @@ class SkillViewController: UIViewController {
             self.skillButton3.enabled = false
             skillButton3.setTitle("装備中", forState: .Normal)
         case 4:
-            self.skillButton0.enabled = false
+            self.skillButton4.enabled = false
             skillButton4.setTitle("装備中", forState: .Normal)
         default:
             break
         }
         defaults.setInteger(equipmentSkill, forKey: "equipmentSkill")
+        defaults.synchronize()
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -77,19 +80,19 @@ class SkillViewController: UIViewController {
         switch equipmentSkill{
         case 0:
             self.skillButton0.enabled = true
-            skillButton0.setTitle("skill1", forState: .Normal)
+            skillButton0.setTitle("RecoveryLife", forState: .Normal)
         case 1:
             self.skillButton1.enabled = true
-            skillButton1.setTitle("skill2", forState: .Normal)
+            skillButton1.setTitle("DeathBlow", forState: .Normal)
         case 2:
             self.skillButton2.enabled = true
-            skillButton2.setTitle("skill3", forState: .Normal)
+            skillButton2.setTitle("TakeItEasy", forState: .Normal)
         case 3:
             self.skillButton3.enabled = true
-            skillButton3.setTitle("skill4", forState: .Normal)
+            skillButton3.setTitle("UptoMe", forState: .Normal)
         case 4:
             self.skillButton4.enabled = true
-            skillButton4.setTitle("skill5", forState: .Normal)
+            skillButton4.setTitle("DesperateExplosion", forState: .Normal)
         default:
             break
         }
@@ -114,7 +117,7 @@ class SkillViewController: UIViewController {
             break
         }
         defaults.setInteger(equipmentSkill, forKey: "equipmentSkill")
-        
+        defaults.synchronize()
         
 
     }
