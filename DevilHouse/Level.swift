@@ -13,7 +13,7 @@ class Level: NSObject {
     func getExp(exp:Int) {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         var sumExp:Int = userDefaults.integerForKey("sumExp")
-        var level:Int = userDefaults.integerForKey("level")
+        let level:Int = userDefaults.integerForKey("level")
         var upExp:Int = userDefaults.integerForKey("upExp")
         if(level == 0){
             levelup()

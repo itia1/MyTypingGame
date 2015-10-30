@@ -15,7 +15,7 @@ class ClearViewController: UIViewController {
     @IBOutlet weak var floor: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var app:AppDelegate =
+        let app:AppDelegate =
         (UIApplication.sharedApplication().delegate as! AppDelegate)
         let timeCount1 = app.timeCount
         let sec: Int = Int(timeCount1)

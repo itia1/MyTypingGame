@@ -12,11 +12,12 @@ import Social
 class GameOverViewController: UIViewController {
 
     @IBOutlet weak var floor: UILabel!
+    var levelfunc:Level?
     
     @IBOutlet weak var time: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var app:AppDelegate =
+        let app:AppDelegate =
         (UIApplication.sharedApplication().delegate as! AppDelegate)
         let timeCount1 = app.timeCount
         let sec: Int = Int(timeCount1)
@@ -34,7 +35,7 @@ class GameOverViewController: UIViewController {
     
     
     @IBAction func postTwitter(sender: AnyObject) {
-        var app:AppDelegate =
+        let app:AppDelegate =
         (UIApplication.sharedApplication().delegate as! AppDelegate)
         let hierarchyCount = app.hierarchy
         let twitter:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)!
