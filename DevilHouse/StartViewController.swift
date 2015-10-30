@@ -9,11 +9,10 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
     var levelfunc:Level?
     override func viewDidLoad() {
         super.viewDidLoad()
-         levelfunc = Level()
+        levelfunc = Level()
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let level:Int = userDefaults.integerForKey("level")
         if(level == 0){

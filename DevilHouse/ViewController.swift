@@ -32,7 +32,6 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController,UITextFieldDelegate {
-    var levelfunc:Level?
     @IBOutlet weak var HitPoint: UILabel!
     @IBOutlet weak var Count: UILabel!
     @IBOutlet weak var trueText: UILabel!
@@ -65,7 +64,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var se_attack1 = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("hit", ofType: "mp3")!)
     var bgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("normal", ofType: "mp3")!)
     
-  //  var bossbgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("boss", ofType: "mp3")!)
+    var bossbgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("boss", ofType: "mp3")!)
     
     var monster1 = UIImage(named:"monster1.png")
     
@@ -144,7 +143,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         EquipmentData = equipmentData()
-        levelfunc = Level()
         let equipmentWeapon:Int = defaults.integerForKey("equipmentWeapon")
         let equipmentProtect:Int = defaults.integerForKey("equipmentProtect")
         attackData = EquipmentData!.weaponsData(equipmentWeapon)
@@ -283,7 +281,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     uphp = 100
                     damage = 20
                     
-         //           bgmplayer = try!AVAudioPlayer(contentsOfURL: bossbgm)
+                    bgmplayer = try!AVAudioPlayer(contentsOfURL: bossbgm)
                     bgmplayer.prepareToPlay()
                     bgmplayer.play()
                 }
