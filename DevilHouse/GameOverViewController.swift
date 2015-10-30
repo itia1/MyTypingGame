@@ -13,10 +13,12 @@ class GameOverViewController: UIViewController {
 
     @IBOutlet weak var floor: UILabel!
     var levelfunc:Level?
-    
+    var moneyfunc:Money?
     @IBOutlet weak var time: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        levelfunc = Level()
+        moneyfunc = Money()
         let app:AppDelegate =
         (UIApplication.sharedApplication().delegate as! AppDelegate)
         let timeCount1 = app.timeCount
@@ -25,6 +27,10 @@ class GameOverViewController: UIViewController {
         self.time.text = String(format: "Time:%02d:%02d:%02d", sec/60, sec%60, msec)
         let hierarchyCount = app.hierarchy
         floor.text = String(format: "階層:\(hierarchyCount)")
+        let money = sec * hierarchyCount
+        let exp = sec/60 * hierarchyCount
+        moneyfunc!.MoneyGet(money)
+        levelfunc!.getExp(exp)
         // Do any additional setup after loading the view.
     }
     

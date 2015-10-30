@@ -9,7 +9,7 @@
 
 import UIKit
 
-class MoneyGet:NSObject{
+class Money:NSObject{
     func MoneyGet(money:Int) {
         
         let userDefaults = NSUserDefaults.standardUserDefaults()
