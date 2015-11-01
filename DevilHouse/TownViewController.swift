@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TownViewController: UIViewController {
+    var bgmplayer = AVAudioPlayer()
+    let townbgm = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("town", ofType: "mp3")!)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bgmplayer = try! AVAudioPlayer(contentsOfURL: townbgm)
+        bgmplayer.play()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -23,7 +30,10 @@ class TownViewController: UIViewController {
     
 
     @IBAction func exitTown(sender: AnyObject) {
+        bgmplayer.stop()
         self.dismissViewControllerAnimated(true, completion: nil)
+        
+        
     }
     /*
     // MARK: - Navigation
