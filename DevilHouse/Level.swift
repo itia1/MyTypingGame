@@ -68,7 +68,7 @@ class Level: NSObject {
         userDefaults.setInteger(def, forKey: "def")
         userDefaults.setInteger(spd, forKey: "spd")
         userDefaults.setInteger(hp, forKey: "hp")
-        
+        userDefaults.synchronize()
     }
     
     
