@@ -273,17 +273,17 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 if(counter == 2){ //第３階層に入る時の処理
                     text = character!.text3
                     uphp = 20
-                    damage = 6
+                    damage = 1
                 }
                 if(counter == 3){ //第４階層に入る時の処理
                     text = character!.text4
-                    uphp = 50
-                    damage = 10
+                    uphp = 100
+                    damage = 5
                 }
                 if(counter == 4){ //第５階層に入る時の処理
                     text = character!.text5
-                    uphp = 100
-                    damage = 20
+                    uphp = 200
+                    damage = 10
                     
                     bgmplayer = try!AVAudioPlayer(contentsOfURL: bossbgm)
                     bgmplayer.prepareToPlay()
