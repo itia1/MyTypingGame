@@ -12,6 +12,7 @@ import Social
 class GameOverViewController: UIViewController {
 
     @IBOutlet weak var floor: UILabel!
+    @IBOutlet weak var Kekka: UILabel!
     var levelfunc:Level?
     var moneyfunc:Money?
     @IBOutlet weak var time: UILabel!
@@ -28,7 +29,8 @@ class GameOverViewController: UIViewController {
         let hierarchyCount = app.hierarchy
         floor.text = String(format: "階層:\(hierarchyCount)")
         let money = sec * hierarchyCount
-        let exp = sec/60 * hierarchyCount
+        let exp = Int((sec*hierarchyCount)/6)
+        Kekka.text = String(format: "金:\(money) exp:\(exp)入手しました")
         moneyfunc!.MoneyGet(money)
         levelfunc!.getExp(exp)
         // Do any additional setup after loading the view.

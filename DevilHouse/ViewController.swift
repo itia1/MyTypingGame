@@ -209,6 +209,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 }
                 if(myhp <= 0){
                     bgmplayer.stop()
+                    timer?.invalidate()
+                    timer2?.invalidate()
+                    ctintmr?.invalidate()
+                    skiitmr?.invalidate()
                     let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 
                     let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("GameOverViewController")
@@ -288,6 +292,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 
                 if(counter == 5){ //すべての敵を倒した時に画面推移させる
                     bgmplayer.stop()
+                    timer?.invalidate()
+                    timer2?.invalidate()
+                    ctintmr?.invalidate()
+                    skiitmr?.invalidate()
                     let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     
                     let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
@@ -370,6 +378,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func exitButtom(sender: AnyObject) {
         bgmplayer.stop()
+        timer?.invalidate()
+        timer2?.invalidate()
+        ctintmr?.invalidate()
+        skiitmr?.invalidate()
         self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true,completion: nil)
     }
     
@@ -437,6 +449,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     
                     if(counter == 5){ //すべての敵を倒した時に画面推移させる
                         bgmplayer.stop()
+                        timer?.invalidate()
+                        timer2?.invalidate()
+                        ctintmr?.invalidate()
+                        skiitmr?.invalidate()
                         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         
                         let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
@@ -504,6 +520,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     Picture.image = bug
                 }
                 
+                /*
                 let randInt2 = Int(arc4random_uniform(UInt32(text.count)))
                 trueText.text = text[randInt2]
                 Count.text = String(counter)
@@ -511,7 +528,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         self.textField.text=""
     //    textField.resignFirstResponder()
-        
+        */
        
             case 2: //文章を簡単にする
             text = character!.text6
@@ -582,6 +599,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     
                     if(counter == 5){ //すべての敵を倒した時に画面推移させる
                         bgmplayer.stop()
+                        timer?.invalidate()
+                        timer2?.invalidate()
+                        ctintmr?.invalidate()
+                        skiitmr?.invalidate()
                         let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         
                         let next:UIViewController = storyboard.instantiateViewControllerWithIdentifier("ClearViewController")
@@ -649,15 +670,15 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 default:
                     Picture.image = bug
                 }
-                
+                /*
                 let randInt2 = Int(arc4random_uniform(UInt32(text.count)))
                 trueText.text = text[randInt2]
                 Count.text = String(counter)
                 HitPoint.text = String(hp)
-                
+
                 self.textField.text=""
              //   textField.resignFirstResponder()
-            
+            */
                 default:
                 break
             }

@@ -11,13 +11,14 @@ import UIKit
 class WeaponViewController: UIViewController {
 
     var equipment:Equipment?
+    var money:Money?
     var weaponInfo:[(name:String,possesion:Bool)]=[]
     override func viewDidLoad() {
         super.viewDidLoad()
          equipment = Equipment()
          weaponInfo = equipment!.readCurrentWeaponInfo()
         // Do any additional setup after loading the view.
-        
+        money = Money()
  
         
     }
