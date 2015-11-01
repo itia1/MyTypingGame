@@ -358,8 +358,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyQ-lI-IH4">
-                                <rect key="frame" x="279" y="363" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyQ-lI-IH4">
+                                <rect key="frame" x="279" y="363" width="42" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -433,6 +433,10 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="You-jk-8DX"/>
+                    <connections>
+                        <outlet property="aaa" destination="X67-vQ-Pyc" id="Noq-f3-fR7"/>
+                        <outlet property="serihu" destination="CyQ-lI-IH4" id="7Lj-Xr-2Z6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFC-c5-65O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -603,6 +607,12 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="waku1.png" translatesAutoresizingMaskIntoConstraints="NO" id="aM3-Sa-HA3">
                                 <rect key="frame" x="140" y="512" width="320" height="50"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVM-CC-AX8">
+                                <rect key="frame" x="269" y="527" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -629,10 +639,12 @@
                             <constraint firstItem="SCg-ru-sb3" firstAttribute="leading" secondItem="J1Z-Hb-N9c" secondAttribute="trailing" constant="50" id="MGO-sN-4dL"/>
                             <constraint firstItem="17F-ST-BSO" firstAttribute="centerY" secondItem="nyl-CD-YHR" secondAttribute="centerY" id="MTo-gQ-7OU"/>
                             <constraint firstItem="40Q-ET-FFj" firstAttribute="top" secondItem="l2P-GY-IAn" secondAttribute="bottom" constant="19" id="ODW-UM-WcA"/>
+                            <constraint firstItem="LVM-CC-AX8" firstAttribute="centerX" secondItem="nyl-CD-YHR" secondAttribute="centerX" id="OQq-iX-354"/>
                             <constraint firstItem="W54-4D-W1h" firstAttribute="leading" secondItem="nyl-CD-YHR" secondAttribute="leadingMargin" constant="20" id="Qba-Ae-GmW"/>
                             <constraint firstItem="ztq-Ix-ArX" firstAttribute="centerX" secondItem="nyl-CD-YHR" secondAttribute="centerX" id="Qmb-Hp-bp0"/>
                             <constraint firstItem="SCg-ru-sb3" firstAttribute="leading" secondItem="b1h-d9-Hek" secondAttribute="trailing" constant="40" id="Tfw-GI-elg"/>
                             <constraint firstItem="oFW-Ns-odv" firstAttribute="centerX" secondItem="nyl-CD-YHR" secondAttribute="centerX" id="UpO-UX-TZi"/>
+                            <constraint firstItem="LVM-CC-AX8" firstAttribute="top" secondItem="nGj-jO-Tx0" secondAttribute="bottom" constant="18" id="Usq-Ob-acx"/>
                             <constraint firstItem="oFW-Ns-odv" firstAttribute="top" secondItem="ztq-Ix-ArX" secondAttribute="bottom" constant="30" id="W1N-m8-r3d"/>
                             <constraint firstItem="aM3-Sa-HA3" firstAttribute="top" secondItem="nGj-jO-Tx0" secondAttribute="bottom" constant="5" id="Waw-uE-f8z"/>
                             <constraint firstItem="W54-4D-W1h" firstAttribute="centerX" secondItem="nyl-CD-YHR" secondAttribute="centerX" id="ZTS-RY-xOS"/>
@@ -660,6 +672,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="aaa" destination="LVM-CC-AX8" id="k3Q-0k-kju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zE-N5-hWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

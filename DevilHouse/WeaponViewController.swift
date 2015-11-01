@@ -19,11 +19,14 @@ class WeaponViewController: UIViewController {
          weaponInfo = equipment!.readCurrentWeaponInfo()
         // Do any additional setup after loading the view.
         money = Money()
- 
-        
+        let bbb:Int = money!.MoneyAppear()
+        aaa.text = String(bbb)
+        serihu.text = "へいらっしゃい！\n今日は何を買うんだい"
     }
    
+    @IBOutlet weak var aaa: UILabel!
 
+    @IBOutlet weak var serihu: UILabel!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

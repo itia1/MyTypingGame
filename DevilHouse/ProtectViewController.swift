@@ -11,16 +11,21 @@ import UIKit
 class ProtectViewController: UIViewController {
 
     var equipment:Equipment?
+    var money:Money?
     var protectInfo:[(name:String,possesion:Bool)]=[]
     override func viewDidLoad() {
         super.viewDidLoad()
         equipment = Equipment()
+        money = Money()
         protectInfo = equipment!.readCurrentProtectInfo()
+        let bbb:Int = money!.MoneyAppear()
+        aaa.text = String(bbb)
         // Do any additional setup after loading the view.
 
     }
     
     
+    @IBOutlet weak var aaa: UILabel!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
