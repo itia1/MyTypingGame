@@ -434,13 +434,18 @@
                     </view>
                     <navigationItem key="navigationItem" id="You-jk-8DX"/>
                     <connections>
+                        <outlet property="Button1" destination="uTc-fV-H6k" id="uH5-Qm-hpd"/>
+                        <outlet property="Button2" destination="7oN-l3-0sx" id="Hyf-1m-9yk"/>
+                        <outlet property="Button3" destination="nXe-z0-CYl" id="4iE-mY-iXU"/>
+                        <outlet property="Button4" destination="5Si-jp-K6M" id="j0C-Bp-jhv"/>
+                        <outlet property="Button5" destination="0Do-Mh-j8b" id="Gwx-st-GrU"/>
                         <outlet property="aaa" destination="X67-vQ-Pyc" id="Noq-f3-fR7"/>
                         <outlet property="serihu" destination="CyQ-lI-IH4" id="7Lj-Xr-2Z6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFC-c5-65O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-879" y="-1144"/>
+            <point key="canvasLocation" x="-987" y="-1166"/>
         </scene>
         <!--Protect View Controller-->
         <scene sceneID="u8l-Bt-0KN">
@@ -673,12 +678,17 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="Button1" destination="l2P-GY-IAn" id="SVt-qY-sQ6"/>
+                        <outlet property="Button2" destination="40Q-ET-FFj" id="vam-j9-vxf"/>
+                        <outlet property="Button3" destination="b1h-d9-Hek" id="EEq-BE-nYG"/>
+                        <outlet property="Button4" destination="bJk-9b-yme" id="ZoI-Ur-4Sb"/>
+                        <outlet property="Button5" destination="Dii-pl-VM8" id="Ew6-9a-bjj"/>
                         <outlet property="aaa" destination="LVM-CC-AX8" id="k3Q-0k-kju"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zE-N5-hWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775" y="-482"/>
+            <point key="canvasLocation" x="-980" y="-503"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -1387,10 +1397,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtI-6A-0bv">
-                                <rect key="frame" x="325" y="265" width="120" height="70"/>
+                                <rect key="frame" x="325" y="265" width="130" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="4Wt-4r-Dj0"/>
-                                    <constraint firstAttribute="width" constant="120" id="c7Z-MU-ayx"/>
+                                    <constraint firstAttribute="width" constant="130" id="c7Z-MU-ayx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="プリトウェン"/>
@@ -1402,10 +1413,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81C-j8-Ak3">
-                                <rect key="frame" x="155" y="265" width="120" height="70"/>
+                                <rect key="frame" x="125" y="265" width="150" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="2r9-Ug-DBb"/>
-                                    <constraint firstAttribute="width" constant="120" id="3aP-bS-3hb"/>
+                                    <constraint firstAttribute="width" constant="150" id="3aP-bS-3hb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="ロンギヌス"/>
@@ -1486,10 +1498,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Jx-Bf-kKE">
-                                <rect key="frame" x="325" y="175" width="120" height="70"/>
+                                <rect key="frame" x="325" y="175" width="130" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="d95-Gr-doP"/>
-                                    <constraint firstAttribute="width" constant="120" id="iph-Q4-xuV"/>
+                                    <constraint firstAttribute="width" constant="130" id="iph-Q4-xuV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="イージス"/>
@@ -1501,10 +1514,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lus-Y7-Xt4">
-                                <rect key="frame" x="155" y="85" width="120" height="70"/>
+                                <rect key="frame" x="125" y="85" width="150" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="CfZ-7D-Jbz"/>
-                                    <constraint firstAttribute="width" constant="120" id="tJC-FQ-GEg"/>
+                                    <constraint firstAttribute="width" constant="150" id="tJC-FQ-GEg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="木の剣"/>
@@ -1516,9 +1530,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thg-xn-7qJ">
-                                <rect key="frame" x="155" y="175" width="120" height="70"/>
+                                <rect key="frame" x="125" y="175" width="150" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="VWV-EJ-aLV"/>
+                                    <constraint firstAttribute="width" constant="150" id="VWV-EJ-aLV"/>
                                     <constraint firstAttribute="height" constant="70" id="kfQ-kO-Z5a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -1531,10 +1546,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3u-j9-nPg">
-                                <rect key="frame" x="325" y="355" width="120" height="70"/>
+                                <rect key="frame" x="325" y="355" width="130" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="8l4-r6-Nf7"/>
-                                    <constraint firstAttribute="width" constant="120" id="Mn1-7s-glR"/>
+                                    <constraint firstAttribute="width" constant="130" id="Mn1-7s-glR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="勇者の盾"/>
@@ -1546,10 +1562,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yis-rn-g4a">
-                                <rect key="frame" x="325" y="445" width="120" height="70"/>
+                                <rect key="frame" x="325" y="445" width="130" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="mN3-9T-98a"/>
-                                    <constraint firstAttribute="width" constant="120" id="st9-ou-K9c"/>
+                                    <constraint firstAttribute="width" constant="130" id="st9-ou-K9c"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="伝説の盾"/>
@@ -1561,10 +1578,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLV-gT-MUW">
-                                <rect key="frame" x="128" y="355" width="147" height="70"/>
+                                <rect key="frame" x="125" y="355" width="150" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Tyc-QJ-0Tl"/>
-                                    <constraint firstAttribute="width" constant="147" id="fXv-D5-N0V"/>
+                                    <constraint firstAttribute="width" constant="150" id="fXv-D5-N0V"/>
                                     <constraint firstAttribute="height" constant="70" id="q84-2z-TdR"/>
                                     <constraint firstAttribute="height" constant="70" id="wsI-1M-SJh"/>
                                 </constraints>
@@ -1584,10 +1602,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4O-DE-gPD">
-                                <rect key="frame" x="155" y="445" width="120" height="70"/>
+                                <rect key="frame" x="125" y="445" width="150" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="0cs-v5-Z1V"/>
-                                    <constraint firstAttribute="width" constant="120" id="nLl-rv-1sO"/>
+                                    <constraint firstAttribute="width" constant="150" id="nLl-rv-1sO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="伝説の剣"/>
@@ -1599,9 +1618,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhF-d1-V4g">
-                                <rect key="frame" x="325" y="85" width="120" height="70"/>
+                                <rect key="frame" x="325" y="85" width="130" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="62K-bm-FpO"/>
+                                    <constraint firstAttribute="width" constant="130" id="62K-bm-FpO"/>
                                     <constraint firstAttribute="height" constant="70" id="8Iv-4H-Uuu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -2317,7 +2337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GDR-n6-S2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775" y="1355"/>
+            <point key="canvasLocation" x="-807" y="1398"/>
         </scene>
     </scenes>
     <resources>
