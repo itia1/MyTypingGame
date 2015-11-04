@@ -173,7 +173,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         HpBar.progress = 1.0
         myHpBar.progress = 1.0
+        
         Picture.image = monster1
+        
         hphold = hp
         myhphold = Int(myhp)
         
@@ -311,6 +313,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
                 self.startTime2 = NSDate.timeIntervalSinceReferenceDate()
                 
                 switch counter{
+                case 0:
+                    Picture.image = monster1
                 case 1:
                     Picture.image = monster2
                 case 2:
@@ -326,14 +330,14 @@ class ViewController: UIViewController,UITextFieldDelegate {
 
             }
             
-            Picture.animationImages = monster1damage
-            Picture.animationRepeatCount = 3
-            Picture.animationDuration = 0.2
-            Picture.startAnimating()
             
             switch counter{
-                
-            case 1: 
+            case 0:
+                    Picture.animationImages = monster1damage
+                    Picture.animationRepeatCount = 3
+                    Picture.animationDuration = 0.2
+                    Picture.startAnimating()
+            case 1:
                     Picture.animationImages = monster2damage
                     Picture.animationRepeatCount = 3
                     Picture.animationDuration = 0.2
@@ -458,6 +462,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
                     self.startTime2 = NSDate.timeIntervalSinceReferenceDate()
                     
                     switch counter{
+                    case 0:
+                        Picture.image = monster1
                     case 1:
                         Picture.image = monster2
                     case 2:
