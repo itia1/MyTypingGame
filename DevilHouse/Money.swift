@@ -35,11 +35,11 @@ class Money:NSObject{
         
     }
     
-    func MoneyAppear() {
+    func MoneyAppear() -> Int{
         let userDefaults = NSUserDefaults.standardUserDefaults()
         let moneyCount:Int = userDefaults.integerForKey("moneyCount")
         //Label.text = String(moneyCount)
-        
+        return moneyCount
         
     }
 

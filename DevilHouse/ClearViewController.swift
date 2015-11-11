@@ -10,11 +10,15 @@ import UIKit
 import Social
 
 class ClearViewController: UIViewController {
-
+    var levelfunc:Level?
+    var moneyfunc:Money?
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var floor: UILabel!
+    @IBOutlet weak var kekka: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        levelfunc = Level()
+        moneyfunc = Money()
         let app:AppDelegate =
         (UIApplication.sharedApplication().delegate as! AppDelegate)
         let timeCount1 = app.timeCount
@@ -23,6 +27,11 @@ class ClearViewController: UIViewController {
         self.time.text = String(format: "Time:%02d:%02d:%02d", sec/60, sec%60, msec)
         let hierarchyCount = app.hierarchy
         floor.text = String(format: "階層:\(hierarchyCount)")
+        let money = sec * hierarchyCount
+        let exp = 100
+        kekka.text = String(format: "金:\(money) exp:\(exp)入手しました")
+        moneyfunc!.MoneyGet(money)
+        levelfunc!.getExp(exp)
 
         // Do any additional setup after loading the view.
     }

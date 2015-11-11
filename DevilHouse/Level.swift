@@ -15,6 +15,7 @@ class Level: NSObject {
         var sumExp:Int = userDefaults.integerForKey("sumExp")
         let level:Int = userDefaults.integerForKey("level")
         var upExp:Int = userDefaults.integerForKey("upExp")
+        sumExp += exp
         if(level == 0){
             levelup()
             upExp = 100;
@@ -61,12 +62,13 @@ class Level: NSObject {
         }else {
             hp++
         }
+        level++
         userDefaults.setInteger(level, forKey: "level")
         userDefaults.setInteger(attack, forKey: "attack")
         userDefaults.setInteger(def, forKey: "def")
         userDefaults.setInteger(spd, forKey: "spd")
         userDefaults.setInteger(hp, forKey: "hp")
-        
+        userDefaults.synchronize()
     }
     
     
