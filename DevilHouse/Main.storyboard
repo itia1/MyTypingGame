@@ -1171,14 +1171,6 @@
                                     <action selector="exitButtom:" destination="UIn-oR-HbU" eventType="touchUpInside" id="gBf-Eg-Eg1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKb-Gm-yaB">
-                                <rect key="frame" x="270" y="120" width="60" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="装備"/>
-                                <connections>
-                                    <segue destination="ofN-ed-5cn" kind="show" id="61W-Oc-eXM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdh-1A-Bw5">
                                 <rect key="frame" x="255" y="452" width="90" height="48"/>
                                 <constraints>
@@ -1203,6 +1195,13 @@
                                 <state key="normal" title="ステータス"/>
                                 <connections>
                                     <segue destination="bqw-EU-2py" kind="show" id="lwh-kq-nsJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKb-Gm-yaB">
+                                <rect key="frame" x="212" y="107" width="176" height="60"/>
+                                <state key="normal" image="bukiwaku2.png"/>
+                                <connections>
+                                    <segue destination="ofN-ed-5cn" kind="show" id="61W-Oc-eXM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1513,18 +1512,14 @@
                                     <action selector="choiceProtect:" destination="ofN-ed-5cn" eventType="touchUpInside" id="WIb-1g-l7h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lus-Y7-Xt4">
-                                <rect key="frame" x="125" y="85" width="150" height="70"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lus-Y7-Xt4">
+                                <rect key="frame" x="103" y="90" width="194" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="CfZ-7D-Jbz"/>
                                     <constraint firstAttribute="width" constant="150" id="tJC-FQ-GEg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="木の剣"/>
-                                <state key="disabled">
-                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" image="kinoturugi.png"/>
+                                <state key="disabled" image="装備中.png"/>
                                 <connections>
                                     <action selector="choiceWeapon:" destination="ofN-ed-5cn" eventType="touchUpInside" id="WN0-f4-QBS"/>
                                 </connections>
@@ -2345,7 +2340,9 @@
         <image name="ajito.png" width="414" height="736"/>
         <image name="battle2.png" width="414" height="736"/>
         <image name="bukihaikei.png" width="414" height="736"/>
+        <image name="bukiwaku2.png" width="140" height="60"/>
         <image name="haikei.png" width="414" height="736"/>
+        <image name="kinoturugi.png" width="140" height="60"/>
         <image name="load.png" width="414" height="736"/>
         <image name="syujinkou.png" width="140" height="200"/>
         <image name="title3.png" width="414" height="736"/>
@@ -2353,8 +2350,9 @@
         <image name="waku1.png" width="320" height="50"/>
         <image name="waku2.png" width="200" height="300"/>
         <image name="waku3.png" width="320" height="180"/>
+        <image name="装備中.png" width="140" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fdY-Je-BDf"/>
+        <segue reference="Mk6-ym-Ixj"/>
     </inferredMetricsTieBreakers>
 </document>
