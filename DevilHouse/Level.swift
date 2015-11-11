@@ -43,7 +43,6 @@ class Level: NSObject {
             hp = 100
             def = 10
             spd = 10
-            level = 1
             var equipmentWeapon = userDefaults.integerForKey("equipmentWeapon")
             var equipmentProtect = userDefaults.integerForKey("equipmentProtect")
             equipmentWeapon = 5

@@ -13,13 +13,15 @@ class ProtectViewController: UIViewController {
     var equipment:Equipment?
     var money:Money?
     var protectInfo:[(name:String,possesion:Bool)]=[]
+    @IBOutlet weak var moneyText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         equipment = Equipment()
         money = Money()
         protectInfo = equipment!.readCurrentProtectInfo()
         let bbb:Int = money!.MoneyAppear()
-        aaa.text = String(bbb)
+        moneyText.text = String(format: "現在のお金:\(bbb)")
+     //   aaa.text = String(bbb)
         // Do any additional setup after loading the view.
 
         for(var i = 0;i<5;i++){
