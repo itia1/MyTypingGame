@@ -716,7 +716,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="battle2.png" translatesAutoresizingMaskIntoConstraints="NO" id="NYH-SG-b2P">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="battle222.png" translatesAutoresizingMaskIntoConstraints="NO" id="TsO-VE-EL5">
                                 <rect key="frame" x="93" y="-68" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テキスト" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZf-od-fCG">
@@ -752,8 +752,8 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRp-YQ-Fhh">
-                                <rect key="frame" x="201" y="234" width="34" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRp-YQ-Fhh">
+                                <rect key="frame" x="200" y="234" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -817,8 +817,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="yes" keyboardType="namePhonePad" returnKeyType="done"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWD-r8-HOs">
-                                <rect key="frame" x="40" y="20" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWD-r8-HOs">
+                                <rect key="frame" x="22" y="20" width="40" height="20"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="1Kg-cw-ivb"/>
@@ -861,6 +861,7 @@
                             <constraint firstItem="sMW-0u-80y" firstAttribute="top" secondItem="gAV-sD-1kw" secondAttribute="bottom" constant="10" id="9Gn-Ic-1xp"/>
                             <constraint firstItem="jh8-yM-TYb" firstAttribute="top" secondItem="rZf-od-fCG" secondAttribute="bottom" constant="15" id="9UZ-6A-R29"/>
                             <constraint firstItem="jh8-yM-TYb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="144" id="9jE-oF-iYh"/>
+                            <constraint firstItem="TsO-VE-EL5" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="ATC-NU-SL6"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Xzd-0K-QTD" secondAttribute="bottom" constant="251" id="Afh-Qo-SPx"/>
                             <constraint firstAttribute="centerX" secondItem="WKD-JL-Er5" secondAttribute="centerX" id="B4C-Wk-CxR"/>
                             <constraint firstItem="gAV-sD-1kw" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="DGm-lw-CjW"/>
@@ -874,6 +875,7 @@
                             <constraint firstItem="OWD-r8-HOs" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="20" id="LaJ-ge-Hdk"/>
                             <constraint firstItem="LRp-YQ-Fhh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="51" id="LoY-Sn-rWp"/>
                             <constraint firstItem="LRp-YQ-Fhh" firstAttribute="top" secondItem="gAV-sD-1kw" secondAttribute="bottom" constant="20" id="NAG-Ki-ky3"/>
+                            <constraint firstItem="TsO-VE-EL5" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Pel-az-6pC"/>
                             <constraint firstAttribute="centerY" secondItem="jh8-yM-TYb" secondAttribute="centerY" id="Q9g-13-rpi"/>
                             <constraint firstItem="Xzd-0K-QTD" firstAttribute="top" secondItem="XmH-oM-XxL" secondAttribute="bottom" constant="10" id="QRH-FZ-IEy"/>
                             <constraint firstItem="sMW-0u-80y" firstAttribute="leading" secondItem="LRp-YQ-Fhh" secondAttribute="trailing" constant="90" id="Tp4-lc-CKT"/>
@@ -902,10 +904,8 @@
                             <constraint firstAttribute="centerX" secondItem="XmH-oM-XxL" secondAttribute="centerX" id="kdp-Qo-bdd"/>
                             <constraint firstAttribute="centerX" secondItem="rZf-od-fCG" secondAttribute="centerX" id="kyb-gM-hkr"/>
                             <constraint firstItem="sMW-0u-80y" firstAttribute="leading" secondItem="LRp-YQ-Fhh" secondAttribute="trailing" constant="40" id="kyh-1c-Lgg"/>
-                            <constraint firstItem="NYH-SG-b2P" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="laZ-rz-elC"/>
                             <constraint firstAttribute="centerX" secondItem="jh8-yM-TYb" secondAttribute="centerX" id="ofk-xh-dCg"/>
                             <constraint firstAttribute="centerX" secondItem="jh8-yM-TYb" secondAttribute="centerX" id="pbf-bc-bm0"/>
-                            <constraint firstItem="NYH-SG-b2P" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="plo-X8-CX4"/>
                             <constraint firstItem="sMW-0u-80y" firstAttribute="leading" secondItem="XmH-oM-XxL" secondAttribute="trailing" constant="40" id="q4c-GR-1iO"/>
                             <constraint firstItem="BNx-yx-h3R" firstAttribute="leading" secondItem="rZf-od-fCG" secondAttribute="trailing" constant="44" id="qxn-Fm-tZT"/>
                             <constraint firstAttribute="centerX" secondItem="g4c-Fb-i9C" secondAttribute="centerX" id="rFs-AP-XvI"/>
@@ -2417,7 +2417,7 @@
     <resources>
         <image name="TwiIcon.png" width="512" height="512"/>
         <image name="ajito.png" width="414" height="736"/>
-        <image name="battle2.png" width="414" height="736"/>
+        <image name="battle222.png" width="414" height="736"/>
         <image name="bukihaikei.png" width="414" height="736"/>
         <image name="haikei.png" width="414" height="736"/>
         <image name="load.png" width="414" height="736"/>
