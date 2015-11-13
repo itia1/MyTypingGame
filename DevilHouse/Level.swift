@@ -26,7 +26,7 @@ class Level: NSObject {
             upExp += 10
         }
         userDefaults.setInteger(sumExp, forKey: "sumExp")
-        userDefaults.setInteger(upExp, forKey: "upExp")
+        userDefaults.setInteger(upExp, forKey: "upExp") 
     }
     
     

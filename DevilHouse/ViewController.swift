@@ -108,14 +108,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
                         ]
     
     var stairs = [
-        UIImage(named:"一拍1.png")!,
-        UIImage(named:"一拍2.png")!,
-        UIImage(named:"一拍3.png")!,
-        UIImage(named:"一拍4.png")!,
-        UIImage(named:"一拍5.png")!,
-        UIImage(named:"一拍6.png")!,
-        UIImage(named:"一拍7.png")!,
-        UIImage(named:"一拍8.png")!,
+        UIImage(named:"kaidan1.png")!,
+        UIImage(named:"kaidan2.png")!,
+        UIImage(named:"kaidan3.png")!,
+        UIImage(named:"kaidan4.png")!,
+        UIImage(named:"kaidan5.png")!,
                   ]
     
     
@@ -265,7 +262,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             if( hp <= 0){
                 
                 AttackEffect.animationImages = stairs
-                AttackEffect.animationDuration = 0.6
+                AttackEffect.animationDuration = 0.8
                 AttackEffect.startAnimating()
                 
                 counter++
