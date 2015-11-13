@@ -13,6 +13,7 @@ class WeaponViewController: UIViewController {
     var equipment:Equipment?
     var money:Money?
     var weaponInfo:[(name:String,possesion:Bool)]=[]
+    @IBOutlet weak var moneyText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
          equipment = Equipment()
@@ -20,8 +21,8 @@ class WeaponViewController: UIViewController {
         // Do any additional setup after loading the view.
         money = Money()
         let bbb:Int = money!.MoneyAppear()
-        aaa.text = String(bbb)
-        serihu.text = "へいらっしゃい！\n今日は何を買うんだい"
+        moneyText.text = String(format: "現在のお金:\(bbb)")
+        
         
         for(var i = 0;i<5;i++){
             let weapon:(name:String,possesion:Bool) = weaponInfo[i]

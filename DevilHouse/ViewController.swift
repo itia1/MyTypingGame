@@ -140,7 +140,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     var hphold:Int = 0// 敵の最大hpを保持させる
     var myhphold:Int = 0 //自分の最大hpを保持させる
     
-    override func viewDidLoad() {
+      override func viewDidLoad() {
         super.viewDidLoad()
         EquipmentData = equipmentData()
         let equipmentWeapon:Int = defaults.integerForKey("equipmentWeapon")
@@ -185,9 +185,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
         bgmplayer.numberOfLoops = -1
         bgmplayer.prepareToPlay()
         bgmplayer.play()
-        
         textField.autocorrectionType = UITextAutocorrectionType.No
-
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -244,6 +243,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     //文字を打ち終えた時に管理する関数
     func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        
+        textField.autocorrectionType = UITextAutocorrectionType.No
         if(textField.text==trueText.text){
             
             hp = Int(hp - Int(attack))
