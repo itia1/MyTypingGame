@@ -97,7 +97,10 @@ class SkillViewController: UIViewController {
                     self.skillButton4.enabled = true
                     self.skillButton4.setTitle("DesperateExplosion", forState: .Normal)
                 equipmentSkill = num
-               
+                
+                defaults.setInteger(equipmentSkill, forKey: "equipmentSkill")
+                defaults.synchronize()
+                
             }
             let actionCancel = UIAlertAction(title: "いいえ", style: .Destructive){
                 (action) -> Void in
@@ -125,6 +128,11 @@ class SkillViewController: UIViewController {
                 self.skillButton3.setTitle("UptoMe", forState: .Normal)
                 self.skillButton4.enabled = true
                 self.skillButton4.setTitle("DesperateExplosion", forState: .Normal)
+                equipmentSkill = num
+                
+                defaults.setInteger(equipmentSkill, forKey: "equipmentSkill")
+                defaults.synchronize()
+                
             }
             let actionCancel = UIAlertAction(title: "いいえ", style: .Destructive){
                 (action) -> Void in
@@ -151,6 +159,11 @@ class SkillViewController: UIViewController {
                 self.skillButton3.setTitle("UptoMe", forState: .Normal)
                 self.skillButton4.enabled = true
                 self.skillButton4.setTitle("DesperateExplosion", forState: .Normal)
+                equipmentSkill = num
+                
+                defaults.setInteger(equipmentSkill, forKey: "equipmentSkill")
+                defaults.synchronize()
+                
             }
             let actionCancel = UIAlertAction(title: "いいえ", style: .Destructive){
                 (action) -> Void in
@@ -177,6 +190,10 @@ class SkillViewController: UIViewController {
                 self.skillButton2.setTitle("TakeItEasy", forState: .Normal)
                 self.skillButton4.enabled = true
                 self.skillButton4.setTitle("DesperateExplosion", forState: .Normal)
+                equipmentSkill = num
+                
+                defaults.setInteger(equipmentSkill, forKey: "equipmentSkill")
+                defaults.synchronize()
                 
             }
             let actionCancel = UIAlertAction(title: "いいえ", style: .Destructive){
@@ -203,6 +220,11 @@ class SkillViewController: UIViewController {
                 self.skillButton2.setTitle("TakeItEasy", forState: .Normal)
                 self.skillButton3.enabled = true
                 self.skillButton3.setTitle("UptoMe", forState: .Normal)
+                equipmentSkill = num
+                
+                defaults.setInteger(equipmentSkill, forKey: "equipmentSkill")
+                defaults.synchronize()
+                
             }
             let actionCancel = UIAlertAction(title: "いいえ", style: .Destructive){
                 (action) -> Void in

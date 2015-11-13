@@ -156,7 +156,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
         attack = Double(attackData) + attackStates
         def = Double(protectData) + defStates
-        self.textField.delegate = self
+        textField.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
         character = Character()
         text = character!.text1

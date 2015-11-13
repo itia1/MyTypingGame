@@ -20,7 +20,7 @@ class ProtectViewController: UIViewController {
         money = Money()
         protectInfo = equipment!.readCurrentProtectInfo()
         let bbb:Int = money!.MoneyAppear()
-        moneyText.text = String(format: "現在のお金:\(bbb)")
+        moneyText.text = String(format: "現在のお金:\(bbb)$")
      //   aaa.text = String(bbb)
         // Do any additional setup after loading the view.
 
@@ -62,18 +62,32 @@ class ProtectViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    func shortage() {
+        var ac = UIAlertController(title: "エラー", message: "お金が足りません", preferredStyle: .Alert)
+        let cancelAction = UIAlertAction(title: "戻る", style: .Cancel) { (action) -> Void in
+        }
+        ac.addAction(cancelAction)
+        // self.presentingViewController?.presentingViewController?.dismissViewControllerAnimated(true,completion: nil)
+        presentViewController(ac, animated: true, completion: nil)
+    }
+    
+    
     @IBAction func buttonTapped(sender : AnyObject) {
-        
+         let bbb:Int = money!.MoneyAppear()
         switch sender.tag{
             
         case 1:
-             let alertController:UIAlertController = UIAlertController(title: "木の盾", message: "購入しますか？", preferredStyle: .Alert)
+             let alertController:UIAlertController = UIAlertController(title: "木の盾", message: "500$:購入しますか？", preferredStyle: .Alert)
             let actionOK = UIAlertAction(title: "はい", style: .Default){
                 action in
+                if bbb >= 500{
                 let num:Int = sender.tag
-                
+                self.Button1.enabled = false
                 let protect:(name:String,possesion:Bool) = self.protectInfo[num-1]
                 self.equipment!.changeProtectPossesion(protect.name)
+                }else{
+                    self.shortage()
+                }
             }
             let actionCancel = UIAlertAction(title: "いいえ", style: .Destructive){
                 (action) -> Void in
@@ -82,16 +96,19 @@ class ProtectViewController: UIViewController {
              alertController.addAction(actionCancel)
              alertController.addAction(actionOK)
              presentViewController(alertController, animated: true, completion: nil)
-            self.Button1.enabled = false
             
         case 2:
-            let alertController:UIAlertController = UIAlertController(title: "イージス", message: "購入しますか？", preferredStyle: .Alert)
+            let alertController:UIAlertController = UIAlertController(title: "イージス", message: "1000$:購入しますか？", preferredStyle: .Alert)
             let actionOK = UIAlertAction(title: "はい", style: .Default){
                 action in
+                if bbb >= 1000{
                 let num:Int = sender.tag
-                
+                    self.Button2.enabled = false
                 let protect:(name:String,possesion:Bool) = self.protectInfo[num-1]
                 self.equipment!.changeProtectPossesion(protect.name)
+                }else{
+                    self.shortage()
+                }
             }
             let actionCancel = UIAlertAction(title: "いいえ", style: .Destructive){
                 (action) -> Void in
@@ -100,16 +117,20 @@ class ProtectViewController: UIViewController {
             alertController.addAction(actionCancel)
             alertController.addAction(actionOK)
             presentViewController(alertController, animated: true, completion: nil)
-            self.Button2.enabled = false
+            
             
         case 3:
-            let alertController:UIAlertController = UIAlertController(title: "プリトウェン", message: "購入しますか？", preferredStyle: .Alert)
+            let alertController:UIAlertController = UIAlertController(title: "プリトウェン", message: "1500$:購入しますか？", preferredStyle: .Alert)
             let actionOK = UIAlertAction(title: "はい", style: .Default){
                 action in
+                if bbb >= 1500{
                 let num:Int = sender.tag
-                
+                    self.Button3.enabled = false
                 let protect:(name:String,possesion:Bool) = self.protectInfo[num-1]
                 self.equipment!.changeProtectPossesion(protect.name)
+                }else{
+                    self.shortage()
+                }
             }
             let actionCancel = UIAlertAction(title: "いいえ", style: .Destructive){
                 (action) -> Void in
@@ -118,16 +139,19 @@ class ProtectViewController: UIViewController {
             alertController.addAction(actionCancel)
             alertController.addAction(actionOK)
             presentViewController(alertController, animated: true, completion: nil)
-            self.Button3.enabled = false
-
+            
         case 4:
-            let alertController:UIAlertController = UIAlertController(title: "勇者の盾", message: "購入しますか？", preferredStyle: .Alert)
+            let alertController:UIAlertController = UIAlertController(title: "勇者の盾", message: "2000$:購入しますか？", preferredStyle: .Alert)
             let actionOK = UIAlertAction(title: "はい", style: .Default){
                 action in
+                if bbb >= 2000{
                 let num:Int = sender.tag
-                
+                    self.Button4.enabled = false
                 let protect:(name:String,possesion:Bool) = self.protectInfo[num-1]
                 self.equipment!.changeProtectPossesion(protect.name)
+                }else{
+                    self.shortage()
+                }
             }
             let actionCancel = UIAlertAction(title: "いいえ", style: .Destructive){
                 (action) -> Void in
@@ -136,16 +160,19 @@ class ProtectViewController: UIViewController {
             alertController.addAction(actionCancel)
             alertController.addAction(actionOK)
             presentViewController(alertController, animated: true, completion: nil)
-            self.Button4.enabled = false
 
         case 5:
-            let alertController:UIAlertController = UIAlertController(title: "課金の盾", message: "購入しますか？", preferredStyle: .Alert)
+            let alertController:UIAlertController = UIAlertController(title: "課金の盾", message: "3000$:購入しますか？", preferredStyle: .Alert)
             let actionOK = UIAlertAction(title: "はい", style: .Default){
                 action in
+                if bbb >= 3000{
                 let num:Int = sender.tag
-                
+                    self.Button5.enabled = false
                 let protect:(name:String,possesion:Bool) = self.protectInfo[num-1]
                 self.equipment!.changeProtectPossesion(protect.name)
+                }else{
+                    self.shortage()
+                }
             }
             let actionCancel = UIAlertAction(title: "いいえ", style: .Destructive){
                 (action) -> Void in
@@ -154,7 +181,6 @@ class ProtectViewController: UIViewController {
             alertController.addAction(actionCancel)
             alertController.addAction(actionOK)
             presentViewController(alertController, animated: true, completion: nil)
-            self.Button5.enabled = false
 
         default:
             break
